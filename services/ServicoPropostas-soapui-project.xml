@@ -2740,7 +2740,7 @@ OFERTA = MAX(ID_OFERTA)
             <!--Optional:-->
             <wcf:Usuario>${prop#usuario}</wcf:Usuario>
             <!--Optional:-->
-            <wcf:opcao>3</wcf:opcao>
+            <wcf:opcao>2</wcf:opcao>
             <!--Optional:-->
             <wcf:proposta>${resultprop#num}</wcf:proposta>
          </tem:Proposta>
