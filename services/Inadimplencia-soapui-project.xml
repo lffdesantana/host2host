@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="e09b3c65-634c-43ae-bc8e-cca90a61eec4" activeEnvironment="Default" name="Inadimplencia" soapui-version="5.4.0" abortOnError="false" runType="SEQUENTIAL" resourceRoot="" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="375b0b41-2c87-413f-9803-179a0c9f4bcb" wsaVersion="NONE" name="BasicHttpBinding_IInadimplencia" type="wsdl" bindingName="{http://tempuri.org/}BasicHttpBinding_IInadimplencia" soapVersion="1_1" anonymous="optional" definition="http://10.10.20.73/ConsultaInadimplencia/Inadimplencia.svc?wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://10.10.20.73/ConsultaInadimplencia/Inadimplencia.svc?wsdl"><con:part><con:url>http://10.10.20.73/ConsultaInadimplencia/Inadimplencia.svc?wsdl</con:url><con:content><![CDATA[<wsdl:definitions name="Inadimplencia" targetNamespace="http://www.portocred.com.br" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:i0="http://tempuri.org/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.portocred.com.br" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/">
+  <wsdl:import namespace="http://tempuri.org/" location="http://10.10.20.73/ConsultaInadimplencia/Inadimplencia.svc?wsdl=wsdl0"/>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://www.portocred.com.br/Imports">
+      <xsd:import schemaLocation="http://10.10.20.73/ConsultaInadimplencia/Inadimplencia.svc?xsd=xsd0" namespace="http://www.portocred.com.br"/>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IInadimplencia_GetVersao_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetVersao"/>
+  </wsdl:message>
+  <wsdl:message name="IInadimplencia_GetVersao_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetVersaoResponse"/>
+  </wsdl:message>
+  <wsdl:message name="IInadimplencia_ConsultarInadimplencia_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarInadimplencia"/>
+  </wsdl:message>
+  <wsdl:message name="IInadimplencia_ConsultarInadimplencia_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarInadimplenciaResponse"/>
+  </wsdl:message>
+  <wsdl:portType name="IInadimplencia">
+    <wsdl:operation name="GetVersao">
+      <wsdl:input wsaw:Action="http://www.portocred.com.br/IInadimplencia/GetVersao" message="tns:IInadimplencia_GetVersao_InputMessage"/>
+      <wsdl:output wsaw:Action="http://www.portocred.com.br/IInadimplencia/GetVersaoResponse" message="tns:IInadimplencia_GetVersao_OutputMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarInadimplencia">
+      <wsdl:input wsaw:Action="http://www.portocred.com.br/IInadimplencia/ConsultarInadimplencia" message="tns:IInadimplencia_ConsultarInadimplencia_InputMessage"/>
+      <wsdl:output wsaw:Action="http://www.portocred.com.br/IInadimplencia/ConsultarInadimplenciaResponse" message="tns:IInadimplencia_ConsultarInadimplencia_OutputMessage"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:service name="Inadimplencia">
+    <wsdl:port name="BasicHttpBinding_IInadimplencia" binding="i0:BasicHttpBinding_IInadimplencia">
+      <soap:address location="http://10.10.20.73/ConsultaInadimplencia/Inadimplencia.svc"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part><con:part><con:url>http://10.10.20.73/ConsultaInadimplencia/Inadimplencia.svc?wsdl=wsdl0</con:url><con:content><![CDATA[<wsdl:definitions targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:i0="http://www.portocred.com.br" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/">
+  <wsdl:import namespace="http://www.portocred.com.br" location="http://10.10.20.73/ConsultaInadimplencia/Inadimplencia.svc?wsdl"/>
+  <wsdl:types/>
+  <wsdl:binding name="BasicHttpBinding_IInadimplencia" type="i0:IInadimplencia">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="GetVersao">
+      <soap:operation soapAction="http://www.portocred.com.br/IInadimplencia/GetVersao" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarInadimplencia">
+      <soap:operation soapAction="http://www.portocred.com.br/IInadimplencia/ConsultarInadimplencia" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part><con:part><con:url>http://10.10.20.73/ConsultaInadimplencia/Inadimplencia.svc?xsd=xsd0</con:url><con:content><![CDATA[<xs:schema elementFormDefault="qualified" targetNamespace="http://www.portocred.com.br" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.portocred.com.br">
+  <xs:element name="GetVersao">
+    <xs:complexType/>
+  </xs:element>
+  <xs:element name="GetVersaoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetVersaoResult" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarInadimplencia">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="cpf" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarInadimplenciaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="ConsultarInadimplenciaResult" type="tns:RetornoInadimplencia"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="RetornoInadimplencia">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="situacao" type="tns:Situacao"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="mensagem" type="tns:Mensagem"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Situacao">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="situacao" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Mensagem">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="codigo" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="descricao" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="complemento" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://10.10.20.73/ConsultaInadimplencia/Inadimplencia.svc</con:endpoint></con:endpoints><con:operation id="7ef75ad9-7eac-4dc8-a859-ae923c288dab" isOneWay="false" action="http://www.portocred.com.br/IInadimplencia/ConsultarInadimplencia" name="ConsultarInadimplencia" bindingOperationName="ConsultarInadimplencia" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="5dfbcd18-a81f-4f0e-bc80-4490bbeed013" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.10.20.73/ConsultaInadimplencia/Inadimplencia.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:por="http://www.portocred.com.br">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <por:ConsultarInadimplencia>
+         <!--Optional:-->
+         <por:cpf>01905920369</por:cpf>
+      </por:ConsultarInadimplencia>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.portocred.com.br/IInadimplencia/ConsultarInadimplencia"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="bae3062f-955a-4797-9221-84b4557048f3" isOneWay="false" action="http://www.portocred.com.br/IInadimplencia/GetVersao" name="GetVersao" bindingOperationName="GetVersao" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="844de6bd-66ad-43f1-9ae0-07e58884c356" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.10.20.73/ConsultaInadimplencia/Inadimplencia.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:por="http://www.portocred.com.br">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <por:GetVersao/>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.portocred.com.br/IInadimplencia/GetVersao"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:testSuite id="8dc84917-b620-456f-bcff-176b5b03f55e" name="Inadimplencia TestSuite"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="5ef314eb-103d-40e2-8f52-2156a51ded0c" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="BasicHttpBinding_IInadimplencia TestSuite" searchProperties="true"><con:settings/><con:testStep type="request" id="e76ae40a-6427-46e8-b820-fac9e50113a4" name="ConsultarInadimplencia"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>BasicHttpBinding_IInadimplencia</con:interface><con:operation>ConsultarInadimplencia</con:operation><con:request name="ConsultarInadimplencia" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="6f417c5c-2318-484b-b8e2-01ee5e0b208b"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.10.20.73/ConsultaInadimplencia/Inadimplencia.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:por="http://www.portocred.com.br">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <por:ConsultarInadimplencia>
+         <!--Optional:-->
+         <por:cpf>01905920369</por:cpf>
+      </por:ConsultarInadimplencia>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="Simple Contains" id="dd34fefc-7e5b-470e-8083-4811a1fbb770" name="Contains"><con:configuration><token>codigo>200&lt;/codigo></token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="SOAP Fault Assertion" id="6a24b9e6-db06-46ac-904a-6b6a1205084e" name="Not SOAP Fault"/><con:assertion type="Schema Compliance" id="a7047064-77f8-4099-a4ae-f9c229e2c0f9" name="Schema Compliance"><con:configuration><definition/></con:configuration></con:assertion><con:assertion type="SOAP Response" id="88f0a10c-c12d-43bc-8b21-fa4b523971dd" name="SOAP Response"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.portocred.com.br/IInadimplencia/ConsultarInadimplencia"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" id="b2ff42e8-7ba8-45df-a948-c72770c76bc5" name="GetVersao"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>BasicHttpBinding_IInadimplencia</con:interface><con:operation>GetVersao</con:operation><con:request name="GetVersao" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="01e4518e-8883-4a8c-9fa9-bde8c5b28b48"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.10.20.73/ConsultaInadimplencia/Inadimplencia.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:por="http://www.portocred.com.br">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <por:GetVersao/>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Fault Assertion" id="64c885fd-7361-4db2-807a-b8132f007809" name="Not SOAP Fault"/><con:assertion type="Schema Compliance" id="15f63e38-a3a3-4caf-a6bd-450f735cd359" name="Schema Compliance"><con:configuration><definition/></con:configuration></con:assertion><con:assertion type="SOAP Response" id="74bc3061-bd60-4b0a-b91a-f22a59b1f91b" name="SOAP Response"/><con:assertion type="Simple Contains" id="8a9dea01-6a7a-4182-8ed5-8c8ddf5eb052" name="Contains"><con:configuration><token>&lt;GetVersaoResult>1.2.0.0&lt;/GetVersaoResult></token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.portocred.com.br/IInadimplencia/GetVersao"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>

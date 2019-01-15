@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="febe6b30-9def-4623-ba85-c18604a139e6" activeEnvironment="Default" name="ConsultaSaldoContrato" soapui-version="5.4.0" abortOnError="false" runType="SEQUENTIAL" resourceRoot="" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="81077531-a243-48dc-b7e1-84feece2a371" wsaVersion="NONE" name="BasicHttpBinding_IConsultaSaldoContrato" type="wsdl" bindingName="{http://tempuri.org/}BasicHttpBinding_IConsultaSaldoContrato" soapVersion="1_1" anonymous="optional" definition="http://10.10.20.73/ConsultaSaldoContrato/ConsultaSaldoContrato.svc?wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://10.10.20.73/ConsultaSaldoContrato/ConsultaSaldoContrato.svc?wsdl"><con:part><con:url>http://10.10.20.73/ConsultaSaldoContrato/ConsultaSaldoContrato.svc?wsdl</con:url><con:content><![CDATA[<wsdl:definitions name="ConsultaSaldoContrato" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:i0="http://www.portocred.com.br" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/">
+  <wsdl:import namespace="http://www.portocred.com.br" location="http://10.10.20.73/ConsultaSaldoContrato/ConsultaSaldoContrato.svc?wsdl=wsdl0"/>
+  <wsdl:types/>
+  <wsdl:binding name="BasicHttpBinding_IConsultaSaldoContrato" type="i0:IConsultaSaldoContrato">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="GetVersao">
+      <soap:operation soapAction="http://www.portocred.com.br/IConsultaSaldoContrato/GetVersao" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaldoContrato">
+      <soap:operation soapAction="http://www.portocred.com.br/IConsultaSaldoContrato/SaldoContrato" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ConsultaSaldoContrato">
+    <wsdl:port name="BasicHttpBinding_IConsultaSaldoContrato" binding="tns:BasicHttpBinding_IConsultaSaldoContrato">
+      <soap:address location="http://10.10.20.73/ConsultaSaldoContrato/ConsultaSaldoContrato.svc"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part><con:part><con:url>http://10.10.20.73/ConsultaSaldoContrato/ConsultaSaldoContrato.svc?wsdl=wsdl0</con:url><con:content><![CDATA[<wsdl:definitions targetNamespace="http://www.portocred.com.br" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.portocred.com.br" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://www.portocred.com.br/Imports">
+      <xsd:import schemaLocation="http://10.10.20.73/ConsultaSaldoContrato/ConsultaSaldoContrato.svc?xsd=xsd0" namespace="http://www.portocred.com.br"/>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IConsultaSaldoContrato_GetVersao_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetVersao"/>
+  </wsdl:message>
+  <wsdl:message name="IConsultaSaldoContrato_GetVersao_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetVersaoResponse"/>
+  </wsdl:message>
+  <wsdl:message name="IConsultaSaldoContrato_SaldoContrato_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaldoContrato"/>
+  </wsdl:message>
+  <wsdl:message name="IConsultaSaldoContrato_SaldoContrato_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaldoContratoResponse"/>
+  </wsdl:message>
+  <wsdl:portType name="IConsultaSaldoContrato">
+    <wsdl:operation name="GetVersao">
+      <wsdl:input wsaw:Action="http://www.portocred.com.br/IConsultaSaldoContrato/GetVersao" message="tns:IConsultaSaldoContrato_GetVersao_InputMessage"/>
+      <wsdl:output wsaw:Action="http://www.portocred.com.br/IConsultaSaldoContrato/GetVersaoResponse" message="tns:IConsultaSaldoContrato_GetVersao_OutputMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="SaldoContrato">
+      <wsdl:input wsaw:Action="http://www.portocred.com.br/IConsultaSaldoContrato/SaldoContrato" message="tns:IConsultaSaldoContrato_SaldoContrato_InputMessage"/>
+      <wsdl:output wsaw:Action="http://www.portocred.com.br/IConsultaSaldoContrato/SaldoContratoResponse" message="tns:IConsultaSaldoContrato_SaldoContrato_OutputMessage"/>
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part><con:part><con:url>http://10.10.20.73/ConsultaSaldoContrato/ConsultaSaldoContrato.svc?xsd=xsd0</con:url><con:content><![CDATA[<xs:schema elementFormDefault="qualified" targetNamespace="http://www.portocred.com.br" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.portocred.com.br">
+  <xs:element name="GetVersao">
+    <xs:complexType/>
+  </xs:element>
+  <xs:element name="GetVersaoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetVersaoResult" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SaldoContrato">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="cpf" type="xs:string"/>
+        <xs:element minOccurs="0" maxOccurs="1" name="lojista" type="xs:string"/>
+        <xs:element minOccurs="0" maxOccurs="1" name="contrato" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SaldoContratoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="SaldoContratoResult" type="tns:Saldo"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="Saldo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="cpf" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="nome" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="listadecontratos" type="tns:ArrayOfContrato"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="mensagem" type="tns:Mensagem"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ArrayOfContrato">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="contrato" nillable="true" type="tns:contrato"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="contrato">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="numero_contrato" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="listadeparcelas" type="tns:ArrayOfParcela"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ArrayOfParcela">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="parcela" nillable="true" type="tns:parcela"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="parcela">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="numero_parcela" type="xs:string"/>
+      <xs:element minOccurs="1" maxOccurs="1" name="data_vencimento" type="xs:dateTime"/>
+      <xs:element minOccurs="1" maxOccurs="1" name="diasatraso" type="xs:int"/>
+      <xs:element minOccurs="1" maxOccurs="1" name="pmt" type="xs:double"/>
+      <xs:element minOccurs="1" maxOccurs="1" name="perc_multa" type="xs:double"/>
+      <xs:element minOccurs="1" maxOccurs="1" name="valor_multa" type="xs:double"/>
+      <xs:element minOccurs="1" maxOccurs="1" name="perc_juros_atraso" type="xs:double"/>
+      <xs:element minOccurs="1" maxOccurs="1" name="valor_juros_atraso" type="xs:double"/>
+      <xs:element minOccurs="1" maxOccurs="1" name="valor_iof_atraso" type="xs:double"/>
+      <xs:element minOccurs="1" maxOccurs="1" name="valor_descontos" type="xs:double"/>
+      <xs:element minOccurs="1" maxOccurs="1" name="despesas" type="xs:double"/>
+      <xs:element minOccurs="1" maxOccurs="1" name="valor_saldo_parcela" type="xs:double"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Mensagem">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="codigo" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="descricao" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="complemento" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://10.10.20.73/ConsultaSaldoContrato/ConsultaSaldoContrato.svc</con:endpoint></con:endpoints><con:operation id="4db6fd6d-0b11-4f2d-bc93-6a547c62e52e" isOneWay="false" action="http://www.portocred.com.br/IConsultaSaldoContrato/GetVersao" name="GetVersao" bindingOperationName="GetVersao" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="caca8cfe-c6f9-4334-908e-804dd393e4fc" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.10.20.73/ConsultaSaldoContrato/ConsultaSaldoContrato.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:por="http://www.portocred.com.br">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <por:GetVersao/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.portocred.com.br/IConsultaSaldoContrato/GetVersao"/></con:call></con:operation><con:operation id="8112356a-f6e6-4fe0-a99d-3159d57e35e5" isOneWay="false" action="http://www.portocred.com.br/IConsultaSaldoContrato/SaldoContrato" name="SaldoContrato" bindingOperationName="SaldoContrato" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="1b53987a-4ce2-4b5c-8647-99423edfee68" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.10.20.73/ConsultaSaldoContrato/ConsultaSaldoContrato.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:por="http://www.portocred.com.br">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <por:SaldoContrato>
+         <!--Optional:-->
+         <por:cpf>29239036415</por:cpf>
+         <!--Optional:-->
+         <por:lojista>905251</por:lojista>
+      </por:SaldoContrato>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.portocred.com.br/IConsultaSaldoContrato/SaldoContrato"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:testSuite id="0b60ffee-1496-44e4-95fa-4ffb20a6de5d" name="ConsultaSaldoContrato TestSuite"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="6b1c988b-502d-4462-8aa9-9c19bae51956" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="BasicHttpBinding_IConsultaSaldoContrato TestSuite" searchProperties="true"><con:settings/><con:testStep type="request" id="c44c2728-2f84-4832-b4fb-f8017ec58685" name="GetVersao"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>BasicHttpBinding_IConsultaSaldoContrato</con:interface><con:operation>GetVersao</con:operation><con:request name="GetVersao" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="c0fbc50f-814e-4eaa-9ee9-ae9ddd5d704f"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.10.20.73/ConsultaSaldoContrato/ConsultaSaldoContrato.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:por="http://www.portocred.com.br">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <por:GetVersao/>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Fault Assertion" id="9093cefa-3023-4956-bae2-212fe11ff40a" name="Not SOAP Fault"/><con:assertion type="Schema Compliance" id="95a1432d-e82a-41df-8321-7d5d6c15520d" name="Schema Compliance"><con:configuration><definition/></con:configuration></con:assertion><con:assertion type="SOAP Response" id="d1506d0f-1100-4574-964a-fc8d8935f945" name="SOAP Response"/><con:assertion type="Simple Contains" id="5c8c40ae-e08e-43cf-ac5d-954dac2bcc7d" name="Contains"><con:configuration><token>&lt;GetVersaoResult>1.2.0.0&lt;/GetVersaoResult></token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.portocred.com.br/IConsultaSaldoContrato/GetVersao"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" id="9fd61b72-f89f-4ce2-8d9f-9dcaa6b05554" name="SaldoContrato"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>BasicHttpBinding_IConsultaSaldoContrato</con:interface><con:operation>SaldoContrato</con:operation><con:request name="SaldoContrato" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="12c196c9-ff7a-4a42-a3b8-ef705c762ba1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.10.20.73/ConsultaSaldoContrato/ConsultaSaldoContrato.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:por="http://www.portocred.com.br">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <por:SaldoContrato>
+         <!--Optional:-->
+         <por:cpf>29239036415</por:cpf>
+         <!--Optional:-->
+         <por:lojista>905251</por:lojista>
+      </por:SaldoContrato>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="56769823-893f-4198-a100-5d2b0428213b" name="SOAP Response"/><con:assertion type="Schema Compliance" id="e5fcae23-0389-4566-b7a3-8879da3d9790" name="Schema Compliance"><con:configuration><definition/></con:configuration></con:assertion><con:assertion type="SOAP Fault Assertion" id="288cd8a7-8d38-438c-8f82-4f659cb18fbe" name="Not SOAP Fault"/><con:assertion type="Simple Contains" id="6feae093-a930-4e26-9ced-3eb5da4bcf1c" name="Contains"><con:configuration><token>&lt;codigo>200&lt;/codigo></token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.portocred.com.br/IConsultaSaldoContrato/SaldoContrato"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>

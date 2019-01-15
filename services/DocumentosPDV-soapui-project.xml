@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="9042be77-8234-45d2-acbc-140f0efb6fcb" activeEnvironment="Default" name="DocumentosPDV" resourceRoot="" soapui-version="5.4.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="a5a8bc45-c776-49b7-b9fa-c93e4c6d1e72" wsaVersion="NONE" name="BasicHttpBinding_IDocumentosPDV" type="wsdl" bindingName="{http://tempuri.org/}BasicHttpBinding_IDocumentosPDV" soapVersion="1_1" anonymous="optional" definition="http://10.10.20.73/documentospdv/documentospdv.svc?wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://10.10.20.73/documentospdv/documentospdv.svc?wsdl"><con:part><con:url>http://10.10.20.73/documentospdv/documentospdv.svc?wsdl</con:url><con:content><![CDATA[<wsdl:definitions name="DocumentosPDV" targetNamespace="http://www.portocred.com.br" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:i0="http://tempuri.org/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.portocred.com.br" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/">
+  <wsdl:import namespace="http://tempuri.org/" location="http://10.10.20.73/DocumentosPDV/DocumentosPDV.svc?wsdl=wsdl0"/>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://www.portocred.com.br/Imports">
+      <xsd:import schemaLocation="http://10.10.20.73/DocumentosPDV/DocumentosPDV.svc?xsd=xsd0" namespace="http://www.portocred.com.br"/>
+      <xsd:import schemaLocation="http://10.10.20.73/DocumentosPDV/DocumentosPDV.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/"/>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IDocumentosPDV_GetVersao_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetVersao"/>
+  </wsdl:message>
+  <wsdl:message name="IDocumentosPDV_GetVersao_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetVersaoResponse"/>
+  </wsdl:message>
+  <wsdl:message name="IDocumentosPDV_ImprimirDocumentos_InputMessage">
+    <wsdl:part name="parameters" element="tns:ImprimirDocumentos"/>
+  </wsdl:message>
+  <wsdl:message name="IDocumentosPDV_ImprimirDocumentos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ImprimirDocumentosResponse"/>
+  </wsdl:message>
+  <wsdl:portType name="IDocumentosPDV">
+    <wsdl:operation name="GetVersao">
+      <wsdl:input wsaw:Action="http://www.portocred.com.br/IDocumentosPDV/GetVersao" message="tns:IDocumentosPDV_GetVersao_InputMessage"/>
+      <wsdl:output wsaw:Action="http://www.portocred.com.br/IDocumentosPDV/GetVersaoResponse" message="tns:IDocumentosPDV_GetVersao_OutputMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="ImprimirDocumentos">
+      <wsdl:input wsaw:Action="http://www.portocred.com.br/IDocumentosPDV/ImprimirDocumentos" message="tns:IDocumentosPDV_ImprimirDocumentos_InputMessage"/>
+      <wsdl:output wsaw:Action="http://www.portocred.com.br/IDocumentosPDV/ImprimirDocumentosResponse" message="tns:IDocumentosPDV_ImprimirDocumentos_OutputMessage"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:service name="DocumentosPDV">
+    <wsdl:port name="BasicHttpBinding_IDocumentosPDV" binding="i0:BasicHttpBinding_IDocumentosPDV">
+      <soap:address location="http://10.10.20.73/DocumentosPDV/DocumentosPDV.svc"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part><con:part><con:url>http://10.10.20.73/DocumentosPDV/DocumentosPDV.svc?wsdl=wsdl0</con:url><con:content><![CDATA[<wsdl:definitions targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:i0="http://www.portocred.com.br" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/">
+  <wsdl:import namespace="http://www.portocred.com.br" location="http://10.10.20.73/DocumentosPDV/DocumentosPDV.svc?wsdl"/>
+  <wsdl:types/>
+  <wsdl:binding name="BasicHttpBinding_IDocumentosPDV" type="i0:IDocumentosPDV">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="GetVersao">
+      <soap:operation soapAction="http://www.portocred.com.br/IDocumentosPDV/GetVersao" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ImprimirDocumentos">
+      <soap:operation soapAction="http://www.portocred.com.br/IDocumentosPDV/ImprimirDocumentos" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part><con:part><con:url>http://10.10.20.73/DocumentosPDV/DocumentosPDV.svc?wsdl</con:url><con:content><![CDATA[<wsdl:definitions name="DocumentosPDV" targetNamespace="http://www.portocred.com.br" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:i0="http://tempuri.org/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.portocred.com.br" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/">
+  <wsdl:import namespace="http://tempuri.org/" location="http://10.10.20.73/DocumentosPDV/DocumentosPDV.svc?wsdl=wsdl0"/>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://www.portocred.com.br/Imports">
+      <xsd:import schemaLocation="http://10.10.20.73/DocumentosPDV/DocumentosPDV.svc?xsd=xsd0" namespace="http://www.portocred.com.br"/>
+      <xsd:import schemaLocation="http://10.10.20.73/DocumentosPDV/DocumentosPDV.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/"/>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IDocumentosPDV_GetVersao_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetVersao"/>
+  </wsdl:message>
+  <wsdl:message name="IDocumentosPDV_GetVersao_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetVersaoResponse"/>
+  </wsdl:message>
+  <wsdl:message name="IDocumentosPDV_ImprimirDocumentos_InputMessage">
+    <wsdl:part name="parameters" element="tns:ImprimirDocumentos"/>
+  </wsdl:message>
+  <wsdl:message name="IDocumentosPDV_ImprimirDocumentos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ImprimirDocumentosResponse"/>
+  </wsdl:message>
+  <wsdl:portType name="IDocumentosPDV">
+    <wsdl:operation name="GetVersao">
+      <wsdl:input wsaw:Action="http://www.portocred.com.br/IDocumentosPDV/GetVersao" message="tns:IDocumentosPDV_GetVersao_InputMessage"/>
+      <wsdl:output wsaw:Action="http://www.portocred.com.br/IDocumentosPDV/GetVersaoResponse" message="tns:IDocumentosPDV_GetVersao_OutputMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="ImprimirDocumentos">
+      <wsdl:input wsaw:Action="http://www.portocred.com.br/IDocumentosPDV/ImprimirDocumentos" message="tns:IDocumentosPDV_ImprimirDocumentos_InputMessage"/>
+      <wsdl:output wsaw:Action="http://www.portocred.com.br/IDocumentosPDV/ImprimirDocumentosResponse" message="tns:IDocumentosPDV_ImprimirDocumentos_OutputMessage"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:service name="DocumentosPDV">
+    <wsdl:port name="BasicHttpBinding_IDocumentosPDV" binding="i0:BasicHttpBinding_IDocumentosPDV">
+      <soap:address location="http://10.10.20.73/DocumentosPDV/DocumentosPDV.svc"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part><con:part><con:url>http://10.10.20.73/DocumentosPDV/DocumentosPDV.svc?xsd=xsd0</con:url><con:content><![CDATA[<xs:schema elementFormDefault="qualified" targetNamespace="http://www.portocred.com.br" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.portocred.com.br">
+  <xs:element name="GetVersao">
+    <xs:complexType>
+      <xs:sequence/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetVersaoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetVersaoResult" nillable="true" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ImprimirDocumentos">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="opcao" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="proposta" nillable="true" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ImprimirDocumentosResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ImprimirDocumentosResult" nillable="true" type="tns:Documentos"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="Documentos">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="documentos" nillable="true" type="tns:ArrayOfdocumentos"/>
+      <xs:element minOccurs="0" name="mensagem" nillable="true" type="tns:Mensagem"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Documentos" nillable="true" type="tns:Documentos"/>
+  <xs:complexType name="ArrayOfdocumentos">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="documentos" nillable="true" type="tns:documentos"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfdocumentos" nillable="true" type="tns:ArrayOfdocumentos"/>
+  <xs:complexType name="documentos">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="conteudo" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="nomearquivo" nillable="true" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="documentos" nillable="true" type="tns:documentos"/>
+  <xs:complexType name="Mensagem">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="codigo" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="complemento" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="descricao" nillable="true" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Mensagem" nillable="true" type="tns:Mensagem"/>
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>http://10.10.20.73/DocumentosPDV/DocumentosPDV.svc?xsd=xsd1</con:url><con:content><![CDATA[<xs:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://schemas.microsoft.com/2003/10/Serialization/">
+  <xs:element name="anyType" nillable="true" type="xs:anyType"/>
+  <xs:element name="anyURI" nillable="true" type="xs:anyURI"/>
+  <xs:element name="base64Binary" nillable="true" type="xs:base64Binary"/>
+  <xs:element name="boolean" nillable="true" type="xs:boolean"/>
+  <xs:element name="byte" nillable="true" type="xs:byte"/>
+  <xs:element name="dateTime" nillable="true" type="xs:dateTime"/>
+  <xs:element name="decimal" nillable="true" type="xs:decimal"/>
+  <xs:element name="double" nillable="true" type="xs:double"/>
+  <xs:element name="float" nillable="true" type="xs:float"/>
+  <xs:element name="int" nillable="true" type="xs:int"/>
+  <xs:element name="long" nillable="true" type="xs:long"/>
+  <xs:element name="QName" nillable="true" type="xs:QName"/>
+  <xs:element name="short" nillable="true" type="xs:short"/>
+  <xs:element name="string" nillable="true" type="xs:string"/>
+  <xs:element name="unsignedByte" nillable="true" type="xs:unsignedByte"/>
+  <xs:element name="unsignedInt" nillable="true" type="xs:unsignedInt"/>
+  <xs:element name="unsignedLong" nillable="true" type="xs:unsignedLong"/>
+  <xs:element name="unsignedShort" nillable="true" type="xs:unsignedShort"/>
+  <xs:element name="char" nillable="true" type="tns:char"/>
+  <xs:simpleType name="char">
+    <xs:restriction base="xs:int"/>
+  </xs:simpleType>
+  <xs:element name="duration" nillable="true" type="tns:duration"/>
+  <xs:simpleType name="duration">
+    <xs:restriction base="xs:duration">
+      <xs:pattern value="\-?P(\d*D)?(T(\d*H)?(\d*M)?(\d*(\.\d*)?S)?)?"/>
+      <xs:minInclusive value="-P10675199DT2H48M5.4775808S"/>
+      <xs:maxInclusive value="P10675199DT2H48M5.4775807S"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="guid" nillable="true" type="tns:guid"/>
+  <xs:simpleType name="guid">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[\da-fA-F]{8}-[\da-fA-F]{4}-[\da-fA-F]{4}-[\da-fA-F]{4}-[\da-fA-F]{12}"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:attribute name="FactoryType" type="xs:QName"/>
+  <xs:attribute name="Id" type="xs:ID"/>
+  <xs:attribute name="Ref" type="xs:IDREF"/>
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://10.10.20.73/DocumentosPDV/DocumentosPDV.svc</con:endpoint></con:endpoints><con:operation id="e356ae9b-c76a-40cc-b060-a1ed16a80bda" isOneWay="false" action="http://www.portocred.com.br/IDocumentosPDV/GetVersao" name="GetVersao" bindingOperationName="GetVersao" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="b482a6e3-67be-4e54-9341-46bb1978600d" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.10.20.73/DocumentosPDV/DocumentosPDV.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:por="http://www.portocred.com.br">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <por:GetVersao/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.portocred.com.br/IDocumentosPDV/GetVersao"/></con:call></con:operation><con:operation id="1c5d87b9-ffe9-4eee-b2a0-32da45faba67" isOneWay="false" action="http://www.portocred.com.br/IDocumentosPDV/ImprimirDocumentos" name="ImprimirDocumentos" bindingOperationName="ImprimirDocumentos" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="2aea1f22-a111-4d99-bb9c-7e312d2498b9" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.10.20.73/DocumentosPDV/DocumentosPDV.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:por="http://www.portocred.com.br">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <por:ImprimirDocumentos>\r
+         <!--Optional:-->\r
+         <por:opcao>4</por:opcao>\r
+         <!--Optional:-->\r
+         <por:proposta>3803649240</por:proposta>\r
+      </por:ImprimirDocumentos>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.portocred.com.br/IDocumentosPDV/ImprimirDocumentos"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:testSuite id="6de4c361-1ad5-438e-be2c-7ce9869b7d38" name="DocumentosPDV TestSuite"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="31cce341-c1ca-4b67-8c08-19cdf4920ebb" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="BasicHttpBinding_IDocumentosPDV TestSuite" searchProperties="true"><con:settings/><con:testStep type="request" id="4c8e6444-3967-4bde-b173-6ae10e935a3b" name="GetVersao"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>BasicHttpBinding_IDocumentosPDV</con:interface><con:operation>GetVersao</con:operation><con:request name="GetVersao" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="e4930ff0-00db-4b6f-869c-6e5bd1bf6585"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.10.20.73/DocumentosPDV/DocumentosPDV.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:por="http://www.portocred.com.br">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <por:GetVersao/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="1def13d7-43c2-4135-ae08-eff8aa6f46de" name="SOAP Response"/><con:assertion type="SOAP Fault Assertion" id="7a277cb5-92e6-4b67-bb26-b52cb049bd27" name="Not SOAP Fault"/><con:assertion type="Schema Compliance" id="13f26d3a-38e1-4d84-9de7-e541f0e228c4" name="Schema Compliance"><con:configuration><definition/></con:configuration></con:assertion><con:assertion type="Simple Contains" id="291ca51c-cdd9-4776-b3e9-b6cd9ffe6169" name="Contains"><con:configuration><token>&lt;GetVersaoResult>1.5.0.0&lt;/GetVersaoResult></token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.portocred.com.br/IDocumentosPDV/GetVersao"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" id="5e397230-d005-4930-aab3-a368d198e1b4" name="ImprimirDocumentos"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>BasicHttpBinding_IDocumentosPDV</con:interface><con:operation>ImprimirDocumentos</con:operation><con:request name="ImprimirDocumentos" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="af87f8c0-3af1-4143-a25e-5fad9b4c97af"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.10.20.73/DocumentosPDV/DocumentosPDV.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:por="http://www.portocred.com.br">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <por:ImprimirDocumentos>\r
+         <!--Optional:-->\r
+         <por:opcao>4</por:opcao>\r
+         <!--Optional:-->\r
+         <por:proposta>3803649240</por:proposta>\r
+      </por:ImprimirDocumentos>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:assertion type="Simple Contains" id="27d3fd4f-757f-4e10-a076-994d02474702" name="Contains"><con:configuration><token>&lt;codigo>200&lt;/codigo></token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="SOAP Fault Assertion" id="812414a4-491f-4d46-b210-1c3946e7bf78" name="Not SOAP Fault"/><con:assertion type="Schema Compliance" id="2983dc37-a372-4836-8b6a-b923e893511d" name="Schema Compliance"><con:configuration><definition/></con:configuration></con:assertion><con:assertion type="SOAP Response" id="86d432b8-6529-4507-9e8d-a1d28dd0644c" name="SOAP Response"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.portocred.com.br/IDocumentosPDV/ImprimirDocumentos"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
