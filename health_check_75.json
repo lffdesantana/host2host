@@ -1,0 +1,53 @@
+{
+  "test":
+  [
+    {
+      "name": "WcfPropostas 75",
+      "url": "http://10.10.20.75/WcfPropostas/ServicoPropostas.svc?wsdl"
+    },
+    {
+      "name": "PagaParcelas 75",
+      "url": "http://10.10.20.75/PagaParcelas/PagaParcelas.svc?wsdl"
+    },
+    {
+      "name": "MotorOfertas 75",
+      "url": "http://10.10.20.75/WsMotorOfertas/MotorOfertas.asmx?WSDL"
+    },
+    {
+      "name": "ListaPagamentos 75",
+      "url": "http://10.10.20.75/ListaPagamentos/ListaPagamentos.svc?wsdl"
+    },
+    {
+      "name": "ConsultaInadimplencia 75",
+      "url": "http://10.10.20.75/ConsultaInadimplencia/Inadimplencia.svc?wsdl"
+    },
+    {
+      "name": "DocumentosPDV 75",
+      "url": "http://10.10.20.75/documentospdv/documentospdv.svc?wsdl"
+    },
+    {
+      "name": "ConsultaSaldoContrato 75",
+      "url": "http://10.10.20.75/ConsultaSaldoContrato/ConsultaSaldoContrato.svc?wsdl"
+    },
+    {
+      "name": "CancelaContrato Rest 75",
+      "url": "http://10.10.20.75/svc-gallery/CancelaContrato/api/Versao"
+    },
+    {
+      "name": "ConsignadoPrivado Rest 75",
+      "url": "http://10.10.20.75/svc-gallery/ConsignadoPrivado/api/Versao"
+    },
+    {
+      "name": "ConsultaCPF Rest 75",
+      "url": "http://10.10.20.75/svc-gallery/ConsultaCPF/api/clientes?cpf=25060945049"
+    },
+    {
+      "name": "ExclusaoPagamento Rest 75",
+      "url": "http://10.10.20.75/svc-gallery/ExclusaoPagamento/swagger/v1/swagger.json"
+    },
+    {
+      "name": "InfClienteConsignado Rest 75",
+      "url": "http://10.10.20.75/svc-gallery/ConsignadoPrivado/api/InfClienteConsignado/01234567890"
+    }
+  ]
+}
