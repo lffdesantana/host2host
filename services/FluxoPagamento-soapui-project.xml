@@ -1,0 +1,574 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="d1632757-09bd-4abd-94c4-45e7c2e458d2" activeEnvironment="Default" name="FluxoPagamento" resourceRoot="" soapui-version="5.4.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="cf03d5bc-f022-4d6e-a3f5-513b1c40f26b" wsaVersion="NONE" name="BasicHttpBinding_IPagaParcelas" type="wsdl" bindingName="{http://tempuri.org/}BasicHttpBinding_IPagaParcelas" soapVersion="1_1" anonymous="optional" definition="http://10.10.20.73/PagaParcelas/PagaParcelas.svc?wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://10.10.20.73/PagaParcelas/PagaParcelas.svc?wsdl"><con:part><con:url>http://10.10.20.73/PagaParcelas/PagaParcelas.svc?wsdl</con:url><con:content><![CDATA[<wsdl:definitions name="PagaParcelas" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:i0="http://www.portocred.com.br" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/">
+  <wsdl:import namespace="http://www.portocred.com.br" location="http://10.10.20.73/PagaParcelas/PagaParcelas.svc?wsdl=wsdl0"/>
+  <wsdl:types/>
+  <wsdl:binding name="BasicHttpBinding_IPagaParcelas" type="i0:IPagaParcelas">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="GetVersao">
+      <soap:operation soapAction="http://www.portocred.com.br/IPagaParcelas/GetVersao" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PagarParcelas">
+      <soap:operation soapAction="http://www.portocred.com.br/IPagaParcelas/PagarParcelas" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="PagaParcelas">
+    <wsdl:port name="BasicHttpBinding_IPagaParcelas" binding="tns:BasicHttpBinding_IPagaParcelas">
+      <soap:address location="http://10.10.20.73/PagaParcelas/PagaParcelas.svc"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part><con:part><con:url>http://10.10.20.73/PagaParcelas/PagaParcelas.svc?wsdl=wsdl0</con:url><con:content><![CDATA[<wsdl:definitions targetNamespace="http://www.portocred.com.br" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.portocred.com.br" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://www.portocred.com.br/Imports">
+      <xsd:import schemaLocation="http://10.10.20.73/PagaParcelas/PagaParcelas.svc?xsd=xsd0" namespace="http://www.portocred.com.br"/>
+      <xsd:import schemaLocation="http://10.10.20.73/PagaParcelas/PagaParcelas.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/"/>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IPagaParcelas_GetVersao_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetVersao"/>
+  </wsdl:message>
+  <wsdl:message name="IPagaParcelas_GetVersao_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetVersaoResponse"/>
+  </wsdl:message>
+  <wsdl:message name="IPagaParcelas_PagarParcelas_InputMessage">
+    <wsdl:part name="parameters" element="tns:PagarParcelas"/>
+  </wsdl:message>
+  <wsdl:message name="IPagaParcelas_PagarParcelas_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PagarParcelasResponse"/>
+  </wsdl:message>
+  <wsdl:portType name="IPagaParcelas">
+    <wsdl:operation name="GetVersao">
+      <wsdl:input wsaw:Action="http://www.portocred.com.br/IPagaParcelas/GetVersao" message="tns:IPagaParcelas_GetVersao_InputMessage"/>
+      <wsdl:output wsaw:Action="http://www.portocred.com.br/IPagaParcelas/GetVersaoResponse" message="tns:IPagaParcelas_GetVersao_OutputMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="PagarParcelas">
+      <wsdl:input wsaw:Action="http://www.portocred.com.br/IPagaParcelas/PagarParcelas" message="tns:IPagaParcelas_PagarParcelas_InputMessage"/>
+      <wsdl:output wsaw:Action="http://www.portocred.com.br/IPagaParcelas/PagarParcelasResponse" message="tns:IPagaParcelas_PagarParcelas_OutputMessage"/>
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part><con:part><con:url>http://10.10.20.73/PagaParcelas/PagaParcelas.svc?xsd=xsd0</con:url><con:content><![CDATA[<xs:schema elementFormDefault="qualified" targetNamespace="http://www.portocred.com.br" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.portocred.com.br">
+  <xs:element name="GetVersao">
+    <xs:complexType>
+      <xs:sequence/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetVersaoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetVersaoResult" nillable="true" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PagarParcelas">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="contrato" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="qtd_parcelas_pagar" type="xs:int"/>
+        <xs:element minOccurs="0" name="valor_pgto" type="xs:double"/>
+        <xs:element minOccurs="0" name="operador" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="lojarecebimento" nillable="true" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PagarParcelasResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="PagarParcelasResult" nillable="true" type="tns:ParcelasPagas"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ParcelasPagas">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="nsu" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="data_pagamento" nillable="true" type="xs:dateTime"/>
+      <xs:element minOccurs="0" name="listaparcelaspagas" nillable="true" type="tns:ArrayOfPagamentos"/>
+      <xs:element minOccurs="0" name="comprovantepagamento" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="nome_cliente" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="cpf_cliente" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="mensagem" nillable="true" type="tns:Mensagem"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ParcelasPagas" nillable="true" type="tns:ParcelasPagas"/>
+  <xs:complexType name="ArrayOfPagamentos">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Pagamentos" nillable="true" type="tns:Pagamentos"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPagamentos" nillable="true" type="tns:ArrayOfPagamentos"/>
+  <xs:complexType name="Pagamentos">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="contrato" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="parcela" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="pmt" type="xs:double"/>
+      <xs:element minOccurs="0" name="situacaoparcela" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="valorpago" type="xs:double"/>
+      <xs:element minOccurs="0" name="vencimento" type="xs:dateTime"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Pagamentos" nillable="true" type="tns:Pagamentos"/>
+  <xs:complexType name="Mensagem">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="codigo" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="complemento" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="descricao" nillable="true" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Mensagem" nillable="true" type="tns:Mensagem"/>
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>http://10.10.20.73/PagaParcelas/PagaParcelas.svc?xsd=xsd1</con:url><con:content><![CDATA[<xs:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://schemas.microsoft.com/2003/10/Serialization/">
+  <xs:element name="anyType" nillable="true" type="xs:anyType"/>
+  <xs:element name="anyURI" nillable="true" type="xs:anyURI"/>
+  <xs:element name="base64Binary" nillable="true" type="xs:base64Binary"/>
+  <xs:element name="boolean" nillable="true" type="xs:boolean"/>
+  <xs:element name="byte" nillable="true" type="xs:byte"/>
+  <xs:element name="dateTime" nillable="true" type="xs:dateTime"/>
+  <xs:element name="decimal" nillable="true" type="xs:decimal"/>
+  <xs:element name="double" nillable="true" type="xs:double"/>
+  <xs:element name="float" nillable="true" type="xs:float"/>
+  <xs:element name="int" nillable="true" type="xs:int"/>
+  <xs:element name="long" nillable="true" type="xs:long"/>
+  <xs:element name="QName" nillable="true" type="xs:QName"/>
+  <xs:element name="short" nillable="true" type="xs:short"/>
+  <xs:element name="string" nillable="true" type="xs:string"/>
+  <xs:element name="unsignedByte" nillable="true" type="xs:unsignedByte"/>
+  <xs:element name="unsignedInt" nillable="true" type="xs:unsignedInt"/>
+  <xs:element name="unsignedLong" nillable="true" type="xs:unsignedLong"/>
+  <xs:element name="unsignedShort" nillable="true" type="xs:unsignedShort"/>
+  <xs:element name="char" nillable="true" type="tns:char"/>
+  <xs:simpleType name="char">
+    <xs:restriction base="xs:int"/>
+  </xs:simpleType>
+  <xs:element name="duration" nillable="true" type="tns:duration"/>
+  <xs:simpleType name="duration">
+    <xs:restriction base="xs:duration">
+      <xs:pattern value="\-?P(\d*D)?(T(\d*H)?(\d*M)?(\d*(\.\d*)?S)?)?"/>
+      <xs:minInclusive value="-P10675199DT2H48M5.4775808S"/>
+      <xs:maxInclusive value="P10675199DT2H48M5.4775807S"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="guid" nillable="true" type="tns:guid"/>
+  <xs:simpleType name="guid">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[\da-fA-F]{8}-[\da-fA-F]{4}-[\da-fA-F]{4}-[\da-fA-F]{4}-[\da-fA-F]{12}"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:attribute name="FactoryType" type="xs:QName"/>
+  <xs:attribute name="Id" type="xs:ID"/>
+  <xs:attribute name="Ref" type="xs:IDREF"/>
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://10.10.20.73/PagaParcelas/PagaParcelas.svc</con:endpoint></con:endpoints><con:operation id="3f13d537-d3ab-4ac2-b26a-43a7125ef393" isOneWay="false" action="http://www.portocred.com.br/IPagaParcelas/GetVersao" name="GetVersao" bindingOperationName="GetVersao" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="9147ca08-76e4-4f50-94c0-33b759ab5554" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.10.20.73/PagaParcelas/PagaParcelas.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:por="http://www.portocred.com.br">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <por:GetVersao/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.portocred.com.br/IPagaParcelas/GetVersao"/></con:call></con:operation><con:operation id="a38596e2-80ee-4396-b695-a649b29afd17" isOneWay="false" action="http://www.portocred.com.br/IPagaParcelas/PagarParcelas" name="PagarParcelas" bindingOperationName="PagarParcelas" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="2ddbde46-d43a-49d2-9af7-fcf773f03cf1" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.10.20.73/PagaParcelas/PagaParcelas.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:por="http://www.portocred.com.br">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <por:PagarParcelas>\r
+         <!--Optional:-->\r
+         <por:contrato>?</por:contrato>\r
+         <!--Optional:-->\r
+         <por:qtd_parcelas_pagar>?</por:qtd_parcelas_pagar>\r
+         <!--Optional:-->\r
+         <por:valor_pgto>?</por:valor_pgto>\r
+         <!--Optional:-->\r
+         <por:operador>?</por:operador>\r
+         <!--Optional:-->\r
+         <por:lojarecebimento>?</por:lojarecebimento>\r
+      </por:PagarParcelas>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.portocred.com.br/IPagaParcelas/PagarParcelas"/></con:call></con:operation></con:interface><con:interface xsi:type="con:WsdlInterface" id="8485aead-8dde-446d-b7e5-214ca812ed97" wsaVersion="NONE" name="BasicHttpBinding_IListaPagamentos" type="wsdl" bindingName="{http://tempuri.org/}BasicHttpBinding_IListaPagamentos" soapVersion="1_1" anonymous="optional" definition="http://10.10.20.73/ListaPagamentos/ListaPagamentos.svc?wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://10.10.20.73/ListaPagamentos/ListaPagamentos.svc?wsdl"><con:part><con:url>http://10.10.20.73/ListaPagamentos/ListaPagamentos.svc?wsdl</con:url><con:content><![CDATA[<wsdl:definitions name="ListaPagamentos" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:i0="http://www.portocred.com.br" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/">
+  <wsdl:import namespace="http://www.portocred.com.br" location="http://10.10.20.73/ListaPagamentos/ListaPagamentos.svc?wsdl=wsdl0"/>
+  <wsdl:types/>
+  <wsdl:binding name="BasicHttpBinding_IListaPagamentos" type="i0:IListaPagamentos">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="GetVersao">
+      <soap:operation soapAction="http://www.portocred.com.br/IListaPagamentos/GetVersao" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarPagamentos">
+      <soap:operation soapAction="http://www.portocred.com.br/IListaPagamentos/ListarPagamentos" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ListaPagamentos">
+    <wsdl:port name="BasicHttpBinding_IListaPagamentos" binding="tns:BasicHttpBinding_IListaPagamentos">
+      <soap:address location="http://10.10.20.73/ListaPagamentos/ListaPagamentos.svc"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part><con:part><con:url>http://10.10.20.73/ListaPagamentos/ListaPagamentos.svc?wsdl=wsdl0</con:url><con:content><![CDATA[<wsdl:definitions targetNamespace="http://www.portocred.com.br" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.portocred.com.br" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://www.portocred.com.br/Imports">
+      <xsd:import schemaLocation="http://10.10.20.73/ListaPagamentos/ListaPagamentos.svc?xsd=xsd0" namespace="http://www.portocred.com.br"/>
+      <xsd:import schemaLocation="http://10.10.20.73/ListaPagamentos/ListaPagamentos.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/"/>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IListaPagamentos_GetVersao_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetVersao"/>
+  </wsdl:message>
+  <wsdl:message name="IListaPagamentos_GetVersao_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetVersaoResponse"/>
+  </wsdl:message>
+  <wsdl:message name="IListaPagamentos_ListarPagamentos_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListarPagamentos"/>
+  </wsdl:message>
+  <wsdl:message name="IListaPagamentos_ListarPagamentos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListarPagamentosResponse"/>
+  </wsdl:message>
+  <wsdl:portType name="IListaPagamentos">
+    <wsdl:operation name="GetVersao">
+      <wsdl:input wsaw:Action="http://www.portocred.com.br/IListaPagamentos/GetVersao" message="tns:IListaPagamentos_GetVersao_InputMessage"/>
+      <wsdl:output wsaw:Action="http://www.portocred.com.br/IListaPagamentos/GetVersaoResponse" message="tns:IListaPagamentos_GetVersao_OutputMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="ListarPagamentos">
+      <wsdl:input wsaw:Action="http://www.portocred.com.br/IListaPagamentos/ListarPagamentos" message="tns:IListaPagamentos_ListarPagamentos_InputMessage"/>
+      <wsdl:output wsaw:Action="http://www.portocred.com.br/IListaPagamentos/ListarPagamentosResponse" message="tns:IListaPagamentos_ListarPagamentos_OutputMessage"/>
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part><con:part><con:url>http://10.10.20.73/ListaPagamentos/ListaPagamentos.svc?xsd=xsd0</con:url><con:content><![CDATA[<xs:schema elementFormDefault="qualified" targetNamespace="http://www.portocred.com.br" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.portocred.com.br">
+  <xs:element name="GetVersao">
+    <xs:complexType>
+      <xs:sequence/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetVersaoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetVersaoResult" nillable="true" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListarPagamentos">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="cpf" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="lojista" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="inicioperiodo" type="xs:dateTime"/>
+        <xs:element minOccurs="0" name="fimperiodo" type="xs:dateTime"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListarPagamentosResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ListarPagamentosResult" nillable="true" type="tns:PagamentosRetorno"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="PagamentosRetorno">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="pagamento" nillable="true" type="tns:ArrayOfPagamentos"/>
+      <xs:element minOccurs="0" name="mensagem" nillable="true" type="tns:Mensagem"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PagamentosRetorno" nillable="true" type="tns:PagamentosRetorno"/>
+  <xs:complexType name="ArrayOfPagamentos">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Pagamentos" nillable="true" type="tns:Pagamentos"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPagamentos" nillable="true" type="tns:ArrayOfPagamentos"/>
+  <xs:complexType name="Pagamentos">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="contrato" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="parcelapaga" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="valorpago" type="xs:double"/>
+      <xs:element minOccurs="0" name="datapagamento" type="xs:dateTime"/>
+      <xs:element minOccurs="0" name="operador" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="nsu" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="vencimento" type="xs:dateTime"/>
+      <xs:element minOccurs="0" name="pmt" type="xs:double"/>
+      <xs:element minOccurs="0" name="saldoparcela" type="xs:double"/>
+      <xs:element minOccurs="0" name="situacao" nillable="true" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Pagamentos" nillable="true" type="tns:Pagamentos"/>
+  <xs:complexType name="Mensagem">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="codigo" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="descricao" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="complemento" nillable="true" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Mensagem" nillable="true" type="tns:Mensagem"/>
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>http://10.10.20.73/ListaPagamentos/ListaPagamentos.svc?xsd=xsd1</con:url><con:content><![CDATA[<xs:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://schemas.microsoft.com/2003/10/Serialization/">
+  <xs:element name="anyType" nillable="true" type="xs:anyType"/>
+  <xs:element name="anyURI" nillable="true" type="xs:anyURI"/>
+  <xs:element name="base64Binary" nillable="true" type="xs:base64Binary"/>
+  <xs:element name="boolean" nillable="true" type="xs:boolean"/>
+  <xs:element name="byte" nillable="true" type="xs:byte"/>
+  <xs:element name="dateTime" nillable="true" type="xs:dateTime"/>
+  <xs:element name="decimal" nillable="true" type="xs:decimal"/>
+  <xs:element name="double" nillable="true" type="xs:double"/>
+  <xs:element name="float" nillable="true" type="xs:float"/>
+  <xs:element name="int" nillable="true" type="xs:int"/>
+  <xs:element name="long" nillable="true" type="xs:long"/>
+  <xs:element name="QName" nillable="true" type="xs:QName"/>
+  <xs:element name="short" nillable="true" type="xs:short"/>
+  <xs:element name="string" nillable="true" type="xs:string"/>
+  <xs:element name="unsignedByte" nillable="true" type="xs:unsignedByte"/>
+  <xs:element name="unsignedInt" nillable="true" type="xs:unsignedInt"/>
+  <xs:element name="unsignedLong" nillable="true" type="xs:unsignedLong"/>
+  <xs:element name="unsignedShort" nillable="true" type="xs:unsignedShort"/>
+  <xs:element name="char" nillable="true" type="tns:char"/>
+  <xs:simpleType name="char">
+    <xs:restriction base="xs:int"/>
+  </xs:simpleType>
+  <xs:element name="duration" nillable="true" type="tns:duration"/>
+  <xs:simpleType name="duration">
+    <xs:restriction base="xs:duration">
+      <xs:pattern value="\-?P(\d*D)?(T(\d*H)?(\d*M)?(\d*(\.\d*)?S)?)?"/>
+      <xs:minInclusive value="-P10675199DT2H48M5.4775808S"/>
+      <xs:maxInclusive value="P10675199DT2H48M5.4775807S"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="guid" nillable="true" type="tns:guid"/>
+  <xs:simpleType name="guid">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[\da-fA-F]{8}-[\da-fA-F]{4}-[\da-fA-F]{4}-[\da-fA-F]{4}-[\da-fA-F]{12}"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:attribute name="FactoryType" type="xs:QName"/>
+  <xs:attribute name="Id" type="xs:ID"/>
+  <xs:attribute name="Ref" type="xs:IDREF"/>
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://10.10.20.73/ListaPagamentos/ListaPagamentos.svc</con:endpoint></con:endpoints><con:operation id="e8bfa40a-292c-421e-bdb2-4839aec2c9c1" isOneWay="false" action="http://www.portocred.com.br/IListaPagamentos/GetVersao" name="GetVersao" bindingOperationName="GetVersao" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="7c11576c-1acf-440a-a9ba-420d1f53d8bb" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.10.20.73/ListaPagamentos/ListaPagamentos.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:por="http://www.portocred.com.br">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <por:GetVersao/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.portocred.com.br/IListaPagamentos/GetVersao"/></con:call></con:operation><con:operation id="9cdad341-3fc9-4a28-9b0c-e6c772d23cc3" isOneWay="false" action="http://www.portocred.com.br/IListaPagamentos/ListarPagamentos" name="ListarPagamentos" bindingOperationName="ListarPagamentos" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="643c2b42-976f-4b63-b09f-51f6fdc4da11" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.10.20.73/ListaPagamentos/ListaPagamentos.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:por="http://www.portocred.com.br">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <por:ListarPagamentos>\r
+         <!--Optional:-->\r
+         <por:cpf>43425976400</por:cpf>\r
+         <!--Optional:-->\r
+         <por:lojista>905251</por:lojista>\r
+         <!--Optional:-->\r
+         <por:inicioperiodo>2018-11-20</por:inicioperiodo>\r
+         <!--Optional:-->\r
+         <por:fimperiodo>2018-11-20</por:fimperiodo>\r
+      </por:ListarPagamentos>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.portocred.com.br/IListaPagamentos/ListarPagamentos"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:interface xsi:type="con:RestService" id="42ae1ecf-906e-4d55-8ffe-ce34ab096f03" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://10.10.20.73" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://10.10.20.73</con:endpoint></con:endpoints><con:resource name="PagamentoH2h" path="/svc-gallery/ExclusaoPagamento/api/PagamentoH2h" id="c189af4b-3c8b-4d28-8962-1586db68e7fd"><con:settings/><con:parameters/><con:method name="PagamentoH2h 1" id="19ddf4cc-94ad-478c-b979-35ccefdef0b9" method="DELETE"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="FAULT"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>400</con:status><con:params/><con:element>Fault</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:pag="http://10.10.20.73/svc-gallery/ExclusaoPagamento/api/PagamentoH2h">pag:Response</con:element></con:representation><con:request name="Request 1" id="c437436b-01f8-402f-84fc-7f198aeb16a4" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://10.10.20.73</con:endpoint><con:request>{
+  "empresa": "01",
+  "agencia": "0001",
+  "contrato": "3803803985",
+  "lojista": "905251",
+  "cpf": "29239036415",
+  "operador": "F3068080",
+  "usuario": "PAQUETA1"
+}</con:request><con:originalUri>http://10.10.20.73/svc-gallery/ExclusaoPagamento/api/PagamentoH2h</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:WsdlInterface" id="431b2794-19ff-4c00-9e56-7c245f5a0831" wsaVersion="NONE" name="BasicHttpBinding_IConsultaSaldoContrato" type="wsdl" bindingName="{http://tempuri.org/}BasicHttpBinding_IConsultaSaldoContrato" soapVersion="1_1" anonymous="optional" definition="http://10.10.20.73/ConsultaSaldoContrato/ConsultaSaldoContrato.svc?wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://10.10.20.73/ConsultaSaldoContrato/ConsultaSaldoContrato.svc?wsdl"><con:part><con:url>http://10.10.20.73/ConsultaSaldoContrato/ConsultaSaldoContrato.svc?wsdl</con:url><con:content><![CDATA[<wsdl:definitions name="ConsultaSaldoContrato" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:i0="http://www.portocred.com.br" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/">
+  <wsdl:import namespace="http://www.portocred.com.br" location="http://10.10.20.73/ConsultaSaldoContrato/ConsultaSaldoContrato.svc?wsdl=wsdl0"/>
+  <wsdl:types/>
+  <wsdl:binding name="BasicHttpBinding_IConsultaSaldoContrato" type="i0:IConsultaSaldoContrato">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="GetVersao">
+      <soap:operation soapAction="http://www.portocred.com.br/IConsultaSaldoContrato/GetVersao" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaldoContrato">
+      <soap:operation soapAction="http://www.portocred.com.br/IConsultaSaldoContrato/SaldoContrato" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ConsultaSaldoContrato">
+    <wsdl:port name="BasicHttpBinding_IConsultaSaldoContrato" binding="tns:BasicHttpBinding_IConsultaSaldoContrato">
+      <soap:address location="http://10.10.20.73/ConsultaSaldoContrato/ConsultaSaldoContrato.svc"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part><con:part><con:url>http://10.10.20.73/ConsultaSaldoContrato/ConsultaSaldoContrato.svc?wsdl=wsdl0</con:url><con:content><![CDATA[<wsdl:definitions targetNamespace="http://www.portocred.com.br" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.portocred.com.br" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://www.portocred.com.br/Imports">
+      <xsd:import schemaLocation="http://10.10.20.73/ConsultaSaldoContrato/ConsultaSaldoContrato.svc?xsd=xsd0" namespace="http://www.portocred.com.br"/>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IConsultaSaldoContrato_GetVersao_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetVersao"/>
+  </wsdl:message>
+  <wsdl:message name="IConsultaSaldoContrato_GetVersao_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetVersaoResponse"/>
+  </wsdl:message>
+  <wsdl:message name="IConsultaSaldoContrato_SaldoContrato_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaldoContrato"/>
+  </wsdl:message>
+  <wsdl:message name="IConsultaSaldoContrato_SaldoContrato_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaldoContratoResponse"/>
+  </wsdl:message>
+  <wsdl:portType name="IConsultaSaldoContrato">
+    <wsdl:operation name="GetVersao">
+      <wsdl:input wsaw:Action="http://www.portocred.com.br/IConsultaSaldoContrato/GetVersao" message="tns:IConsultaSaldoContrato_GetVersao_InputMessage"/>
+      <wsdl:output wsaw:Action="http://www.portocred.com.br/IConsultaSaldoContrato/GetVersaoResponse" message="tns:IConsultaSaldoContrato_GetVersao_OutputMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="SaldoContrato">
+      <wsdl:input wsaw:Action="http://www.portocred.com.br/IConsultaSaldoContrato/SaldoContrato" message="tns:IConsultaSaldoContrato_SaldoContrato_InputMessage"/>
+      <wsdl:output wsaw:Action="http://www.portocred.com.br/IConsultaSaldoContrato/SaldoContratoResponse" message="tns:IConsultaSaldoContrato_SaldoContrato_OutputMessage"/>
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part><con:part><con:url>http://10.10.20.73/ConsultaSaldoContrato/ConsultaSaldoContrato.svc?xsd=xsd0</con:url><con:content><![CDATA[<xs:schema elementFormDefault="qualified" targetNamespace="http://www.portocred.com.br" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.portocred.com.br">
+  <xs:element name="GetVersao">
+    <xs:complexType/>
+  </xs:element>
+  <xs:element name="GetVersaoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="GetVersaoResult" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SaldoContrato">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="cpf" type="xs:string"/>
+        <xs:element minOccurs="0" maxOccurs="1" name="lojista" type="xs:string"/>
+        <xs:element minOccurs="0" maxOccurs="1" name="contrato" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SaldoContratoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="SaldoContratoResult" type="tns:Saldo"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="Saldo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="cpf" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="nome" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="listadecontratos" type="tns:ArrayOfContrato"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="mensagem" type="tns:Mensagem"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ArrayOfContrato">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="contrato" nillable="true" type="tns:contrato"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="contrato">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="numero_contrato" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="listadeparcelas" type="tns:ArrayOfParcela"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ArrayOfParcela">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="parcela" nillable="true" type="tns:parcela"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="parcela">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="numero_parcela" type="xs:string"/>
+      <xs:element minOccurs="1" maxOccurs="1" name="data_vencimento" type="xs:dateTime"/>
+      <xs:element minOccurs="1" maxOccurs="1" name="diasatraso" type="xs:int"/>
+      <xs:element minOccurs="1" maxOccurs="1" name="pmt" type="xs:double"/>
+      <xs:element minOccurs="1" maxOccurs="1" name="perc_multa" type="xs:double"/>
+      <xs:element minOccurs="1" maxOccurs="1" name="valor_multa" type="xs:double"/>
+      <xs:element minOccurs="1" maxOccurs="1" name="perc_juros_atraso" type="xs:double"/>
+      <xs:element minOccurs="1" maxOccurs="1" name="valor_juros_atraso" type="xs:double"/>
+      <xs:element minOccurs="1" maxOccurs="1" name="valor_iof_atraso" type="xs:double"/>
+      <xs:element minOccurs="1" maxOccurs="1" name="valor_descontos" type="xs:double"/>
+      <xs:element minOccurs="1" maxOccurs="1" name="despesas" type="xs:double"/>
+      <xs:element minOccurs="1" maxOccurs="1" name="valor_saldo_parcela" type="xs:double"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Mensagem">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="codigo" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="descricao" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="complemento" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://10.10.20.73/ConsultaSaldoContrato/ConsultaSaldoContrato.svc</con:endpoint></con:endpoints><con:operation id="c7ec71ca-8038-461f-8dee-4f767350b971" isOneWay="false" action="http://www.portocred.com.br/IConsultaSaldoContrato/GetVersao" name="GetVersao" bindingOperationName="GetVersao" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="598939bf-1f9c-4b1c-bba2-47abb69c586a" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.10.20.73/ConsultaSaldoContrato/ConsultaSaldoContrato.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:por="http://www.portocred.com.br">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <por:GetVersao/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.portocred.com.br/IConsultaSaldoContrato/GetVersao"/></con:call></con:operation><con:operation id="f1cc1a5a-c55b-48f5-9519-759dd4bf2394" isOneWay="false" action="http://www.portocred.com.br/IConsultaSaldoContrato/SaldoContrato" name="SaldoContrato" bindingOperationName="SaldoContrato" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="1462221f-f9ad-4f13-a8d4-5f16a4c972cf" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.10.20.73/ConsultaSaldoContrato/ConsultaSaldoContrato.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:por="http://www.portocred.com.br">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <por:SaldoContrato>
+         <!--Optional:-->
+         <por:cpf>29239036415</por:cpf>
+         <!--Optional:-->
+         <por:lojista>905251</por:lojista>
+      </por:SaldoContrato>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.portocred.com.br/IConsultaSaldoContrato/SaldoContrato"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:testSuite id="e20883e9-b079-4b00-8b77-2382d9a85414" name="FluxoPagamento_TestSuite"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="37773c6e-0436-4b6b-98d9-b9f9a961ea70" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Fluxo_Pagamento TestSuite" searchProperties="true"><con:settings/><con:testStep type="request" id="e99654b9-2c81-46fd-ab50-694f0a862b6c" name="ConsultaSaldoContrato"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>BasicHttpBinding_IConsultaSaldoContrato</con:interface><con:operation>SaldoContrato</con:operation><con:request name="ConsultaSaldoContrato" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="12c196c9-ff7a-4a42-a3b8-ef705c762ba1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.10.20.73/ConsultaSaldoContrato/ConsultaSaldoContrato.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:por="http://www.portocred.com.br">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <por:SaldoContrato>
+         <!--Optional:-->
+         <por:cpf>29239036415</por:cpf>
+         <!--Optional:-->
+         <por:lojista>905251</por:lojista>
+      </por:SaldoContrato>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="56769823-893f-4198-a100-5d2b0428213b" name="SOAP Response"/><con:assertion type="Schema Compliance" id="e5fcae23-0389-4566-b7a3-8879da3d9790" name="Schema Compliance"><con:configuration><definition/></con:configuration></con:assertion><con:assertion type="SOAP Fault Assertion" id="288cd8a7-8d38-438c-8f82-4f659cb18fbe" name="Not SOAP Fault"/><con:assertion type="Simple Contains" id="6feae093-a930-4e26-9ced-3eb5da4bcf1c" name="Contains"><con:configuration><token>&lt;codigo>200&lt;/codigo></token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.portocred.com.br/IConsultaSaldoContrato/SaldoContrato"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" id="ffed4eec-3f61-41ac-93e0-eec08c477277" name="ListarPagamentos"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>BasicHttpBinding_IListaPagamentos</con:interface><con:operation>ListarPagamentos</con:operation><con:request name="ListarPagamentos" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="db0c2b1a-499e-4cd0-9282-c8ff76fcd0b4"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.10.20.73/ListaPagamentos/ListaPagamentos.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:por="http://www.portocred.com.br">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <por:ListarPagamentos>\r
+         <!--Optional:-->\r
+         <por:cpf>43425976400</por:cpf>\r
+         <!--Optional:-->\r
+         <por:lojista>905251</por:lojista>\r
+         <!--Optional:-->\r
+         <por:inicioperiodo>2018-11-20</por:inicioperiodo>\r
+         <!--Optional:-->\r
+         <por:fimperiodo>2018-11-20</por:fimperiodo>\r
+      </por:ListarPagamentos>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:assertion type="Simple Contains" id="ac8131a6-6a05-4d41-a23d-e508253aa05b" name="Contains"><con:configuration><token>&lt;codigo>200&lt;/codigo></token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="SOAP Fault Assertion" id="e5a3ff92-9c1e-4950-8d65-388a319e8cc1" name="Not SOAP Fault"/><con:assertion type="SOAP Response" id="6931b2b6-8b9a-4f6d-8570-ef293be430a5" name="SOAP Response"/><con:assertion type="Schema Compliance" id="7045416e-cd2a-4133-a9bd-a8258851748d" name="Schema Compliance"><con:configuration><definition/></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.portocred.com.br/IListaPagamentos/ListarPagamentos"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" id="88ee2b0d-d56b-4dac-abfb-8006a5641c19" name="PagarParcelas"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>BasicHttpBinding_IPagaParcelas</con:interface><con:operation>PagarParcelas</con:operation><con:request name="PagarParcelas" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="52f05b5c-e6fa-4881-9f0a-b4adf2b94e6b"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.10.20.73/PagaParcelas/PagaParcelas.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:por="http://www.portocred.com.br">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <por:PagarParcelas>
+         <!--Optional:-->
+         <por:contrato>3803803985</por:contrato>
+         <!--Optional:-->
+         <por:qtd_parcelas_pagar>10</por:qtd_parcelas_pagar>
+         <!--Optional:-->
+         <por:valor_pgto>134.43</por:valor_pgto>
+         <!--Optional:-->
+         <por:operador>F3068080</por:operador>
+         <!--Optional:-->
+         <por:lojarecebimento>5365</por:lojarecebimento>
+      </por:PagarParcelas>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Fault Assertion" id="67c8b6f2-3db4-488d-bb9e-4ee316fc7619" name="Not SOAP Fault"/><con:assertion type="Schema Compliance" id="fe93706a-97b8-411b-9421-fefae9060926" name="Schema Compliance"><con:configuration><definition/></con:configuration></con:assertion><con:assertion type="SOAP Response" id="66c51793-39d3-4778-836d-0a0aeb6fb1ef" name="SOAP Response"/><con:assertion type="Simple Contains" id="51ce7eaf-8090-430f-b9b2-8bfd01982350" name="Contains"><con:configuration><token>&lt;codigo>200&lt;/codigo></token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.portocred.com.br/IPagaParcelas/PagarParcelas"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="restrequest" name="ExclusaoPagamentoH2h" id="d2ef5cbd-bd3f-4aef-ba2c-f4cd829fdbdc"><con:settings/><con:config service="http://10.10.20.73" resourcePath="/svc-gallery/ExclusaoPagamento/api/PagamentoH2h" methodName="PagamentoH2h 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="ExclusaoPagamentoH2h" id="a0c2d72a-fc10-4a65-a933-a2b47eb364bb" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://10.10.20.73</con:endpoint><con:request>{
+  "empresa": "01",
+  "agencia": "0001",
+  "contrato": "3803803985",
+  "lojista": "905251",
+  "cpf": "29239036415",
+  "operador": "F3068080",
+  "usuario": "PAQUETA1"
+}</con:request><con:originalUri>http://10.10.20.73/svc-gallery/ExclusaoPagamento/api/PagamentoH2h</con:originalUri><con:assertion type="Schema Compliance" id="0842359a-b890-4507-a42b-07081838e46b" name="Schema Compliance"><con:configuration/></con:assertion><con:assertion type="Simple Contains" id="59268166-d5c0-48de-b5bd-dcda1eef02e7" name="Contains"><con:configuration><token>CANCELAMENTO DE PAGAMENTO</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/></con:soapui-project>
