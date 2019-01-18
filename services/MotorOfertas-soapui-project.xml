@@ -385,7 +385,7 @@
       <soap12:address location="http://10.10.20.73/WsMotorOfertas/MotorOfertas.asmx"/>
     </wsdl:port>
   </wsdl:service>
-</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://10.10.20.73/WsMotorOfertas/MotorOfertas.asmx</con:endpoint></con:endpoints><con:operation id="f689c632-8499-4b4f-b3a4-ac4d1be28e6e" isOneWay="false" action="http://tempuri.org/CalculaOferta" name="CalculaOferta" bindingOperationName="CalculaOferta" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="84de41a6-59f5-4f5a-a101-2a9d4fde8873" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.10.20.73/WsMotorOfertas/MotorOfertas.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://10.10.20.72/WsMotorOfertas/MotorOfertas.asmx</con:endpoint><con:endpoint>http://10.10.20.73/WsMotorOfertas/MotorOfertas.asmx</con:endpoint><con:endpoint>http://10.10.20.75/WsMotorOfertas/MotorOfertas.asmx</con:endpoint><con:endpoint>http://10.10.20.84/WsMotorOfertas/MotorOfertas.asmx</con:endpoint></con:endpoints><con:operation id="f689c632-8499-4b4f-b3a4-ac4d1be28e6e" isOneWay="false" action="http://tempuri.org/CalculaOferta" name="CalculaOferta" bindingOperationName="CalculaOferta" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="84de41a6-59f5-4f5a-a101-2a9d4fde8873" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.10.20.73/WsMotorOfertas/MotorOfertas.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">
    <soapenv:Header/>
    <soapenv:Body>
       <tem:CalculaOferta>
@@ -450,7 +450,7 @@
          </tem:obj>
       </tem:CalculaOferta>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/CalculaOferta"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:testSuite id="f3dd54a7-4b1f-4f09-b0e9-d7025e740c1d" name="MotorOfertasSoap TestSuite"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="7a5fce88-5f24-49a7-9af1-ebc9c96ba132" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="MotorOfertasSoap TestSuite" searchProperties="true"><con:settings/><con:testStep type="request" id="f99ac3dc-621a-47a8-b53c-1ae20741ae8c" name="CalculaOferta"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>MotorOfertasSoap</con:interface><con:operation>CalculaOferta</con:operation><con:request name="CalculaOferta" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="ed493179-97e3-493e-a3c8-ab4a1056b709"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.10.20.73/WsMotorOfertas/MotorOfertas.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/CalculaOferta"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:testSuite id="f3dd54a7-4b1f-4f09-b0e9-d7025e740c1d" name="MotorOfertasSoap Suite"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="7a5fce88-5f24-49a7-9af1-ebc9c96ba132" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="MotorOfertasSoap 73" searchProperties="true"><con:settings/><con:testStep type="request" id="f99ac3dc-621a-47a8-b53c-1ae20741ae8c" name="CalculaOferta"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>MotorOfertasSoap</con:interface><con:operation>CalculaOferta</con:operation><con:request name="CalculaOferta" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="ed493179-97e3-493e-a3c8-ab4a1056b709"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.10.20.73/WsMotorOfertas/MotorOfertas.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">
    <soapenv:Header/>
    <soapenv:Body>
       <tem:CalculaOferta>
@@ -511,14 +511,11 @@
                   <tem:PerfilCliente>X</tem:PerfilCliente>
                </tem:Neurotech>
             </tem:ListaNeurotech>
-            <tem:DtPrimeiroVencimento>2019-01-07</tem:DtPrimeiroVencimento>
+            <tem:DtPrimeiroVencimento>2019-01-10</tem:DtPrimeiroVencimento>
          </tem:obj>
       </tem:CalculaOferta>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Fault Assertion" id="b9bf056d-dd82-4229-8bec-dad8cd9a9dbc" name="Not SOAP Fault"/><con:assertion type="Schema Compliance" id="3bd0d5ad-4c86-4294-8830-7bd753d4113b" name="Schema Compliance"><con:configuration><definition/></con:configuration></con:assertion><con:assertion type="SOAP Response" id="6f804405-db4b-4ac0-b938-23a6eb319776" name="SOAP Response"/><con:assertion type="Simple Contains" id="d2f29ec1-b229-436e-b96d-7f5f19757c8f" name="Contains"><con:configuration><token>&lt;Mensagem>Ofertas calculadas com sucesso.&lt;/Mensagem></token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/CalculaOferta"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:testSuite id="d00683cc-bdec-447b-bdb8-0a2c080ca287" name="MotorOfertasSoap12 TestSuite"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="1c0e6fca-34bc-45b2-9a86-b20cd9b089c2" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="MotorOfertasSoap12 TestSuite" searchProperties="true"><con:settings/><con:testStep type="request" id="cc50d1f8-c9f4-4bce-b398-3bc38b61466b" name="CalculaOferta"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>MotorOfertasSoap12</con:interface><con:operation>CalculaOferta</con:operation><con:request name="CalculaOferta" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="004a6cd6-3393-438b-84b0-256990f050b8"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
-  &lt;con:entry key="charset" value="UTF-8"/>
-  &lt;con:entry key="Content-Type" value="application/XML"/>
-&lt;/xml-fragment></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.10.20.70/WsMotorOfertas/MotorOfertas.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Fault Assertion" id="b9bf056d-dd82-4229-8bec-dad8cd9a9dbc" name="Not SOAP Fault"/><con:assertion type="Schema Compliance" id="3bd0d5ad-4c86-4294-8830-7bd753d4113b" name="Schema Compliance"><con:configuration><definition/></con:configuration></con:assertion><con:assertion type="SOAP Response" id="6f804405-db4b-4ac0-b938-23a6eb319776" name="SOAP Response"/><con:assertion type="Simple Contains" id="d2f29ec1-b229-436e-b96d-7f5f19757c8f" name="Contains"><con:configuration><token>&lt;Mensagem>Ofertas calculadas com sucesso.&lt;/Mensagem></token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/CalculaOferta"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="1abec64a-1937-400a-8398-3e5eee2510d7" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="MotorOfertasSoap 72" searchProperties="true"><con:settings/><con:testStep type="request" id="0892a686-7703-4376-947a-8e6ac59dae3c" name="CalculaOferta"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>MotorOfertasSoap</con:interface><con:operation>CalculaOferta</con:operation><con:request name="CalculaOferta" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="ed493179-97e3-493e-a3c8-ab4a1056b709"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.10.20.72/WsMotorOfertas/MotorOfertas.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">
    <soapenv:Header/>
    <soapenv:Body>
       <tem:CalculaOferta>
@@ -579,8 +576,138 @@
                   <tem:PerfilCliente>X</tem:PerfilCliente>
                </tem:Neurotech>
             </tem:ListaNeurotech>
-            <tem:DtPrimeiroVencimento>2019-01-07</tem:DtPrimeiroVencimento>
+            <tem:DtPrimeiroVencimento>2019-01-10</tem:DtPrimeiroVencimento>
          </tem:obj>
       </tem:CalculaOferta>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="157cd44a-2d59-4a6e-8adb-0b5d93fdba49" name="SOAP Response"/><con:assertion type="SOAP Fault Assertion" id="64123854-0cbd-4ffe-be99-26a27a099e85" name="Not SOAP Fault"/><con:assertion type="Schema Compliance" id="70274625-9876-4116-9848-c34d5a0ae631" name="Schema Compliance"><con:configuration><definition/></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/MotorOfertasSoap/CalculaOfertaRequest"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Fault Assertion" id="b9bf056d-dd82-4229-8bec-dad8cd9a9dbc" name="Not SOAP Fault"/><con:assertion type="Schema Compliance" id="3bd0d5ad-4c86-4294-8830-7bd753d4113b" name="Schema Compliance"><con:configuration><definition/></con:configuration></con:assertion><con:assertion type="SOAP Response" id="6f804405-db4b-4ac0-b938-23a6eb319776" name="SOAP Response"/><con:assertion type="Simple Contains" id="d2f29ec1-b229-436e-b96d-7f5f19757c8f" name="Contains"><con:configuration><token>&lt;Mensagem>Ofertas calculadas com sucesso.&lt;/Mensagem></token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/CalculaOferta"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="a4f3640c-637f-489a-887d-7f5c59102a9f" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="MotorOfertasSoap 75" searchProperties="true"><con:settings/><con:testStep type="request" id="dd63c644-a4a5-4881-9201-66b487f8c098" name="CalculaOferta"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>MotorOfertasSoap</con:interface><con:operation>CalculaOferta</con:operation><con:request name="CalculaOferta" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="ed493179-97e3-493e-a3c8-ab4a1056b709"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.10.20.75/WsMotorOfertas/MotorOfertas.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <tem:CalculaOferta>
+         
+         <!--Optional:-->
+         <tem:obj>
+        
+            <!--Optional:-->
+            <tem:Parceiro>3</tem:Parceiro>
+            <!--Optional:-->
+            <tem:Loja>5152</tem:Loja>
+            <!--Optional:-->
+            <tem:Lojista>905151</tem:Lojista>
+            <!--Optional:-->
+            <tem:CodProposta>3803946902</tem:CodProposta>
+            <tem:DataMovimento>2018-03-22</tem:DataMovimento>
+            <!--Optional:-->
+            <tem:IndicadorCalculoOfertas>S</tem:IndicadorCalculoOfertas>
+            <!--Optional:-->
+            <tem:TipoSeguroPrestamista>2</tem:TipoSeguroPrestamista>
+            <!--Optional:-->
+            <tem:IndicadorClienteLosango>N</tem:IndicadorClienteLosango>
+            <tem:ValorSolicitado>5000.00</tem:ValorSolicitado>
+            
+            <tem:PrazoSolicitado>24</tem:PrazoSolicitado>
+            <!--Optional:-->
+            <tem:ProdutoSolicitado>000712</tem:ProdutoSolicitado>
+            <!--Optional:-->
+            <tem:CPF>67502245553</tem:CPF>
+            <!--Optional:-->
+            <tem:TipoContrato>CCB</tem:TipoContrato>
+            <!--Optional:-->
+            <tem:Acesso>
+               
+               <!--Optional:-->
+               <tem:Loja>5152</tem:Loja>
+               <!--Optional:-->
+               <tem:Lojista>905151</tem:Lojista>
+               <!--Optional:-->
+               <tem:Parceiro>3</tem:Parceiro>
+               <!--Optional:-->
+               <tem:Usuario>BPC5151HH</tem:Usuario>
+               <!--Optional:-->
+               <tem:Senha>123456</tem:Senha>
+            </tem:Acesso>
+            <!--Optional:-->
+            <tem:ListaNeurotech>
+               
+               <!--Zero or more repetitions:-->
+               <tem:Neurotech>
+                  
+                  <!--Optional:-->
+                  <tem:FamiliaProduto>CHEQUE</tem:FamiliaProduto>
+                  <tem:ValorMaximo>5000.00</tem:ValorMaximo>
+                  <tem:PMTMax>500.00</tem:PMTMax>
+                  <tem:PrazoMax>24</tem:PrazoMax>
+                  <!--Optional:-->
+                  <tem:PerfilCliente>X</tem:PerfilCliente>
+               </tem:Neurotech>
+            </tem:ListaNeurotech>
+            <tem:DtPrimeiroVencimento>2019-01-10</tem:DtPrimeiroVencimento>
+         </tem:obj>
+      </tem:CalculaOferta>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Fault Assertion" id="b9bf056d-dd82-4229-8bec-dad8cd9a9dbc" name="Not SOAP Fault"/><con:assertion type="Schema Compliance" id="3bd0d5ad-4c86-4294-8830-7bd753d4113b" name="Schema Compliance"><con:configuration><definition/></con:configuration></con:assertion><con:assertion type="SOAP Response" id="6f804405-db4b-4ac0-b938-23a6eb319776" name="SOAP Response"/><con:assertion type="Simple Contains" id="d2f29ec1-b229-436e-b96d-7f5f19757c8f" name="Contains"><con:configuration><token>&lt;Mensagem>Ofertas calculadas com sucesso.&lt;/Mensagem></token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/CalculaOferta"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="36b6bc38-f087-43c9-bc4b-56897eab6ce6" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="MotorOfertasSoap 84" searchProperties="true"><con:settings/><con:testStep type="request" id="41e02081-c1c5-4c9a-bcda-1dbabfa15367" name="CalculaOferta"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>MotorOfertasSoap</con:interface><con:operation>CalculaOferta</con:operation><con:request name="CalculaOferta" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="ed493179-97e3-493e-a3c8-ab4a1056b709"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.10.20.84/WsMotorOfertas/MotorOfertas.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <tem:CalculaOferta>
+         
+         <!--Optional:-->
+         <tem:obj>
+        
+            <!--Optional:-->
+            <tem:Parceiro>3</tem:Parceiro>
+            <!--Optional:-->
+            <tem:Loja>5152</tem:Loja>
+            <!--Optional:-->
+            <tem:Lojista>905151</tem:Lojista>
+            <!--Optional:-->
+            <tem:CodProposta>3803946902</tem:CodProposta>
+            <tem:DataMovimento>2018-03-22</tem:DataMovimento>
+            <!--Optional:-->
+            <tem:IndicadorCalculoOfertas>S</tem:IndicadorCalculoOfertas>
+            <!--Optional:-->
+            <tem:TipoSeguroPrestamista>2</tem:TipoSeguroPrestamista>
+            <!--Optional:-->
+            <tem:IndicadorClienteLosango>N</tem:IndicadorClienteLosango>
+            <tem:ValorSolicitado>5000.00</tem:ValorSolicitado>
+            
+            <tem:PrazoSolicitado>24</tem:PrazoSolicitado>
+            <!--Optional:-->
+            <tem:ProdutoSolicitado>000712</tem:ProdutoSolicitado>
+            <!--Optional:-->
+            <tem:CPF>67502245553</tem:CPF>
+            <!--Optional:-->
+            <tem:TipoContrato>CCB</tem:TipoContrato>
+            <!--Optional:-->
+            <tem:Acesso>
+               
+               <!--Optional:-->
+               <tem:Loja>5152</tem:Loja>
+               <!--Optional:-->
+               <tem:Lojista>905151</tem:Lojista>
+               <!--Optional:-->
+               <tem:Parceiro>3</tem:Parceiro>
+               <!--Optional:-->
+               <tem:Usuario>BPC5151HH</tem:Usuario>
+               <!--Optional:-->
+               <tem:Senha>123456</tem:Senha>
+            </tem:Acesso>
+            <!--Optional:-->
+            <tem:ListaNeurotech>
+               
+               <!--Zero or more repetitions:-->
+               <tem:Neurotech>
+                  
+                  <!--Optional:-->
+                  <tem:FamiliaProduto>CHEQUE</tem:FamiliaProduto>
+                  <tem:ValorMaximo>5000.00</tem:ValorMaximo>
+                  <tem:PMTMax>500.00</tem:PMTMax>
+                  <tem:PrazoMax>24</tem:PrazoMax>
+                  <!--Optional:-->
+                  <tem:PerfilCliente>X</tem:PerfilCliente>
+               </tem:Neurotech>
+            </tem:ListaNeurotech>
+            <tem:DtPrimeiroVencimento>2019-01-10</tem:DtPrimeiroVencimento>
+         </tem:obj>
+      </tem:CalculaOferta>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Fault Assertion" id="b9bf056d-dd82-4229-8bec-dad8cd9a9dbc" name="Not SOAP Fault"/><con:assertion type="Schema Compliance" id="3bd0d5ad-4c86-4294-8830-7bd753d4113b" name="Schema Compliance"><con:configuration><definition/></con:configuration></con:assertion><con:assertion type="SOAP Response" id="6f804405-db4b-4ac0-b938-23a6eb319776" name="SOAP Response"/><con:assertion type="Simple Contains" id="d2f29ec1-b229-436e-b96d-7f5f19757c8f" name="Contains"><con:configuration><token>&lt;Mensagem>Ofertas calculadas com sucesso.&lt;/Mensagem></token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/CalculaOferta"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
