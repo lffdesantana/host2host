@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:soapui-project id="15543098-f373-4ea7-9ebf-6ab159a690f4" activeEnvironment="Default" name="ConsignadoPrivadoRest" resourceRoot="" soapui-version="5.4.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:RestService" id="c4ca25e9-7dcd-4979-bf8c-308f3612683f" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://10.10.20.73" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://10.10.20.73</con:endpoint></con:endpoints><con:resource name="ConsignadoPrivado" path="/svc-gallery/ConsignadoPrivado/api/ConsignadoPrivado" id="55c22e6d-e88e-4e1e-90bc-c2e90993b59f"><con:settings/><con:parameters/><con:method name="ConsignadoPrivado 1" id="7937f0bf-1421-4abd-a870-f16a074193c2" method="POST"><con:settings/><con:parameters/><con:representation type="FAULT"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>400</con:status><con:params/><con:element>Fault</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>500</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="Request 1" id="0e76f463-933c-4154-93bd-bc97b6cd863d" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://10.10.20.73</con:endpoint><con:request>{
+<con:soapui-project id="15543098-f373-4ea7-9ebf-6ab159a690f4" activeEnvironment="Default" name="ConsignadoPrivadoRest" resourceRoot="" soapui-version="5.4.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:RestService" id="c4ca25e9-7dcd-4979-bf8c-308f3612683f" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://10.10.20.73" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://10.10.20.73</con:endpoint></con:endpoints><con:resource name="ConsignadoPrivado" path="/svc-gallery/ConsignadoPrivado/api/ConsignadoPrivado" id="55c22e6d-e88e-4e1e-90bc-c2e90993b59f"><con:settings/><con:parameters/><con:method name="ConsignadoPrivado 1" id="7937f0bf-1421-4abd-a870-f16a074193c2" method="POST"><con:settings/><con:parameters/><con:representation type="FAULT"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>400</con:status><con:params/><con:element>Fault</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>500</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:con1="http://10.10.20.73/svc-gallery/ConsignadoPrivado/api/ConsignadoPrivado">con1:Response</con:element></con:representation><con:request name="Request 1" id="0e76f463-933c-4154-93bd-bc97b6cd863d" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://10.10.20.73</con:endpoint><con:request>{
   "lojista": "000020",
   "loja": "0030",
   "tipoContrato": "ACEITE",
@@ -81,80 +81,84 @@
   "valorTotal": 5000.00,
   "valorTotalPst": 5000.00,
   "seguro": "1"
-}</con:request><con:originalUri>http://10.10.20.73/svc-gallery/ConsignadoPrivado/api/ConsignadoPrivado</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:request></con:method></con:resource></con:interface><con:testSuite id="4ae32b86-0358-4ab2-b333-a12d2c4d5067" name="ConsignadoPrivado TestSuite"><con:description>TestSuite generated for REST Service [http://10.10.20.73]</con:description><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="74e348a0-1938-45a4-bdbd-57b1f10cf8e7" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="http://10.10.20.73 TestSuite" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="ConsignadoPrivado" id="d94fbf77-ac4f-4121-aee3-da3d540f6591"><con:settings/><con:config service="http://10.10.20.73" resourcePath="/svc-gallery/ConsignadoPrivado/api/ConsignadoPrivado" methodName="ConsignadoPrivado 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="ConsignadoPrivado" id="0e76f463-933c-4154-93bd-bc97b6cd863d" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://10.10.20.73</con:endpoint><con:request>{
-  "lojista": "905060",
-  "loja": "5062",
-  "tipoContrato": "CCB",
-  "conveniada": "904324",
-  "orgaoRecebedor": "04324",
-  "dadosCliente": {
-    "cpf": "90043847153",
-    "nome": "fulano da silva",
-    "dataNascimento": "18/01/1979",
-    "estadoCivil": "C",
-    "escolaridade": "7",
-    "nacionalidade": "01",
-    "sexo": "m",
-    "mae": "sicrana da silva",
-    "email": "teste@teste.com",
-    "tipoDocumento": "1",
-    "numeroDocumento": "12345678",
-    "renda": 20000,
-    "logradouro": "rua dos alfaneiros",
-    "numero": "555",
-    "complemento": "embaixo da escada",
-    "bairro": "centro",
-    "cidade": "centro",
-    "uf": "rs",
-    "cep":99200130,
-    "contatos": [
-      {
-        "ddd": "51",
-        "telefone": "32281100"
-      }
-    ],
-    "banco": "stri",
-    "tipoConta": "1",
-    "agencia": "strin",
-    "conta": "string",
-    "dadosProfissionais": {
-      "dataAdmissao": "01/02/2010",
-      "nome": "Sicredi",
-      "logradouro": "av. das flores",
-      "numero": "1234",
-      "complemento": "predio",
-      "bairro": "centro",
-     "cidade": "poa",
-      "uf": "rs",
-      "cep": "90030130"
-    },
-    "referenciasPessoais": {
-      "nome": "beltrano",
-      "relacionamento": "amigo",
-      "ddd": "51",
-      "fone": "32281100"
-    }
-  },
-  "parceiro": 12,
-  "emissao": "14/01/2019",
-  "dataPrimeiroVencimento": "08/03/2019",
-  "prazo": "012",
-  "produto": "000999",
-  "plano": "3587",
-  "taxa": 0.02,
-  "valorCredito": 10000.01,
-  "valorParcela": 1000.99,
-  "valorFinanciado": 11380.01,
-  "iof": 10.01,
-  "tac": 0,
-  "finIofSeguro": 0,
-  "valorSeguro": 0,
-  "idProdutoSeguro": 0,
-  "seguradora": "00",
-  "valorLiberado": 10000.01,
-  "valorTaxaInclusao": 0.01,
-  "valorTaxaRenovacao": 0.01,
-  "valorTotal": 11380.01,
-  "valorTotalPst": 0,
-  "seguro": "0"
-}</con:request><con:originalUri>http://10.10.20.73/svc-gallery/ConsignadoPrivado/api/ConsignadoPrivado</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties><con:property><con:name>lojista</con:name><con:value>000020</con:value></con:property></con:properties><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
+}</con:request><con:originalUri>http://10.10.20.73/svc-gallery/ConsignadoPrivado/api/ConsignadoPrivado</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:request></con:method></con:resource></con:interface><con:testSuite id="4ae32b86-0358-4ab2-b333-a12d2c4d5067" name="ConsignadoPrivado TestSuite"><con:description>TestSuite generated for REST Service [http://10.10.20.73]</con:description><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="74e348a0-1938-45a4-bdbd-57b1f10cf8e7" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="http://10.10.20.73 TestSuite" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="ConsignadoPrivado" id="d94fbf77-ac4f-4121-aee3-da3d540f6591"><con:settings/><con:config service="http://10.10.20.73" resourcePath="/svc-gallery/ConsignadoPrivado/api/ConsignadoPrivado" methodName="ConsignadoPrivado 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="ConsignadoPrivado" id="0e76f463-933c-4154-93bd-bc97b6cd863d" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="charset" value="utf-8"/>
+  &lt;con:entry key="content-type" value="application/json-patch+json"/>
+  &lt;con:entry key="accept" value="text/plain"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://10.10.20.73</con:endpoint><con:request>{
+ "lojista": "905060",
+ "loja": "5062",
+ "tipoContrato": "CCB",
+ "conveniada": "904324",
+ "orgaoRecebedor": "04324",
+ "dadosCliente": {
+   "cpf": "90043847153",
+   "nome": "fulano da silva",
+   "dataNascimento": "18/01/1979",
+   "estadoCivil": "C",
+   "escolaridade": "7",
+   "nacionalidade": "01",
+   "sexo": "m",
+   "mae": "sicrana da silva",
+   "email": "teste@teste.com",
+   "tipoDocumento": "1",
+   "numeroDocumento": "12345678",
+   "renda": 20000,
+   "logradouro": "rua dos alfaneiros",
+   "numero": "555",
+   "complemento": "embaixo da escada",
+   "bairro": "centro",
+   "cidade": "centro",
+   "uf": "rs",
+   "cep":99200130,
+   "contatos": [
+     {
+       "ddd": "51",
+       "telefone": "32281100"
+     }
+   ],
+   "banco": "stri",
+   "tipoConta": "1",
+   "agencia": "strin",
+   "conta": "string",
+   "dadosProfissionais": {
+     "dataAdmissao": "01/02/2010",
+     "nome": "Sicredi",
+     "logradouro": "av. das flores",
+     "numero": "1234",
+     "complemento": "predio",
+     "bairro": "centro",
+    "cidade": "poa",
+     "uf": "rs",
+     "cep": "90030130"
+   },
+   "referenciasPessoais": {
+     "nome": "beltrano",
+     "relacionamento": "amigo",
+     "ddd": "51",
+     "fone": "32281100"
+   }
+ },
+ "parceiro": 12,
+ "emissao": "01/02/2018",
+ "dataPrimeiroVencimento": "08/03/2018",
+ "prazo": "012",
+ "produto": "000999",
+ "plano": "3587",
+ "valorCredito": 10000.01,
+ "valorParcela": 1000.99,
+ "valorFinanciado": 11380.01,
+ "taxa": 0.10,
+ "iof": 10.01,
+ "tac": 0,
+ "finIofSeguro": 0,
+ "valorSeguro": 0,
+ "idProdutoSeguro": 0,
+ "seguradora": "00",
+ "valorLiberado": 10000.01,
+ "valorTaxaInclusao": 0.01,
+ "valorTaxaRenovacao": 0.01,
+ "valorTotal": 11380.01,
+ "valorTotalPst": 0,
+ "seguro": "0"
+}</con:request><con:originalUri>http://10.10.20.73/svc-gallery/ConsignadoPrivado/api/ConsignadoPrivado</con:originalUri><con:assertion type="Schema Compliance" id="5359ed60-54f6-4fcc-bc43-d2e26b2382a7" name="Schema Compliance"><con:configuration/></con:assertion><con:assertion type="Simple Contains" id="ae89db65-8db6-42a2-866e-39d6a0fca072" name="Contains"><con:configuration><token>Proposta adicionada com sucesso</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties><con:property><con:name>lojista</con:name><con:value>000020</con:value></con:property></con:properties><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
