@@ -1652,7 +1652,7 @@
   <xs:attribute name="FactoryType" type="xs:QName"/>
   <xs:attribute name="Id" type="xs:ID"/>
   <xs:attribute name="Ref" type="xs:IDREF"/>
-</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://10.10.20.72/WcfPropostas/ServicoPropostas.svc</con:endpoint><con:endpoint>http://10.10.20.73/WcfPropostas/ServicoPropostas.svc</con:endpoint><con:endpoint>http://10.10.20.75/WcfPropostas/ServicoPropostas.svc</con:endpoint><con:endpoint>http://10.10.20.84/WcfPropostas/ServicoPropostas.svc</con:endpoint></con:endpoints><con:operation id="9bb132e1-618b-44ec-ab30-8791daeb2b26" isOneWay="false" action="http://tempuri.org/IServicoPropostas/Calculadora" name="Calculadora" bindingOperationName="Calculadora" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="fdbfd01e-d495-4b11-b2ff-35fd8c5edda6" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.10.20.73/WcfPropostas/ServicoPropostas.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/" xmlns:wcf="http://schemas.datacontract.org/2004/07/WcfPropostas">
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://10.10.20.200/WcfPropostas/ServicoPropostas.svc</con:endpoint><con:endpoint>http://10.10.20.72/WcfPropostas/ServicoPropostas.svc</con:endpoint><con:endpoint>http://10.10.20.73/WcfPropostas/ServicoPropostas.svc</con:endpoint><con:endpoint>http://10.10.20.75/WcfPropostas/ServicoPropostas.svc</con:endpoint><con:endpoint>http://10.10.20.84/WcfPropostas/ServicoPropostas.svc</con:endpoint></con:endpoints><con:operation id="9bb132e1-618b-44ec-ab30-8791daeb2b26" isOneWay="false" action="http://tempuri.org/IServicoPropostas/Calculadora" name="Calculadora" bindingOperationName="Calculadora" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="fdbfd01e-d495-4b11-b2ff-35fd8c5edda6" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.10.20.73/WcfPropostas/ServicoPropostas.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/" xmlns:wcf="http://schemas.datacontract.org/2004/07/WcfPropostas">
    <soapenv:Header/>
    <soapenv:Body>
       <tem:Calculadora>
@@ -1845,7 +1845,7 @@
       <tem:UploadDocumentos>
          </tem:UploadDocumentos>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/IServicoPropostas/UploadDocumentos"/></con:call></con:operation></con:interface><con:testSuite id="f9ab81fb-bf4c-4a72-abe6-b4c25f58fa43" name="WCFProposta Suite"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="3ffbb2a3-4555-4a79-b969-670a8865b32d" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="WCFPropostasFluxoE2E 73" searchProperties="true"><con:settings/><con:testStep type="properties" name="prop" id="cb6258f9-3f3f-460d-946b-0aa32899c845"><con:settings/><con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:properties><con:property><con:name>loja</con:name><con:value>5477</con:value></con:property><con:property><con:name>lojista</con:name><con:value>905297</con:value></con:property><con:property><con:name>parceiro</con:name><con:value>11</con:value></con:property><con:property><con:name>senha</con:name><con:value>123456</con:value></con:property><con:property><con:name>usuario</con:name><con:value>LASA1</con:value></con:property><con:property><con:name>origem</con:name><con:value>H</con:value></con:property><con:property><con:name>dataPriVencimento</con:name><con:value>2019-02-17</con:value></con:property><con:property><con:name>seguro</con:name><con:value>2</con:value></con:property><con:property><con:name>prazo</con:name><con:value>9</con:value></con:property><con:property><con:name>produto</con:name><con:value>001028</con:value></con:property><con:property><con:name>valorOp</con:name><con:value>3387</con:value></con:property><con:property><con:name>cliCPF</con:name><con:value>80759776610</con:value></con:property><con:property><con:name>cliNome</con:name><con:value>PAULO CARLOS P</con:value></con:property><con:property><con:name>cliDataNasc</con:name><con:value>1988-12-17</con:value></con:property><con:property><con:name>cliSexo</con:name><con:value>M</con:value></con:property><con:property><con:name>cliMail</con:name><con:value>teste23datum@gmail.com</con:value></con:property><con:property><con:name>renda</con:name><con:value>11000</con:value></con:property><con:property><con:name>tipocontrato</con:name><con:value>0</con:value></con:property><con:property><con:name>cliTelefone</con:name><con:value>94362</con:value></con:property><con:property><con:name>cliTelefonerand</con:name><con:value>8910</con:value></con:property></con:properties></con:config></con:testStep><con:testStep type="groovy" name="GERACPFCNPJ" id="0493287d-ebbe-4e87-8281-bbc5174ec142"><con:settings/><con:config><script>// codigo para gerar CPF
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/IServicoPropostas/UploadDocumentos"/></con:call></con:operation></con:interface><con:testSuite id="f9ab81fb-bf4c-4a72-abe6-b4c25f58fa43" name="WCFProposta Suite"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="3ffbb2a3-4555-4a79-b969-670a8865b32d" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="WCFPropostasFluxoE2E 73" searchProperties="true"><con:settings/><con:testStep type="properties" name="prop" id="cb6258f9-3f3f-460d-946b-0aa32899c845"><con:settings/><con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:properties><con:property><con:name>loja</con:name><con:value>5477</con:value></con:property><con:property><con:name>lojista</con:name><con:value>905297</con:value></con:property><con:property><con:name>parceiro</con:name><con:value>11</con:value></con:property><con:property><con:name>senha</con:name><con:value>123456</con:value></con:property><con:property><con:name>usuario</con:name><con:value>LASA1</con:value></con:property><con:property><con:name>origem</con:name><con:value>H</con:value></con:property><con:property><con:name>dataPriVencimento</con:name><con:value>2019-02-17</con:value></con:property><con:property><con:name>seguro</con:name><con:value>2</con:value></con:property><con:property><con:name>prazo</con:name><con:value>9</con:value></con:property><con:property><con:name>produto</con:name><con:value>001028</con:value></con:property><con:property><con:name>valorOp</con:name><con:value>3387</con:value></con:property><con:property><con:name>cliCPF</con:name><con:value>41854859307</con:value></con:property><con:property><con:name>cliNome</con:name><con:value>PAULO CARLOS P</con:value></con:property><con:property><con:name>cliDataNasc</con:name><con:value>1988-12-17</con:value></con:property><con:property><con:name>cliSexo</con:name><con:value>M</con:value></con:property><con:property><con:name>cliMail</con:name><con:value>teste23datum@gmail.com</con:value></con:property><con:property><con:name>renda</con:name><con:value>11000</con:value></con:property><con:property><con:name>tipocontrato</con:name><con:value>0</con:value></con:property><con:property><con:name>cliTelefone</con:name><con:value>94362</con:value></con:property><con:property><con:name>cliTelefonerand</con:name><con:value>8910</con:value></con:property></con:properties></con:config></con:testStep><con:testStep type="groovy" name="GERACPFCNPJ" id="0493287d-ebbe-4e87-8281-bbc5174ec142"><con:settings/><con:config><script>// codigo para gerar CPF
 // codigo copiado de http://gerardocumentos.com.br/?pg=funcao-javascript-para-gerar-cpf e transformado para groovy
 int randomiza(n) {
 	ranNum = Math.round(Math.random()*n);
@@ -2580,7 +2580,7 @@ OFERTA = MAX(ID_OFERTA)
          </tem:Proposta>
       </tem:EfetivarProposta>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="6184eadb-019a-4e70-8532-a5a95b6e1ea2"/><con:assertion type="Schema Compliance" id="4932b17f-92d0-4596-b264-4d5ea97f5d24"><con:configuration/></con:assertion><con:assertion type="SOAP Fault Assertion" id="481c83d6-24c5-4219-af5c-6c4cab478acd"/><con:assertion type="Simple Contains" id="6d4a0b4b-e10f-4034-aafc-7446659f28c2" name="Contains"><con:configuration><token>&lt;a:Codigo>200&lt;/a:Codigo></token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="6411d7f8-7672-416f-b92b-b409dc580fe8" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="WCFPropostasFluxoE2E 72" searchProperties="true" timeout="0" wsrmEnabled="false" wsrmVersion="1.0" wsrmAckTo="" amfAuthorisation="false" amfEndpoint="" amfLogin="" amfPassword=""><con:settings/><con:testStep type="properties" name="prop" id="32a11176-cbe5-40a1-b90e-891189297ec4"><con:settings/><con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:properties><con:property><con:name>loja</con:name><con:value>5477</con:value></con:property><con:property><con:name>lojista</con:name><con:value>905297</con:value></con:property><con:property><con:name>parceiro</con:name><con:value>11</con:value></con:property><con:property><con:name>senha</con:name><con:value>123456</con:value></con:property><con:property><con:name>usuario</con:name><con:value>LASA1</con:value></con:property><con:property><con:name>origem</con:name><con:value>H</con:value></con:property><con:property><con:name>dataPriVencimento</con:name><con:value>2019-02-22</con:value></con:property><con:property><con:name>seguro</con:name><con:value>2</con:value></con:property><con:property><con:name>prazo</con:name><con:value>9</con:value></con:property><con:property><con:name>produto</con:name><con:value>001028</con:value></con:property><con:property><con:name>valorOp</con:name><con:value>3662</con:value></con:property><con:property><con:name>cliCPF</con:name><con:value>88045556374</con:value></con:property><con:property><con:name>cliNome</con:name><con:value>PAULO CARLOS P</con:value></con:property><con:property><con:name>cliDataNasc</con:name><con:value>1988-12-17</con:value></con:property><con:property><con:name>cliSexo</con:name><con:value>M</con:value></con:property><con:property><con:name>cliMail</con:name><con:value>teste23datum@gmail.com</con:value></con:property><con:property><con:name>renda</con:name><con:value>11000</con:value></con:property><con:property><con:name>tipocontrato</con:name><con:value>0</con:value></con:property><con:property><con:name>cliTelefone</con:name><con:value>94362</con:value></con:property><con:property><con:name>cliTelefonerand</con:name><con:value>8374</con:value></con:property></con:properties></con:config></con:testStep><con:testStep type="groovy" name="GERACPFCNPJ" id="d7b50822-790a-4cd8-b991-fbc72325e872"><con:settings/><con:config><script>// codigo para gerar CPF
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="6184eadb-019a-4e70-8532-a5a95b6e1ea2"/><con:assertion type="Schema Compliance" id="4932b17f-92d0-4596-b264-4d5ea97f5d24"><con:configuration/></con:assertion><con:assertion type="SOAP Fault Assertion" id="481c83d6-24c5-4219-af5c-6c4cab478acd"/><con:assertion type="Simple Contains" id="6d4a0b4b-e10f-4034-aafc-7446659f28c2" name="Contains"><con:configuration><token>&lt;a:Codigo>200&lt;/a:Codigo></token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="6411d7f8-7672-416f-b92b-b409dc580fe8" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="WCFPropostasFluxoE2E 72" searchProperties="true" timeout="0" wsrmEnabled="false" wsrmVersion="1.0" wsrmAckTo="" amfAuthorisation="false" amfEndpoint="" amfLogin="" amfPassword=""><con:settings/><con:testStep type="properties" name="prop" id="32a11176-cbe5-40a1-b90e-891189297ec4"><con:settings/><con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:properties><con:property><con:name>loja</con:name><con:value>5477</con:value></con:property><con:property><con:name>lojista</con:name><con:value>905297</con:value></con:property><con:property><con:name>parceiro</con:name><con:value>11</con:value></con:property><con:property><con:name>senha</con:name><con:value>123456</con:value></con:property><con:property><con:name>usuario</con:name><con:value>LASA1</con:value></con:property><con:property><con:name>origem</con:name><con:value>H</con:value></con:property><con:property><con:name>dataPriVencimento</con:name><con:value>2019-02-22</con:value></con:property><con:property><con:name>seguro</con:name><con:value>2</con:value></con:property><con:property><con:name>prazo</con:name><con:value>9</con:value></con:property><con:property><con:name>produto</con:name><con:value>001028</con:value></con:property><con:property><con:name>valorOp</con:name><con:value>3662</con:value></con:property><con:property><con:name>cliCPF</con:name><con:value>53018889606</con:value></con:property><con:property><con:name>cliNome</con:name><con:value>PAULO CARLOS P</con:value></con:property><con:property><con:name>cliDataNasc</con:name><con:value>1988-12-17</con:value></con:property><con:property><con:name>cliSexo</con:name><con:value>M</con:value></con:property><con:property><con:name>cliMail</con:name><con:value>teste23datum@gmail.com</con:value></con:property><con:property><con:name>renda</con:name><con:value>11000</con:value></con:property><con:property><con:name>tipocontrato</con:name><con:value>0</con:value></con:property><con:property><con:name>cliTelefone</con:name><con:value>94362</con:value></con:property><con:property><con:name>cliTelefonerand</con:name><con:value>8374</con:value></con:property></con:properties></con:config></con:testStep><con:testStep type="groovy" name="GERACPFCNPJ" id="d7b50822-790a-4cd8-b991-fbc72325e872"><con:settings/><con:config><script>// codigo para gerar CPF
 // codigo copiado de http://gerardocumentos.com.br/?pg=funcao-javascript-para-gerar-cpf e transformado para groovy
 int randomiza(n) {
 	ranNum = Math.round(Math.random()*n);
@@ -4766,6 +4766,741 @@ OFERTA = MAX(ID_OFERTA)
       </tem:ImprimirDocumentos>
    </soapenv:Body>
 </soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="6e0872b4-1fe5-4e82-aa33-9d6ecc321ace"/><con:assertion type="Schema Compliance" id="e64bea68-b183-4724-aafd-751797799410"><con:configuration/></con:assertion><con:assertion type="SOAP Fault Assertion" id="94d45a4c-fab3-42e9-b5b8-556eb568b767"/><con:assertion type="Simple Contains" id="09f8cd87-8077-4038-bc72-e0508a0e0695" name="Contains"><con:configuration><token>&lt;a:Codigo>200&lt;/a:Codigo></token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="EfetivarProposta" id="d22ef8c5-ea0a-4db5-a926-99884bd42bd4"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>BasicHttpBinding_IServicoPropostas</con:interface><con:operation>EfetivarProposta</con:operation><con:request name="EfetivarProposta" id="8b597682-c6bd-4ecb-8180-3424ebd2a867"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.10.20.84/WcfPropostas/ServicoPropostas.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/" xmlns:wcf="http://schemas.datacontract.org/2004/07/WcfPropostas">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <tem:EfetivarProposta>
+         <tem:Proposta> 
+            <!--Optional:-->
+            <wcf:Loja>${prop#loja}</wcf:Loja>
+            <!--Optional:-->
+            <wcf:Lojista>${prop#lojista}</wcf:Lojista>
+            <!--Optional:-->
+            <wcf:Parceiro>${prop#parceiro}</wcf:Parceiro>
+            <!--Optional:-->
+            <wcf:Senha>${prop#senha}</wcf:Senha>
+            <!--Optional:-->
+            <wcf:Usuario>${prop#usuario}</wcf:Usuario>
+            <wcf:proposta>${resultprop#num}</wcf:proposta> 
+            <wcf:uploadConfirmado>S</wcf:uploadConfirmado>
+         </tem:Proposta>
+      </tem:EfetivarProposta>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="6184eadb-019a-4e70-8532-a5a95b6e1ea2"/><con:assertion type="Schema Compliance" id="4932b17f-92d0-4596-b264-4d5ea97f5d24"><con:configuration/></con:assertion><con:assertion type="SOAP Fault Assertion" id="481c83d6-24c5-4219-af5c-6c4cab478acd"/><con:assertion type="Simple Contains" id="6d4a0b4b-e10f-4034-aafc-7446659f28c2" name="Contains"><con:configuration><token>&lt;a:Codigo>200&lt;/a:Codigo></token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="4ffb23ce-a4a7-426f-b1a0-5c7a2885aeca" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="WCFPropostasFluxoE2E 200" searchProperties="true"><con:settings/><con:testStep type="properties" name="prop" id="c1124a0b-57e0-4289-9dcb-a988fa812290"><con:settings/><con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:properties><con:property><con:name>loja</con:name><con:value>5477</con:value></con:property><con:property><con:name>lojista</con:name><con:value>905297</con:value></con:property><con:property><con:name>parceiro</con:name><con:value>11</con:value></con:property><con:property><con:name>senha</con:name><con:value>123456</con:value></con:property><con:property><con:name>usuario</con:name><con:value>LASA1</con:value></con:property><con:property><con:name>origem</con:name><con:value>H</con:value></con:property><con:property><con:name>dataPriVencimento</con:name><con:value>2019-02-22</con:value></con:property><con:property><con:name>seguro</con:name><con:value>2</con:value></con:property><con:property><con:name>prazo</con:name><con:value>9</con:value></con:property><con:property><con:name>produto</con:name><con:value>001028</con:value></con:property><con:property><con:name>valorOp</con:name><con:value>3453</con:value></con:property><con:property><con:name>cliCPF</con:name><con:value>81485594731</con:value></con:property><con:property><con:name>cliNome</con:name><con:value>PAULO CARLOS P</con:value></con:property><con:property><con:name>cliDataNasc</con:name><con:value>1988-12-17</con:value></con:property><con:property><con:name>cliSexo</con:name><con:value>M</con:value></con:property><con:property><con:name>cliMail</con:name><con:value>teste23datum@gmail.com</con:value></con:property><con:property><con:name>renda</con:name><con:value>11000</con:value></con:property><con:property><con:name>tipocontrato</con:name><con:value>0</con:value></con:property><con:property><con:name>cliTelefone</con:name><con:value>94362</con:value></con:property><con:property><con:name>cliTelefonerand</con:name><con:value>8226</con:value></con:property></con:properties></con:config></con:testStep><con:testStep type="groovy" name="GERACPFCNPJ" id="41de7894-9b50-4701-af51-c75202475964"><con:settings/><con:config><script>// codigo para gerar CPF
+// codigo copiado de http://gerardocumentos.com.br/?pg=funcao-javascript-para-gerar-cpf e transformado para groovy
+int randomiza(n) {
+	ranNum = Math.round(Math.random()*n);
+	return ranNum;
+}
+
+int mod(dividendo,divisor) {
+	return Math.round(dividendo - (Math.floor(dividendo/divisor)*divisor));
+}
+
+String gerarCPF(boolean comPontos) {
+	n = 9;
+	n1 = randomiza(n);
+	n2 = randomiza(n);
+	n3 = randomiza(n);
+	n4 = randomiza(n);
+	n5 = randomiza(n);
+	n6 = randomiza(n);
+	n7 = randomiza(n);
+	n8 = randomiza(n);
+	n9 = randomiza(n);
+	d1 = n9*2+n8*3+n7*4+n6*5+n5*6+n4*7+n3*8+n2*9+n1*10;
+	d1 = 11 - ( mod(d1,11) );
+	if (d1>=10) {
+		d1 = 0;
+	}
+	d2 = d1*2+n9*3+n8*4+n7*5+n6*6+n5*7+n4*8+n3*9+n2*10+n1*11;
+	d2 = 11 - ( mod(d2,11) );
+	if (d2>=10) {
+		d2 = 0;
+	}
+	retorno = '';
+	if (comPontos) {
+		cpf = ''+n1+n2+n3+'.'+n4+n5+n6+'.'+n7+n8+n9+'-'+d1+d2;
+	}
+	else {
+		cpf = ''+n1+n2+n3+n4+n5+n6+n7+n8+n9+d1+d2;
+	}
+	if (n7 &lt;2) {
+		return gerarCPF(false);
+	} else {
+		return cpf;
+	}
+	
+}
+
+String gerarCnpj (boolean comPontos) {
+	n = 9;
+	n1 = randomiza(n);
+	n2 = randomiza(n);
+	n3 = randomiza(n);
+	n4 = randomiza(n);
+	n5 = randomiza(n);
+	n6 = randomiza(n);
+	n7 = randomiza(n);
+	n8 = randomiza(n);
+	n9 = 0; //randomiza(n);
+	n10 = 0; //randomiza(n);
+	n11 = 0; //randomiza(n);
+	n12 = 1; //randomiza(n);
+	d1 = n12*2+n11*3+n10*4+n9*5+n8*6+n7*7+n6*8+n5*9+n4*2+n3*3+n2*4+n1*5;
+	d1 = 11 - ( mod(d1,11) );
+	if (d1>=10) {
+		d1 = 0;
+	}
+	d2 = d1*2+n12*3+n11*4+n10*5+n9*6+n8*7+n7*8+n6*9+n5*2+n4*3+n3*4+n2*5+n1*6;
+	d2 = 11 - ( mod(d2,11) );
+	if (d2>=10) {
+		d2 = 0;
+	}
+	retorno = '';
+	if (comPontos) {
+		cnpj = ''+n1+n2+'.'+n3+n4+n5+'.'+n6+n7+n8+'/'+n9+n10+n11+n12+'-'+d1+d2;
+	}
+	else {
+		cnpj = ''+n1+n2+n3+n4+n5+n6+n7+n8+n9+n10+n11+n12+d1+d2;
+	}
+	return cnpj
+}
+
+//log.info gerarCPF(true)
+//log.info gerarCPF(false)
+//log.info gerarCnpj(true)
+//log.info gerarCnpj(false)
+
+testRunner.testCase.testSteps["prop"].setPropertyValue( "cliCPF", gerarCPF(false) )
+//testRunner.testCase.testSteps["prop"].setPropertyValue( "cliTelefone", gerarCPF(false) )
+
+def getLocalPropValueOne = testRunner.testCase.testSteps["prop"].getPropertyValue("cliCPF")
+//def getLocalPropValueTwo = testRunner.testCase.testSteps["prop"].getPropertyValue("cliTelefone")
+log.info(getLocalPropValueOne)
+//log.info(getLocalPropValueTwo)</script></con:config></con:testStep><con:testStep type="jdbc" name="GeraTelefone" id="f15172a9-444a-43f4-b0b2-10b4065cc965"><con:settings/><con:config xsi:type="con:JdbcRequestTestStep" convertColumnNamesToUpperCase="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:driver>com.microsoft.sqlserver.jdbc.SQLServerDriver</con:driver><con:connectionString>jdbc:sqlserver://10.10.20.23;databaseName=db_sicred_tecnica9;username=sicred;password=ps&amp;sicred</con:connectionString><con:query>SELECT CAST(FLOOR(RAND()*(50-1000)+9000) AS varchar(10)) as RAND
+
+</con:query><con:assertion type="JDBC Status" id="779fd060-01fe-4f4b-b298-2890ca0ee8d2" name="JDBC Status"/><con:assertion type="JDBC Timeout" id="a8c432c8-c8eb-4fd5-9418-37eaf1cdb12c" name="JDBC Timeout"/><con:properties/></con:config></con:testStep><con:testStep type="jdbc" name="GeraValor" id="ab21dee1-db45-498e-8607-c74de0934d54"><con:settings/><con:config xsi:type="con:JdbcRequestTestStep" convertColumnNamesToUpperCase="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:driver>com.microsoft.sqlserver.jdbc.SQLServerDriver</con:driver><con:connectionString>jdbc:sqlserver://10.10.20.23;databaseName=db_sicred_tecnica9;username=sicred;password=ps&amp;sicred</con:connectionString><con:query>SELECT CAST(FLOOR(RAND()*(50-2000)+4000) AS varchar(10)) as VALOR
+
+</con:query><con:assertion type="JDBC Status" id="779fd060-01fe-4f4b-b298-2890ca0ee8d2" name="JDBC Status"/><con:assertion type="JDBC Timeout" id="a8c432c8-c8eb-4fd5-9418-37eaf1cdb12c" name="JDBC Timeout"/><con:properties/></con:config></con:testStep><con:testStep type="transfer" name="FoneTransfer" id="c3c42df7-53bf-40c4-b31a-6c10e7ba012d"><con:settings/><con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>num</con:name><con:sourceType>ResponseAsXml</con:sourceType><con:sourceStep>GeraTelefone</con:sourceStep><con:sourcePath>//RAND[1]</con:sourcePath><con:targetType>cliTelefonerand</con:targetType><con:targetStep>prop</con:targetStep><con:upgraded>true</con:upgraded></con:transfers><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>vlrOp</con:name><con:sourceType>ResponseAsXml</con:sourceType><con:sourceStep>GeraValor</con:sourceStep><con:sourcePath>//VALOR[1]</con:sourcePath><con:targetType>valorOp</con:targetType><con:targetStep>prop</con:targetStep><con:upgraded>true</con:upgraded></con:transfers></con:config></con:testStep><con:testStep type="request" name="GravarProposta" id="f2714c6d-1b9e-4fe1-9782-779d74b889ca"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>BasicHttpBinding_IServicoPropostas</con:interface><con:operation>GravarProposta</con:operation><con:request name="GravarProposta" id="a2540cfd-e878-4f16-917d-37139cc36754"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.10.20.200/WcfPropostas/ServicoPropostas.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/" xmlns:wcf="http://schemas.datacontract.org/2004/07/WcfPropostas">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <tem:GravarProposta>
+         <!--Optional:-->
+         <tem:Proposta>
+            <!--Optional:-->
+            <wcf:Loja>${prop#loja}</wcf:Loja>
+            <!--Optional:-->
+            <wcf:Lojista>${prop#lojista}</wcf:Lojista>
+            <!--Optional:-->
+            <wcf:Parceiro>${prop#parceiro}</wcf:Parceiro>
+            <!--Optional:-->
+            <wcf:Senha>${prop#senha}</wcf:Senha>
+            <!--Optional:-->
+            <wcf:Usuario>${prop#usuario}</wcf:Usuario>
+            <!--Optional:-->
+            <wcf:Origem>${prop#origem}</wcf:Origem>
+            <!--Optional:-->
+            <wcf:dadosAdicionais>
+				<wcf:DadosAdicionais>
+					<wcf:Campo>CPFATENDENTE</wcf:Campo>
+					<wcf:Valor>84668458015</wcf:Valor>
+				</wcf:DadosAdicionais>
+		 </wcf:dadosAdicionais>
+            <wcf:operacao>      
+               <!--Optional:-->
+               <wcf:DtPrimeiroVencimento>${prop#dataPriVencimento}</wcf:DtPrimeiroVencimento>
+               <!--Optional:-->
+               <wcf:Midia>88</wcf:Midia>
+               <!--Optional:-->
+               <wcf:Prazo>${prop#prazo}</wcf:Prazo>
+               <!--Optional:-->
+               <wcf:Produto>${prop#produto}</wcf:Produto>
+               <!--Optional:-->
+               <wcf:Seguro>${prop#seguro}</wcf:Seguro>
+               <!--Optional:-->
+               <wcf:TipoContrato>${prop#tipocontrato}</wcf:TipoContrato>
+               <!--Optional:-->
+               <wcf:ValorOperacao>${prop#valorOp}</wcf:ValorOperacao>
+               <!--Optional:-->
+               <wcf:cliente>         
+                  <!--Optional:-->
+                <wcf:CPF_CNPJ>${prop#cliCPF}</wcf:CPF_CNPJ>
+                  <!--Optional:-->
+                  <wcf:DATANASCIMENTO>${prop#cliDataNasc}</wcf:DATANASCIMENTO>
+                 <!--Optional:-->
+                  <wcf:EMAIL>${prop#cliMail}</wcf:EMAIL>
+               
+                  <wcf:NOME>${prop#cliNome}${prop#cliTelefonerand}</wcf:NOME>
+                  <!--Optional:-->
+                  <wcf:SEXO>${prop#cliSexo}</wcf:SEXO>
+                  <!--Optional:-->
+                  <wcf:Telefone>           
+                     <!--Optional:-->
+                     <wcf:DDD>011</wcf:DDD>
+                     <!--Optional:-->
+                     <wcf:NUMERO>${prop#cliTelefone}${prop#cliTelefonerand}</wcf:NUMERO>
+                  </wcf:Telefone>
+                   <wcf:emprego>                                         
+                     <wcf:CLASSEPROFIS>02</wcf:CLASSEPROFIS>                            
+                     <wcf:RENDA>${prop#renda}</wcf:RENDA>            
+                  </wcf:emprego>
+         
+                  <wcf:enderecoresidencial>                                      
+                     <wcf:CEP>04532080</wcf:CEP>                                 
+                  </wcf:enderecoresidencial>        
+               </wcf:cliente>
+            </wcf:operacao>
+            
+         </tem:Proposta>
+      </tem:GravarProposta>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="41f9735d-bc75-475d-ab3f-c83b7a367e87"/><con:assertion type="SOAP Fault Assertion" id="cea1c5ea-cac6-4ca5-abd0-d1ee8f7b187c" name="Not SOAP Fault"/><con:assertion type="Schema Compliance" id="506ff789-f8de-4c4a-b3d2-7d275901e64d" name="Schema Compliance"><con:configuration><definition/></con:configuration></con:assertion><con:assertion type="Simple Contains" id="a894d6be-0045-4016-b98a-b18967471554" name="Contains"><con:configuration><token>&lt;a:Codigo>200&lt;/a:Codigo></token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="transfer" name="CodPropTransfer" id="c4f0517b-9db2-4442-891b-c6bc1d11e037"><con:settings/><con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>nr</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>GravarProposta</con:sourceStep><con:sourcePath>declare namespace a='http://schemas.datacontract.org/2004/07/WcfPropostas';
+//a:NumeroProposta</con:sourcePath><con:targetType>num</con:targetType><con:targetStep>resultprop</con:targetStep><con:type>XPATH</con:type><con:targetTransferType>XPATH</con:targetTransferType><con:upgraded>true</con:upgraded></con:transfers></con:config></con:testStep><con:testStep type="properties" name="resultprop" id="f2abaebd-406a-47b3-9c7a-e391e801442c"><con:settings/><con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:properties><con:property><con:name>num</con:name><con:value>3805683622</con:value></con:property></con:properties></con:config></con:testStep><con:testStep type="request" name="ConsultaStatus" id="3e7383c5-ee6d-4bb6-9ef9-34d23cd91ae0"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>BasicHttpBinding_IServicoPropostas</con:interface><con:operation>ConsultarStatus</con:operation><con:request name="ConsultaStatus" id="ef60c470-032a-45ec-8c7d-b6f39320c37d"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.10.20.200/WcfPropostas/ServicoPropostas.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/" xmlns:wcf="http://schemas.datacontract.org/2004/07/WcfPropostas">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <tem:ConsultarStatus>
+         <tem:Proposta>
+            <!--Optional:-->
+            <wcf:Loja>${prop#loja}</wcf:Loja>
+            <!--Optional:-->
+            <wcf:Lojista>${prop#lojista}</wcf:Lojista>
+            <!--Optional:-->
+            <wcf:Parceiro>${prop#parceiro}</wcf:Parceiro>
+            <!--Optional:-->
+            <wcf:Senha>${prop#senha}</wcf:Senha>
+            <!--Optional:-->
+            <wcf:Usuario>${prop#usuario}</wcf:Usuario>
+            <!--Optional:-->
+            <wcf:proposta>${resultprop#num}</wcf:proposta>
+         </tem:Proposta>
+      </tem:ConsultarStatus>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="e8bf6c5c-6159-4b04-bd3d-d61c8745541f"/><con:assertion type="Schema Compliance" id="b5cf1e8c-2d6e-4ec9-a24c-8695d54887a9"><con:configuration/></con:assertion><con:assertion type="SOAP Fault Assertion" id="3349028f-811e-48a6-9210-f3135f1e5768"/><con:assertion type="Simple Contains" id="b90eb8e8-455b-4f63-a71b-30224c8aea2e" name="Contains"><con:configuration><token>&lt;a:Codigo>200&lt;/a:Codigo></token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="ConsultarProposta" id="9f7c35ce-2320-4761-ac98-a0265769d931"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>BasicHttpBinding_IServicoPropostas</con:interface><con:operation>ConsultarProposta</con:operation><con:request name="ConsultarProposta" id="3538b647-3505-4190-8dd0-b15a4f03136b"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.10.20.200/WcfPropostas/ServicoPropostas.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/" xmlns:wcf="http://schemas.datacontract.org/2004/07/WcfPropostas">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <tem:ConsultarProposta>
+         <!--Optional:-->
+         <tem:Proposta>
+            <!--Optional:-->
+            <wcf:Loja>${prop#loja}</wcf:Loja>
+            <!--Optional:-->
+            <wcf:Lojista>${prop#lojista}</wcf:Lojista>
+            <!--Optional:-->
+            <wcf:Parceiro>${prop#parceiro}</wcf:Parceiro>
+            <!--Optional:-->
+            <wcf:Senha>${prop#senha}</wcf:Senha>
+            <!--Optional:-->
+            <wcf:Usuario>${prop#usuario}</wcf:Usuario>
+            <!--Optional:-->
+            <wcf:NumeroProposta>${resultprop#num}</wcf:NumeroProposta>
+         </tem:Proposta>
+      </tem:ConsultarProposta>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="a5c8865c-1650-4358-bc0c-786333f1d2c0"/><con:assertion type="Schema Compliance" id="18004447-510b-47e6-a596-173b5cfced7e"><con:configuration/></con:assertion><con:assertion type="SOAP Fault Assertion" id="b7fa7932-4e09-489f-8128-5c224f1bc64d"/><con:assertion type="Simple Contains" id="5c59017d-2bd2-4de3-95ef-d6ad91706149" name="Contains"><con:configuration><token>&lt;a:Codigo>200&lt;/a:Codigo></token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="ConsultaLoja" id="2f0c8c47-ff20-4595-9933-4d7e7a0dcd00"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>BasicHttpBinding_IServicoPropostas</con:interface><con:operation>ConsultaLoja</con:operation><con:request name="ConsultaLoja" id="4c96a610-effa-469f-b510-f88d1ee2cf18"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.10.20.200/WcfPropostas/ServicoPropostas.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/" xmlns:wcf="http://schemas.datacontract.org/2004/07/WcfPropostas">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <tem:ConsultaLoja><!--Optional:-->
+         <tem:usuario>
+		<!--Optional:-->
+            <wcf:Parceiro>${prop#parceiro}</wcf:Parceiro>
+            <!--Optional:-->
+            <wcf:Senha>${prop#senha}</wcf:Senha>
+            <!--Optional:-->
+            <wcf:Usuario>${prop#usuario}</wcf:Usuario>
+         </tem:usuario>
+      </tem:ConsultaLoja>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="9092f395-a410-4fcc-b6fd-1ab9eadd2646"/><con:assertion type="Schema Compliance" id="99e72cd4-5c9f-4c9e-a434-7471d4f37bd4"><con:configuration/></con:assertion><con:assertion type="SOAP Fault Assertion" id="97c0b8e7-5401-44e1-b8ea-8a74eff1009c"/><con:assertion type="Simple Contains" id="0f49deba-d3cf-46f3-b8d2-a4dbc249d70f" name="Contains"><con:configuration><token>&lt;a:Codigo>200&lt;/a:Codigo></token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="ConsultarHistorico" id="c2624768-a46d-4a5a-8e72-b207ac4b6403"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>BasicHttpBinding_IServicoPropostas</con:interface><con:operation>ConsultarHistorico</con:operation><con:request name="ConsultarHistorico" id="901b0a0e-eaa8-48d6-bb85-ce20661c22b2"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.10.20.200/WcfPropostas/ServicoPropostas.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/" xmlns:wcf="http://schemas.datacontract.org/2004/07/WcfPropostas">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <tem:ConsultarHistorico><!--Optional:-->
+         <tem:Proposta>
+            <!--Optional:-->
+            <wcf:Loja>${prop#loja}</wcf:Loja>
+            <!--Optional:-->
+            <wcf:Lojista>${prop#lojista}</wcf:Lojista>
+            <!--Optional:-->
+            <wcf:Parceiro>${prop#parceiro}</wcf:Parceiro>
+            <!--Optional:-->
+            <wcf:Senha>${prop#senha}</wcf:Senha>
+            <!--Optional:-->
+            <wcf:Usuario>${prop#usuario}</wcf:Usuario>
+            <!--Optional:-->
+            <wcf:proposta>${resultprop#num}</wcf:proposta>
+         </tem:Proposta>
+      </tem:ConsultarHistorico>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="62f1872b-7292-4353-b80e-ad9624532c64"/><con:assertion type="Schema Compliance" id="10b4d5e3-0759-434d-b4d0-13b1e9128228"><con:configuration/></con:assertion><con:assertion type="SOAP Fault Assertion" id="c26856a0-0500-4ba9-82e3-3376219577dc"/><con:assertion type="Simple Contains" id="466804b1-afa5-4cc3-977f-8161a3e11213" name="Contains"><con:configuration><token>&lt;a:Codigo>200&lt;/a:Codigo></token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="ConsultarPropostaCPF" id="9242dc20-3eef-4cb5-b839-1a4c1c323759"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>BasicHttpBinding_IServicoPropostas</con:interface><con:operation>ConsultarPropostaCPF</con:operation><con:request name="ConsultarPropostaCPF" id="97807b80-5c73-4049-b08b-eedc8675c4b9"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.10.20.200/WcfPropostas/ServicoPropostas.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/" xmlns:wcf="http://schemas.datacontract.org/2004/07/WcfPropostas">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <tem:ConsultarPropostaCPF><!--Optional:-->
+         <tem:Proposta>
+            <!--Optional:-->
+            <wcf:CPF>${prop#cliCPF}</wcf:CPF>
+            <!--Optional:-->
+            <wcf:Parceiro>${prop#parceiro}</wcf:Parceiro>
+            <!--Optional:-->
+            <wcf:Senha>${prop#senha}</wcf:Senha>
+            <!--Optional:-->
+            <wcf:Usuario>${prop#usuario}</wcf:Usuario>
+         </tem:Proposta>
+      </tem:ConsultarPropostaCPF>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="a3ca0425-6953-4afe-b7ff-6d53de8331b4"/><con:assertion type="Schema Compliance" id="cfe65902-08a1-414c-bdd3-e32b33152a95"><con:configuration/></con:assertion><con:assertion type="SOAP Fault Assertion" id="c8119ee6-4394-4af9-9ada-c1f838ddbcf3"/><con:assertion type="Simple Contains" id="b13b8712-8a4f-4ab0-8f3b-b5cf6721ba6e" name="Contains"><con:configuration><token>&lt;a:Codigo>200&lt;/a:Codigo></token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="ListaPlano" id="da444c74-9b3e-42b1-a098-84c37ee14fb4"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>BasicHttpBinding_IServicoPropostas</con:interface><con:operation>ListarPlanos</con:operation><con:request name="ListaPlano" id="b554411b-9d0b-4da1-8a94-346e2d98fa55"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.10.20.200/WcfPropostas/ServicoPropostas.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/" xmlns:wcf="http://schemas.datacontract.org/2004/07/WcfPropostas">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <tem:ListarPlanos><!--Optional:-->
+         <tem:Proposta>
+            <wcf:Loja>${prop#loja}</wcf:Loja>
+            <!--Optional:-->
+            <wcf:Lojista>${prop#lojista}</wcf:Lojista>
+            <!--Optional:-->
+            <wcf:Parceiro>${prop#parceiro}</wcf:Parceiro>
+             <!--Optional:-->
+            <wcf:Produto>${prop#produto}</wcf:Produto>
+            <!--Optional:-->
+            <wcf:Senha>${prop#senha}</wcf:Senha>
+            <!--Optional:-->
+            <wcf:Usuario>${prop#usuario}</wcf:Usuario>
+         </tem:Proposta>
+      </tem:ListarPlanos>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="52c08517-269e-4503-ba6b-d488136de0c7"/><con:assertion type="Schema Compliance" id="3708d8ea-6c22-4502-a6d8-9457fe236191"><con:configuration/></con:assertion><con:assertion type="SOAP Fault Assertion" id="e758f5f7-fe0c-4414-a0aa-7967cb312510"/><con:assertion type="Simple Contains" id="15ade6db-7c0a-49d9-b5d5-da989d807316" name="Contains"><con:configuration><token>&lt;a:Codigo>200&lt;/a:Codigo></token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="transfer" name="PlanTransfer" id="8b213f7b-4a1b-43a2-b58b-67cbd7e0514b"><con:settings/><con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>cod</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>ListaPlano</con:sourceStep><con:sourcePath>declare namespace  a='http://schemas.datacontract.org/2004/07/WcfPropostas';
+//a:plano[1]</con:sourcePath><con:targetType>cod</con:targetType><con:targetStep>resultPlan</con:targetStep><con:upgraded>true</con:upgraded></con:transfers></con:config></con:testStep><con:testStep type="properties" name="resultPlan" id="b4c49ce1-d927-4642-8dd4-5d774b1fd31b"><con:settings/><con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:properties><con:property><con:name>cod</con:name><con:value>9615</con:value></con:property></con:properties></con:config></con:testStep><con:testStep type="request" name="Calculadora" id="3a340b3f-6de5-4b5a-b2a0-d80ecc0afba9"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>BasicHttpBinding_IServicoPropostas</con:interface><con:operation>Calculadora</con:operation><con:request name="Calculadora" id="c81ea60e-ef60-44ab-9e71-a220e2837f62"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.10.20.200/WcfPropostas/ServicoPropostas.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/" xmlns:wcf="http://schemas.datacontract.org/2004/07/WcfPropostas">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <tem:Calculadora><!--Optional:-->
+         <tem:Proposta>
+            <!--Optional:-->
+            <wcf:Loja>${prop#loja}</wcf:Loja>
+            <!--Optional:-->
+            <wcf:Lojista>${prop#lojista}</wcf:Lojista>
+            <!--Optional:-->
+            <wcf:Parceiro>${prop#parceiro}</wcf:Parceiro>
+            <!--Optional:-->
+            <wcf:Senha>${prop#senha}</wcf:Senha>
+            <!--Optional:-->
+            <wcf:Usuario>${prop#usuario}</wcf:Usuario>
+            <!--Optional:-->
+            <wcf:CPF>${prop#cliCPF}</wcf:CPF>
+            <!--Optional:-->
+            <wcf:DataPrimeiroVencimento>${prop#dataPriVencimento}</wcf:DataPrimeiroVencimento>
+            <!--Optional:-->
+            <wcf:Seguro>${prop#seguro}</wcf:Seguro>
+            <!--Optional:-->
+            <wcf:origemOferta>${prop#origem}</wcf:origemOferta>
+            <!--Optional:-->
+            <wcf:plano>${resultPlan#cod}</wcf:plano>
+            <!--Optional:-->
+            <wcf:prazoMaximo>${prop#prazo}</wcf:prazoMaximo>
+            <!--Optional:-->
+            <wcf:prazoMinimo>${prop#prazo}</wcf:prazoMinimo>
+            <!--Optional:-->
+            <wcf:produto>${prop#produto}</wcf:produto>
+            <!--Optional:-->
+            <wcf:proposta>${resultprop#num}</wcf:proposta>
+            <!--Optional:-->
+            <wcf:valorCredito>${prop#valorOp}</wcf:valorCredito>
+            <!--Optional:-->
+            <wcf:valorParcela>0</wcf:valorParcela>
+         </tem:Proposta>
+      </tem:Calculadora>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="bcea7bef-c9b3-4e0d-9178-80b0d34fff32"/><con:assertion type="Schema Compliance" id="7096a73e-a033-47a6-b5fa-5a9eb37eb97d"><con:configuration/></con:assertion><con:assertion type="SOAP Fault Assertion" id="a863057f-1c2e-489e-9865-7843f2337806"/><con:assertion type="Simple Contains" id="da36cd58-61cd-4aa3-ae2c-ba71e4396ba1" name="Contains"><con:configuration><token>&lt;a:Codigo>200&lt;/a:Codigo></token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="ListarPrazos" id="eac4c4b2-77ea-4f68-9d65-00d7d68b4aa1"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>BasicHttpBinding_IServicoPropostas</con:interface><con:operation>ListarPrazos</con:operation><con:request name="ListarPrazos" id="9ef0b722-ea4f-469f-9a95-20c11a660d03"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.10.20.200/WcfPropostas/ServicoPropostas.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/" xmlns:wcf="http://schemas.datacontract.org/2004/07/WcfPropostas">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <tem:ListarPrazos><!--Optional:-->
+         <tem:Proposta>
+            <!--Optional:-->
+            <wcf:Loja>${prop#loja}</wcf:Loja>
+            <!--Optional:-->
+            <wcf:Lojista>${prop#lojista}</wcf:Lojista>
+            <!--Optional:-->
+            <wcf:Parceiro>${prop#parceiro}</wcf:Parceiro>
+            <!--Optional:-->
+            <wcf:Plano>${resultPlan#cod}</wcf:Plano>
+            <!--Optional:-->
+            <wcf:Produto>${prop#produto}</wcf:Produto>
+            <!--Optional:-->
+            <wcf:Senha>${prop#senha}</wcf:Senha>
+            <!--Optional:-->
+            <wcf:Usuario>${prop#usuario}</wcf:Usuario>
+         </tem:Proposta>
+      </tem:ListarPrazos>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="f3736a23-25d8-4fb9-babe-efdade6e06e6"/><con:assertion type="Schema Compliance" id="323ca9c5-ecca-4e2a-a981-55a5e2084a80"><con:configuration/></con:assertion><con:assertion type="SOAP Fault Assertion" id="ad76353c-e2de-4cd1-bb2d-77c011796a13"/><con:assertion type="Simple Contains" id="d4c6c7eb-2660-48b4-aa7a-8b0fbcef3cc5" name="Contains"><con:configuration><token>&lt;a:Codigo>200&lt;/a:Codigo></token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="ListaProdutos" id="0a92ef91-068e-4ce3-9bdd-124ef40085b3"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>BasicHttpBinding_IServicoPropostas</con:interface><con:operation>ListarProdutos</con:operation><con:request name="ListaProdutos" id="0d10e30d-41df-413e-9fec-09eb39b2b3b0"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.10.20.200/WcfPropostas/ServicoPropostas.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/" xmlns:wcf="http://schemas.datacontract.org/2004/07/WcfPropostas">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <tem:ListarProdutos><!--Optional:-->
+         <tem:Proposta>
+            <!--Optional:-->
+            <wcf:Loja>${prop#loja}</wcf:Loja>
+            <!--Optional:-->
+            <wcf:Lojista>${prop#lojista}</wcf:Lojista>
+            <!--Optional:-->
+            <wcf:Parceiro>${prop#parceiro}</wcf:Parceiro>
+            <!--Optional:-->
+            <wcf:Senha>${prop#senha}</wcf:Senha>
+            <!--Optional:-->
+            <wcf:Usuario>${prop#usuario}</wcf:Usuario>
+         </tem:Proposta>
+      </tem:ListarProdutos>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="503346c1-87e8-4052-9227-4a261f12fda1"/><con:assertion type="Schema Compliance" id="e1844a1e-b17e-4377-9e9b-2b0f27285725"><con:configuration/></con:assertion><con:assertion type="SOAP Fault Assertion" id="3a1ef925-15e7-491b-9b26-9aa04557aa36"/><con:assertion type="Simple Contains" id="554eaa83-6286-4435-aa49-4315eeb1b9ea" name="Contains"><con:configuration><token>&lt;a:Codigo>200&lt;/a:Codigo></token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="CancelaProposta" id="b01dc42b-aa6a-4efe-ae2d-b4c34813489f" disabled="true"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>BasicHttpBinding_IServicoPropostas</con:interface><con:operation>CancelaProposta</con:operation><con:request name="CancelaProposta" id="3a3dc04b-b4e8-4cdf-99e2-ab80ca8cd826"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.10.20.200/WcfPropostas/ServicoPropostas.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/" xmlns:wcf="http://schemas.datacontract.org/2004/07/WcfPropostas">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <tem:CancelaProposta><!--Optional:-->
+         <tem:Proposta>
+            <!--Optional:-->
+            <wcf:Loja>${prop#loja}</wcf:Loja>
+            <!--Optional:-->
+            <wcf:Lojista>${prop#lojista}</wcf:Lojista>
+            <!--Optional:-->
+            <wcf:Parceiro>${prop#parceiro}</wcf:Parceiro>
+            <!--Optional:-->
+            <wcf:Senha>${prop#senha}</wcf:Senha>
+            <!--Optional:-->
+            <wcf:Usuario>${prop#usuario}</wcf:Usuario>
+            <!--Optional:-->
+            <wcf:proposta>${resultprop#num}</wcf:proposta>
+         </tem:Proposta>
+      </tem:CancelaProposta>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="9c5856d5-4fb5-42d8-ac60-fbe35d809cfe"/><con:assertion type="Schema Compliance" id="df09d10b-dbfc-4b11-ab22-c80a50c923a3"><con:configuration/></con:assertion><con:assertion type="SOAP Fault Assertion" id="31543fa9-428a-460a-9c5e-4670189cee2d"/><con:assertion type="Simple Contains" id="ecd0a1b1-59d4-49de-8a75-9cd0dd4ad62e" name="Contains"><con:configuration><token>&lt;a:Codigo>200&lt;/a:Codigo></token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" id="9587bc97-96e0-4b37-9c3b-245b7010f8de"><con:configuration/></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="ListarPendencias" id="2d4e1a83-1ffa-4381-afae-bc58f4ceb899"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>BasicHttpBinding_IServicoPropostas</con:interface><con:operation>ListarPendencia</con:operation><con:request name="ListarPendencias" id="bb5a7788-343d-4dcd-8c01-dbca65fe5136"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.10.20.200/WcfPropostas/ServicoPropostas.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/" xmlns:wcf="http://schemas.datacontract.org/2004/07/WcfPropostas">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <tem:ListarPendencia><!--Optional:-->
+         <tem:Proposta>
+            <!--Optional:-->
+            <wcf:Loja>${prop#loja}</wcf:Loja>
+            <!--Optional:-->
+            <wcf:Lojista>${prop#lojista}</wcf:Lojista>
+            <!--Optional:-->
+            <wcf:Parceiro>${prop#parceiro}</wcf:Parceiro>
+            <!--Optional:-->
+            <wcf:Senha>${prop#senha}</wcf:Senha>
+            <!--Optional:-->
+            <wcf:Usuario>${prop#usuario}</wcf:Usuario>
+            <!--Optional:-->
+            <wcf:proposta>${resultprop#num}</wcf:proposta>
+         </tem:Proposta>
+      </tem:ListarPendencia>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="d8969b77-e0e6-40cf-bd9c-b6e50ab21867"/><con:assertion type="Schema Compliance" id="08d81cd5-827d-44e7-8f72-3fdb28042d86"><con:configuration/></con:assertion><con:assertion type="SOAP Fault Assertion" id="ec69377c-373f-41d6-9917-f18427b68934"/><con:assertion type="Simple Contains" id="69e01d36-a4fb-4fdc-8ff8-b211b9f990ad" name="Contains"><con:configuration><token>&lt;a:Codigo>200&lt;/a:Codigo></token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="delay" name="Delay" id="33c75653-cacb-4902-b4b1-b97eb34aa058"><con:settings/><con:config><delay>35000</delay></con:config></con:testStep><con:testStep type="request" name="ConsultaOfertas" id="b5530274-5faf-4477-85e4-21cec7ea7111"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>BasicHttpBinding_IServicoPropostas</con:interface><con:operation>ConsultarOfertas</con:operation><con:request name="ConsultaOfertas" id="198bd128-bd08-449f-b151-7709e577a655"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.10.20.200/WcfPropostas/ServicoPropostas.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/" xmlns:wcf="http://schemas.datacontract.org/2004/07/WcfPropostas">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <tem:ConsultarOfertas><!--Optional:-->
+         <tem:Proposta>
+            <!--Optional:-->
+            <wcf:Loja>${prop#loja}</wcf:Loja>
+            <!--Optional:-->
+            <wcf:Lojista>${prop#lojista}</wcf:Lojista>
+            <!--Optional:-->
+            <wcf:Parceiro>${prop#parceiro}</wcf:Parceiro>
+            <!--Optional:-->
+            <wcf:Senha>${prop#senha}</wcf:Senha>
+            <!--Optional:-->
+            <wcf:Usuario>${prop#usuario}</wcf:Usuario>
+            <!--Optional:-->
+            <wcf:origemOferta>${prop#origem}</wcf:origemOferta>
+            <!--Optional:-->
+            <wcf:proposta>${resultprop#num}</wcf:proposta>
+         </tem:Proposta>
+      </tem:ConsultarOfertas>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="600c583f-5e13-4292-8cbb-3a30994bab39"/><con:assertion type="Schema Compliance" id="1c0a9610-d46a-4b20-aed0-d3013b4a9103"><con:configuration/></con:assertion><con:assertion type="SOAP Fault Assertion" id="b1b27cf2-8ef4-4347-8768-92bb68caa5fd"/><con:assertion type="Simple Contains" id="50e2494b-1b41-4027-afb4-4cb4e101d54c" name="Contains"><con:configuration><token>&lt;a:Codigo>200&lt;/a:Codigo></token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="jdbc" name="BuscaOferta" id="500360e7-e176-4965-9208-e89dfcfbf449"><con:settings/><con:config xsi:type="con:JdbcRequestTestStep" convertColumnNamesToUpperCase="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:driver>com.microsoft.sqlserver.jdbc.SQLServerDriver</con:driver><con:connectionString>jdbc:sqlserver://10.10.20.23;databaseName=db_sicred_tecnica9;username=sicred;password=ps&amp;sicred</con:connectionString><con:query>SELECT PRAZO = MAX(OFERTA.PRAZO), 
+OFERTA = MAX(ID_OFERTA) 
+ FROM H2H_OFERTAS OFERTA
+ INNER JOIN (SELECT PRAZO = MAX(PRAZO) FROM H2H_OFERTAS WHERE PROPOSTA = '${resultprop#num}' AND ATIVO = 'S' AND PRODUTO = '${prop#produto}') MAIOR_PRAZO ON MAIOR_PRAZO.PRAZO > OFERTA.PRAZO
+ WHERE PROPOSTA = '${resultprop#num}' AND ATIVO = 'S' AND PRODUTO = '${prop#produto}'</con:query><con:assertion type="JDBC Status" id="779fd060-01fe-4f4b-b298-2890ca0ee8d2" name="JDBC Status"/><con:assertion type="JDBC Timeout" id="a8c432c8-c8eb-4fd5-9418-37eaf1cdb12c" name="JDBC Timeout"/><con:properties/></con:config></con:testStep><con:testStep type="transfer" name="OfertaTransfer" id="a7a0e385-c02f-4b03-ad8a-96b73ff73bfc"><con:settings/><con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>id</con:name><con:sourceType>ResponseAsXml</con:sourceType><con:sourceStep>BuscaOferta</con:sourceStep><con:sourcePath>//OFERTA[1]</con:sourcePath><con:targetType>num</con:targetType><con:targetStep>idOferta</con:targetStep><con:type>XPATH</con:type><con:upgraded>true</con:upgraded></con:transfers></con:config></con:testStep><con:testStep type="properties" name="idOferta" id="5a3bbc33-b95f-409b-9560-5cab5bd69881"><con:settings/><con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:properties><con:property><con:name>num</con:name><con:value>23347044</con:value></con:property><con:property><con:name>plano</con:name><con:value>9846</con:value></con:property><con:property><con:name>seguro</con:name><con:value>2</con:value></con:property><con:property><con:name>prazo</con:name><con:value>021</con:value></con:property><con:property><con:name>produto</con:name><con:value>000712</con:value></con:property></con:properties></con:config></con:testStep><con:testStep type="request" name="SelecionarOfertas" id="1d562823-60b9-4ac8-b1f2-d967f3650232"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>BasicHttpBinding_IServicoPropostas</con:interface><con:operation>EscolherOferta</con:operation><con:request name="SelecionarOfertas" id="c052066b-9136-49c3-a2c1-0246f69010ff"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.10.20.200/WcfPropostas/ServicoPropostas.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/" xmlns:wcf="http://schemas.datacontract.org/2004/07/WcfPropostas">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <tem:EscolherOferta><!--Optional:-->
+         <tem:Proposta>
+            <!--Optional:-->
+            <wcf:Loja>${prop#loja}</wcf:Loja>
+            <!--Optional:-->
+            <wcf:Lojista>${prop#lojista}</wcf:Lojista>
+            <!--Optional:-->
+            <wcf:Parceiro>${prop#parceiro}</wcf:Parceiro>
+            <!--Optional:-->
+            <wcf:Senha>${prop#senha}</wcf:Senha>
+            <!--Optional:-->
+            <wcf:Usuario>${prop#usuario}</wcf:Usuario>
+            <!--Optional:-->
+            <wcf:idOferta>${idOferta#num}</wcf:idOferta>
+            <!--Optional:-->
+            <wcf:proposta>${resultprop#num}</wcf:proposta>
+         </tem:Proposta>
+      </tem:EscolherOferta>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="b2114376-6c75-4bb2-9722-a444645ee209"/><con:assertion type="Schema Compliance" id="2c688f2c-a053-46e5-bd43-8e2d36329c2b"><con:configuration/></con:assertion><con:assertion type="SOAP Fault Assertion" id="554fdd7f-4497-4493-81f8-0d36eb0ca86d"/><con:assertion type="Simple Contains" id="715baf89-2060-4858-a25b-26171ae563f4" name="Contains"><con:configuration><token>&lt;a:Codigo>200&lt;/a:Codigo></token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="delay" name="Delay to Comp" id="d5afd520-6d36-4cc9-93b7-c958c56f4e94"><con:settings/><con:config><delay>35000</delay></con:config></con:testStep><con:testStep type="request" name="AlterarProposta" id="3c6002b7-24bb-4867-8b0d-6d2212cd31ad"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>BasicHttpBinding_IServicoPropostas</con:interface><con:operation>GravarProposta</con:operation><con:request name="AlterarProposta" id="ab828b85-c5f6-4376-b723-83524cb1673f"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.10.20.200/WcfPropostas/ServicoPropostas.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope
+	xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+	xmlns:tem="http://tempuri.org/"
+	xmlns:ws="http://schemas.datacontract.org/2004/07/WcfPropostas">
+	<soapenv:Header/>
+	<soapenv:Body>
+		<tem:GravarProposta>
+			<tem:Proposta>
+				<!--Optional:-->
+				<ws:Loja>${prop#loja}</ws:Loja>
+				<!--Optional:-->
+				<ws:Lojista>${prop#lojista}</ws:Lojista>
+				<!--Optional:-->
+				<ws:Parceiro>${prop#parceiro}</ws:Parceiro>
+				<!--Optional:-->
+				<ws:Senha>${prop#senha}</ws:Senha>
+				<!--Optional:-->
+				<ws:Usuario>${prop#usuario}</ws:Usuario>
+				<!--Optional:-->
+				<ws:NumeroProposta>${resultprop#num}</ws:NumeroProposta>
+				<!--Optional:-->
+				<ws:Origem>${prop#origem}</ws:Origem>
+				<!--Optional:-->
+			            <!--Optional:-->
+ 		           <ws:dadosAdicionais>
+					<ws:DadosAdicionais>
+						<ws:Campo>CPFATENDENTE</ws:Campo>
+						<ws:Valor>84668458015</ws:Valor>
+					</ws:DadosAdicionais>
+				 </ws:dadosAdicionais>
+				<ws:operacao>
+					<ws:DtPrimeiroVencimento>${prop#dataPriVencimento}</ws:DtPrimeiroVencimento>
+					<ws:Midia>88</ws:Midia>
+					<ws:Produto>${prop#produto}</ws:Produto>
+					<ws:Seguro>${prop#seguro}</ws:Seguro>
+					<ws:TipoContrato>${prop#tipocontrato}</ws:TipoContrato>
+					<ws:cliente>
+						<ws:CPF_CNPJ>${prop#cliCPF}</ws:CPF_CNPJ>
+						<ws:DATANASCIMENTO>${prop#cliDataNasc}</ws:DATANASCIMENTO>
+						<ws:ESCOLARIDADE>6</ws:ESCOLARIDADE>
+						<ws:ESTADOCIVIL>S</ws:ESTADOCIVIL>
+						<ws:NACIONALIDADE>01</ws:NACIONALIDADE>
+						<ws:NOME>${prop#cliNome}${prop#cliTelefonerand}</ws:NOME>
+						<ws:SEXO>${prop#cliSexo}</ws:SEXO>
+						<ws:Telefone>
+							<ws:DDD>011</ws:DDD>
+							<ws:NUMERO>${prop#cliTelefone}${prop#cliTelefonerand}</ws:NUMERO>
+							<ws:TIPO>2</ws:TIPO>
+						</ws:Telefone>
+						<ws:docidentidade>
+							<ws:DATAEMISSAO>2009-03-31</ws:DATAEMISSAO>
+							<ws:EMISSOR>01</ws:EMISSOR>
+							<ws:NUMERO>534443059</ws:NUMERO>
+							<ws:TIPO>01</ws:TIPO>
+							<ws:UF>BA</ws:UF>
+						</ws:docidentidade>
+						<ws:emprego>
+							<ws:ATIVIDADE>1618</ws:ATIVIDADE>
+							<ws:CLASSEPROFIS>02</ws:CLASSEPROFIS>
+							<ws:DATAADMISSAO>2014-04-01</ws:DATAADMISSAO>
+							<ws:EMPRESA>Condominio Ed Noah</ws:EMPRESA>
+							<ws:EnderecoComercial>
+								<ws:BAIRRO>Itaim Bibi</ws:BAIRRO>
+								<ws:CEP>04532080</ws:CEP>
+								<ws:CIDADE>Sao Paulo</ws:CIDADE>
+								<ws:LOGRADOURO>Rua Jesuino Arruda</ws:LOGRADOURO>
+								<ws:NUMERO>60</ws:NUMERO>
+								<ws:UF>SP</ws:UF>
+								<ws:telefonecomercial>
+									<ws:DDD>011</ws:DDD>
+									<ws:NUMERO>31675919</ws:NUMERO>
+								</ws:telefonecomercial>
+							</ws:EnderecoComercial>
+							<ws:RENDA>${prop#renda}</ws:RENDA>
+						</ws:emprego>
+						<ws:enderecoresidencial>
+							<ws:BAIRRO>Itaim Bibi</ws:BAIRRO>
+							<ws:CEP>04532080</ws:CEP>
+							<ws:CIDADE>Sao Paulo</ws:CIDADE>
+							<ws:LOGRADOURO>Rua Jesuino Arruda</ws:LOGRADOURO>
+							<ws:NUMERO>60</ws:NUMERO>
+							<ws:TEMPOANO>2012</ws:TEMPOANO>
+							<ws:TEMPOMES>01</ws:TEMPOMES>
+							<ws:TIPOCORRESPOND>2</ws:TIPOCORRESPOND>
+							<ws:TIPORESIDENCIA>1</ws:TIPORESIDENCIA>
+							<ws:UF>SP</ws:UF>
+						</ws:enderecoresidencial>
+						<ws:filiacao>
+							<ws:MAE>Vitalina Mendes dos Santos</ws:MAE>
+						</ws:filiacao>
+						<ws:indicadores></ws:indicadores>
+						<ws:naturalidade>
+							<ws:CIDADE>Miguel Calmon</ws:CIDADE>
+							<ws:UF>BA</ws:UF>
+						</ws:naturalidade>
+						<ws:refbancaria1>
+							<ws:AGENCIA>1568</ws:AGENCIA>
+							<ws:BANCO>0237</ws:BANCO>
+							<ws:CIDADE>Sao Paulo</ws:CIDADE>
+							<ws:CONTA>10003377</ws:CONTA>
+							<ws:LIMITECHESP>0.00</ws:LIMITECHESP>
+							<ws:TEMPOANO>2016</ws:TEMPOANO>
+							<ws:TEMPOMES>06</ws:TEMPOMES>
+							<ws:TIPOCONTA>1</ws:TIPOCONTA>
+							<ws:TIPOCONTABANCARIA>2</ws:TIPOCONTABANCARIA>
+							<ws:UF>SP</ws:UF>
+						</ws:refbancaria1>
+					<ws:refpessoal1>
+						<ws:NOME>renalva</ws:NOME>
+						<ws:RELACIONAMENTO>irmã</ws:RELACIONAMENTO>
+						<ws:telefoneref>
+							<ws:DDD>73</ws:DDD>
+							<ws:NUMERO>988975545</ws:NUMERO>
+						</ws:telefoneref>
+					</ws:refpessoal1>
+					<ws:refpessoal2>
+						<ws:NOME>dernival</ws:NOME>
+						<ws:RELACIONAMENTO>cunhado</ws:RELACIONAMENTO>
+						<ws:telefoneref>
+							<ws:DDD>73</ws:DDD>
+							<ws:NUMERO>981652652</ws:NUMERO>
+						</ws:telefoneref>
+					</ws:refpessoal2>
+				</ws:cliente>
+				</ws:operacao>
+			</tem:Proposta>
+		</tem:GravarProposta>
+	</soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="b314ab96-ab6e-411d-ac24-08e0fba7afc3"/><con:assertion type="Schema Compliance" id="533999b5-eddc-4020-b148-774101faab27"><con:configuration/></con:assertion><con:assertion type="SOAP Fault Assertion" id="9aedcc4f-7a55-48a6-9fee-dff07194f391"/><con:assertion type="Simple Contains" id="6c8ada9f-dc8a-468f-a464-d5c4fa5cc554" name="Contains"><con:configuration><token>&lt;a:Codigo>200&lt;/a:Codigo></token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="delay" name="Delay to Pref" id="a91b661b-ced5-494a-9c88-bf6c36490a5e"><con:settings/><con:config><delay>35000</delay></con:config></con:testStep><con:testStep type="request" name="PreEfetivarProposta" id="b8d69e87-7ed8-472a-9b37-fe3dc52f38ad"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>BasicHttpBinding_IServicoPropostas</con:interface><con:operation>PreEfetivarProposta</con:operation><con:request name="PreEfetivarProposta" id="1d2db50d-cc96-4d54-b946-fa46693b21f2"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.10.20.200/WcfPropostas/ServicoPropostas.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope
+	xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+	xmlns:tem="http://tempuri.org/"
+	xmlns:wcf="http://schemas.datacontract.org/2004/07/WcfPropostas">
+	<soapenv:Header/>
+	<soapenv:Body>
+		<tem:PreEfetivarProposta>
+			<!--Optional:-->
+			<tem:Proposta>
+				<!--Optional:-->
+				<wcf:Loja>${prop#loja}</wcf:Loja>
+				<!--Optional:-->
+				<wcf:Lojista>${prop#lojista}</wcf:Lojista>
+				<!--Optional:-->
+				<wcf:Parceiro>${prop#parceiro}</wcf:Parceiro>
+				<!--Optional:-->
+				<wcf:Senha>${prop#senha}</wcf:Senha>
+				<!--Optional:-->
+				<wcf:Usuario>${prop#usuario} </wcf:Usuario>
+				<!--Optional:-->
+				<wcf:dadosLiberacao>
+					<!--Optional:-->
+					<wcf:agencia>3529</wcf:agencia>
+					<!--Optional:-->
+					<wcf:banco>001</wcf:banco>
+					<!--Optional:-->
+					<wcf:beneficiario>${prop#cliNome}${prop#cliTelefonerand}</wcf:beneficiario>
+					<!--Optional:-->
+					<wcf:conta>225568</wcf:conta>
+					<!--Optional:-->
+					<wcf:cpf_cnpj>${prop#cliCPF}</wcf:cpf_cnpj>
+					<!--Optional:-->
+					<wcf:formaLiberacao>2</wcf:formaLiberacao>
+					<!--Optional:-->
+					<wcf:tipocontabancaria>1</wcf:tipocontabancaria>
+				</wcf:dadosLiberacao>
+				<!--Optional:-->
+				<wcf:formaEnvio>
+					<!--Optional:-->
+					<wcf:correio>S</wcf:correio>
+					<!--Optional:-->
+					<wcf:email>N</wcf:email>
+					<!--Optional:-->
+					<wcf:loja>S</wcf:loja>
+				</wcf:formaEnvio>
+				<!--Optional:-->
+				<wcf:proposta>${resultprop#num}</wcf:proposta>
+				<!--Optional:-->
+				<wcf:tipoEfetivacao>
+					<!--Optional:-->
+					<wcf:tipoEfetivacao>2</wcf:tipoEfetivacao>
+				</wcf:tipoEfetivacao>
+			</tem:Proposta>
+		</tem:PreEfetivarProposta>
+	</soapenv:Body>
+</soapenv:Envelope>
+]]></con:request><con:assertion type="SOAP Response" id="4623698c-0629-4232-9d86-fe597d76ffd9"/><con:assertion type="Schema Compliance" id="52a4e330-0cac-42ad-b6f2-a02253900796"><con:configuration/></con:assertion><con:assertion type="SOAP Fault Assertion" id="e9f258c5-2391-4a58-80e1-cf55cb1e517d"/><con:assertion type="Simple Contains" id="1334c542-4d73-43de-b5a3-42350e9dc322" name="Contains"><con:configuration><token>&lt;a:Codigo>200&lt;/a:Codigo></token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="UploadDocumentos" id="e2750206-5abc-4fb8-99f8-5ace97087bf8" disabled="true"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>BasicHttpBinding_IServicoPropostas</con:interface><con:operation>UploadDocumentos</con:operation><con:request name="UploadDocumentos" id="d297b42d-2c1c-46a0-bb6a-e8fef6075e66"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.10.20.200/WcfPropostas/ServicoPropostas.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/" xmlns:wcf="http://schemas.datacontract.org/2004/07/WcfPropostas">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <tem:UploadDocumentos><!--Optional:-->
+         <tem:pParametros>
+            <!--Optional:-->
+            <wcf:NumeroProposta>${resultprop#num}</wcf:NumeroProposta>
+            <!--Optional:-->
+            <wcf:Parceiro>${prop#parceiro}</wcf:Parceiro>
+            <!--Optional:-->
+            <wcf:Senha>${prop#senha}</wcf:Senha>
+            <!--Optional:-->
+            <wcf:Usuario>${prop#usuario}</wcf:Usuario>
+         </tem:pParametros>
+      </tem:UploadDocumentos>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="50ade742-f2f9-4fd2-b045-b59434a8e11c"/><con:assertion type="Schema Compliance" id="04c73f28-d3e5-4cb2-a8f8-8ec4271381bc"><con:configuration/></con:assertion><con:assertion type="SOAP Fault Assertion" id="b817037f-e527-4e98-97ed-f535387c3bc1"/><con:assertion type="Simple Contains" id="4db616be-acc7-409f-b190-912fc9ff3616" name="Contains"><con:configuration><token>&lt;a:Codigo>200&lt;/a:Codigo></token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="ImprimirDocumentos Opt 1" id="82baa135-172e-4449-9f9e-2802fe861edf"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>BasicHttpBinding_IServicoPropostas</con:interface><con:operation>ImprimirDocumentos</con:operation><con:request name="ImprimirDocumentos Opt 1" id="82f3959e-67cd-4904-9b11-4e91e527e70a"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.10.20.200/WcfPropostas/ServicoPropostas.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/" xmlns:wcf="http://schemas.datacontract.org/2004/07/WcfPropostas">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <tem:ImprimirDocumentos><!--Optional:-->
+         <tem:Proposta>
+            <!--Optional:-->
+            <wcf:Loja>${prop#loja}</wcf:Loja>
+            <!--Optional:-->
+            <wcf:Lojista>${prop#lojista}</wcf:Lojista>
+            <!--Optional:-->
+            <wcf:Parceiro>${prop#parceiro}</wcf:Parceiro>
+            <!--Optional:-->
+            <wcf:Senha>${prop#senha}</wcf:Senha>
+            <!--Optional:-->
+            <wcf:Usuario>${prop#usuario}</wcf:Usuario>
+            <!--Optional:-->
+            <wcf:opcao>1</wcf:opcao>
+            <!--Optional:-->
+            <wcf:proposta>${resultprop#num}</wcf:proposta>
+         </tem:Proposta>
+      </tem:ImprimirDocumentos>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="6e0872b4-1fe5-4e82-aa33-9d6ecc321ace"/><con:assertion type="Schema Compliance" id="e64bea68-b183-4724-aafd-751797799410"><con:configuration/></con:assertion><con:assertion type="SOAP Fault Assertion" id="94d45a4c-fab3-42e9-b5b8-556eb568b767"/><con:assertion type="Simple Contains" id="09f8cd87-8077-4038-bc72-e0508a0e0695" name="Contains"><con:configuration><token>&lt;a:Codigo>200&lt;/a:Codigo></token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="ImprimirDocumentos Opt 2" id="8c5198d0-3610-4881-b7c2-5b59804ad094"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>BasicHttpBinding_IServicoPropostas</con:interface><con:operation>ImprimirDocumentos</con:operation><con:request name="ImprimirDocumentos Opt 2" id="82f3959e-67cd-4904-9b11-4e91e527e70a"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.10.20.200/WcfPropostas/ServicoPropostas.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/" xmlns:wcf="http://schemas.datacontract.org/2004/07/WcfPropostas">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <tem:ImprimirDocumentos><!--Optional:-->
+         <tem:Proposta>
+            <!--Optional:-->
+            <wcf:Loja>${prop#loja}</wcf:Loja>
+            <!--Optional:-->
+            <wcf:Lojista>${prop#lojista}</wcf:Lojista>
+            <!--Optional:-->
+            <wcf:Parceiro>${prop#parceiro}</wcf:Parceiro>
+            <!--Optional:-->
+            <wcf:Senha>${prop#senha}</wcf:Senha>
+            <!--Optional:-->
+            <wcf:Usuario>${prop#usuario}</wcf:Usuario>
+            <!--Optional:-->
+            <wcf:opcao>2</wcf:opcao>
+            <!--Optional:-->
+            <wcf:proposta>${resultprop#num}</wcf:proposta>
+         </tem:Proposta>
+      </tem:ImprimirDocumentos>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="6e0872b4-1fe5-4e82-aa33-9d6ecc321ace"/><con:assertion type="Schema Compliance" id="e64bea68-b183-4724-aafd-751797799410"><con:configuration/></con:assertion><con:assertion type="SOAP Fault Assertion" id="94d45a4c-fab3-42e9-b5b8-556eb568b767"/><con:assertion type="Simple Contains" id="09f8cd87-8077-4038-bc72-e0508a0e0695" name="Contains"><con:configuration><token>&lt;a:Codigo>200&lt;/a:Codigo></token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="ImprimirDocumentos Opt 3" id="94fbb2c0-2cef-494d-8773-cdba28669099"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>BasicHttpBinding_IServicoPropostas</con:interface><con:operation>ImprimirDocumentos</con:operation><con:request name="ImprimirDocumentos Opt 3" id="82f3959e-67cd-4904-9b11-4e91e527e70a"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.10.20.200/WcfPropostas/ServicoPropostas.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/" xmlns:wcf="http://schemas.datacontract.org/2004/07/WcfPropostas">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <tem:ImprimirDocumentos><!--Optional:-->
+         <tem:Proposta>
+            <!--Optional:-->
+            <wcf:Loja>${prop#loja}</wcf:Loja>
+            <!--Optional:-->
+            <wcf:Lojista>${prop#lojista}</wcf:Lojista>
+            <!--Optional:-->
+            <wcf:Parceiro>${prop#parceiro}</wcf:Parceiro>
+            <!--Optional:-->
+            <wcf:Senha>${prop#senha}</wcf:Senha>
+            <!--Optional:-->
+            <wcf:Usuario>${prop#usuario}</wcf:Usuario>
+            <!--Optional:-->
+            <wcf:opcao>3</wcf:opcao>
+            <!--Optional:-->
+            <wcf:proposta>${resultprop#num}</wcf:proposta>
+         </tem:Proposta>
+      </tem:ImprimirDocumentos>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="6e0872b4-1fe5-4e82-aa33-9d6ecc321ace"/><con:assertion type="Schema Compliance" id="e64bea68-b183-4724-aafd-751797799410"><con:configuration/></con:assertion><con:assertion type="SOAP Fault Assertion" id="94d45a4c-fab3-42e9-b5b8-556eb568b767"/><con:assertion type="Simple Contains" id="09f8cd87-8077-4038-bc72-e0508a0e0695" name="Contains"><con:configuration><token>&lt;a:Codigo>200&lt;/a:Codigo></token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="EfetivarProposta" id="db4c8835-1f22-42fa-99f5-9d34538e50bd"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>BasicHttpBinding_IServicoPropostas</con:interface><con:operation>EfetivarProposta</con:operation><con:request name="EfetivarProposta" id="8b597682-c6bd-4ecb-8180-3424ebd2a867"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.10.20.200/WcfPropostas/ServicoPropostas.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/" xmlns:wcf="http://schemas.datacontract.org/2004/07/WcfPropostas">
    <soapenv:Header/>
    <soapenv:Body>
       <tem:EfetivarProposta>
