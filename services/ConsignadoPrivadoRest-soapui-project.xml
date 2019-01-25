@@ -140,8 +140,8 @@
    }
  },
  "parceiro": 12,
- "emissao": "26/12/2018",
- "dataPrimeiroVencimento": "15/01/2019",
+ "emissao": "01/02/2018",
+ "dataPrimeiroVencimento": "08/03/2018",
  "prazo": "012",
  "produto": "000999",
  "plano": "3587",
@@ -481,4 +481,4 @@
  "valorTotal": 11380.01,
  "valorTotalPst": 0,
  "seguro": "0"
-}</con:request><con:originalUri>http://10.10.20.73/svc-gallery/ConsignadoPrivado/api/ConsignadoPrivado</con:originalUri><con:assertion type="Schema Compliance" id="5359ed60-54f6-4fcc-bc43-d2e26b2382a7" name="Schema Compliance"><con:configuration/></con:assertion><con:assertion type="Simple Contains" id="ae89db65-8db6-42a2-866e-39d6a0fca072" name="Contains"><con:configuration><token>Proposta adicionada com sucesso</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties><con:property><con:name>lojista</con:name><con:value>000020</con:value></con:property></con:properties><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
+}</con:request><con:originalUri>http://10.10.20.73/svc-gallery/ConsignadoPrivado/api/ConsignadoPrivado</con:originalUri><con:assertion type="Schema Compliance" id="5359ed60-54f6-4fcc-bc43-d2e26b2382a7" name="Schema Compliance"><con:configuration/></con:assertion><con:assertion type="Simple Contains" id="ae89db65-8db6-42a2-866e-39d6a0fca072" name="Contains"><con:configuration><token>Proposta adicionada com sucesso</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:restRequest></con:config></con:testStep><con:loadTest id="ada50418-70ab-4024-a9e5-f510f1801878" name="LoadTest 1"><con:settings><con:setting id="HttpSettings@close-connections">false</con:setting></con:settings><con:threadCount>60</con:threadCount><con:startDelay>0</con:startDelay><con:sampleInterval>250</con:sampleInterval><con:calculateTPSOnTimePassed>true</con:calculateTPSOnTimePassed><con:resetStatisticsOnThreadCountChange>true</con:resetStatisticsOnThreadCountChange><con:historyLimit>-1</con:historyLimit><con:testLimit>60</con:testLimit><con:limitType>TIME</con:limitType><con:loadStrategy><con:type>Simple</con:type></con:loadStrategy><con:assertion type="Step Status" name="Step Status"/><con:maxAssertionErrors>100</con:maxAssertionErrors><con:cancelExcessiveThreads>true</con:cancelExcessiveThreads><con:strategyInterval>500</con:strategyInterval></con:loadTest><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties><con:property><con:name>lojista</con:name><con:value>000020</con:value></con:property></con:properties><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>

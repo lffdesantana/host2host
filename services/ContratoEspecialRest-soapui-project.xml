@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="d5a3ab3d-d822-44f8-b6dd-d0df94e3d48a" activeEnvironment="Default" name="ContratoEspecialRest" resourceRoot="" soapui-version="5.4.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:RestService" id="95866e1c-3fe0-448d-b3ef-310d92fa071e" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://10.10.20.200" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>http://10.10.20.200</con:endpoint></con:endpoints><con:resource name="ContratoEspecial" path="/svc-gallery/EfetivaPropostaLendico/api/ContratoEspecial" id="dad55eef-851f-40b5-8fc5-b5f67a89992c"><con:settings/><con:parameters/><con:method name="ContratoEspecial 1" id="6fc43aca-f156-460d-a2f6-3a640ce6199f" method="POST"><con:settings/><con:parameters/><con:representation type="FAULT"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>400</con:status><con:params/><con:element>Fault</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="Request 1" id="1f135fef-248b-493c-b06d-a04b73f4ff6f" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="accept" value="application/json"/>
+  &lt;con:entry key="Content-Type" value="application/json"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://10.10.20.200</con:endpoint><con:request>{
+  "operacao": {
+    "parceiro": 18,
+    "contratoExterno": "999999",
+    "empresa": "01",
+    "agencia": "0001",
+    "midia": "99",
+    "loja":"5287",
+    "lojista":"905287",
+    "codVendedor": "000001",
+    "produto": "001028",
+    "plano": "3737",
+    "prazo": 4,
+    "dtEmissao": "30/01/2019",
+    "dtPrimeiroVencimento": "18/02/2019",
+    "valorCompra": 500,
+    "valorPrestacao": 191.28,
+    "tipoContrato": "E",
+    "taxa": 19.249990,
+    "cet": 19.675071,
+    "tc": 0,
+    "iof": 5.26,
+    "parcelas": [
+      {
+        "nroParcela": 1,
+        "dtVencimento": "18/02/2019",
+        "valor": 191.28
+      },
+                  {
+        "nroParcela": 2,
+        "dtVencimento": "18/03/2019",
+        "valor": 191.28
+      },
+                  {
+        "nroParcela": 3,
+        "dtVencimento": "18/04/2019",
+        "valor": 191.28
+      },
+                  {
+        "nroParcela": 4,
+        "dtVencimento": "18/05/2019",
+        "valor": 191.28
+      }
+    ],
+    "liberacao":[  
+         {  
+            "banco":"341",
+            "agencia":"2222",
+            "conta":"1111111",
+            "digitoConta":"9",
+            "tipoConta":"1",
+            "cpfCnpjDestinatario":"04201687457",
+            "nomeDestinatario":"LUIS FERNANDO FONSECA DE SANTANA",
+            "formaLiberacao":2,
+            "sequenciaLiberacao":1,
+            "valorLiberacao":500
+         }
+      ],
+      "dadosAdicionais":[  
+         {  
+            "parametro":"carencia",
+            "valor":"Teste"
+         },
+
+         {  
+            "parametro":"identificacaoClienteLendico",
+            "valor":"5134"
+         },
+         {  
+            "parametro":"numeroPropostaPSD",
+            "valor":"17d78145-0769-4552-9cc8-3beab2a94d7e"
+         }
+      ]
+   },
+   "cliente":{  
+      "cpf":"83734589053",
+      "mae":"Maria",
+      "pai":"João",
+      "tipoPessoa":"F",
+      "cnh":"123456",
+      "sexo":"M",
+      "naturalidade":"Porto Alegre",
+      "naturalidadeUf":"RS",
+      "nacionalidade":"BR",
+      "estCivil":"C",
+      "escolaridade":"7",
+      "dependentes":"0",
+      "email":"pedroh@teste.com",
+      "atividade":{  
+         "contatoComercial":[  
+            {  
+               "tipo":1,
+               "ddd":"51",
+               "numero":"989898989"
+            }
+         ]
+      },
+      "enderecoResidencial":{  
+         "tipoResidencia":1,
+         "cep":"90410000",
+         "uf":"RS",
+         "cidade":"Porto Alegre",
+         "bairro":"Petropolis",
+         "endereco":"Avenida Protásio Alves",
+         "numero":"1077",
+         "complemento":"nenhum"
+      },
+      "contatoResidencial":[  
+         {  
+            "tipo":2,
+            "ddd":"51",
+            "numero":"999999999"
+         }
+      ],
+      "comercial":{  
+         "enderecoComercial":{  
+            "tipoResidencia":7,
+            "cep":"90030130",
+            "uf":"RS",
+            "cidade":"Porto Alegre",
+            "bairro":"Centro",
+            "endereco":"Avenida Júlio de Castilhos",
+            "numero":"132",
+            "complemento":"506"
+         },
+         "nomeEmpresa":"Portocred",
+         "profissao":"1628",
+         "descricaoCargo":"Analista de Sistemas",
+         "dataAdmissao":"01/02/2010"
+      },
+      "nome":"Pedro Henrique",
+      "nascimento":"22/01/1979",
+      "renda":1421.66,
+      "nroIdentidade":"1043945342",
+      "orgaoEmissorIdentidade":"01",
+      "ufOrgaoEmissorIdentidade":"RS",
+      "dataEmissaoIdentidade":"27/03/1997"
+   }
+}</con:request><con:originalUri>http://10.10.20.200/svc-gallery/EfetivaPropostaLendico/api/ContratoEspecial</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/></con:soapui-project>

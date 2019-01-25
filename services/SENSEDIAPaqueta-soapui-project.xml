@@ -1,0 +1,708 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="2714e658-0cad-4364-9bce-7f6c93193e5f" activeEnvironment="Default" name="SENSEDIAPaqueta" resourceRoot="" soapui-version="5.4.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:RestService" id="074e2bd4-34fd-4183-84fb-fd694cb6ccbf" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://sb-api.portocred.com.br" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>https://sb-api.portocred.com.br</con:endpoint></con:endpoints><con:resource name="GravaPropostas" path="/gestao-proposta/v1/propostas" id="a8d98f4c-1595-4b1b-99e2-cb4a3fbc39df"><con:settings/><con:parameters/><con:method name="Propostas 1" id="3fe930ad-6b35-4826-8a67-12bb4601d7e9" method="POST"><con:settings/><con:parameters/><con:representation type="FAULT"><con:mediaType>text/plain</con:mediaType><con:status>401</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="Request 1" id="957dba7a-c075-48c3-9183-fe4b3b032c6d" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="access_token" value="${#Project#token}"/>
+  <con:entry key="CODIGOLOJA" value="${#Project#loja}"/>
+  <con:entry key="X-AUTHORIZATION" value="${#Project#auth}"/>
+  <con:entry key="CODIGOLOJISTA" value="${#Project#lojista}"/>
+  <con:entry key="client_id" value="${#Project#cliente}"/>
+  <con:entry key="Content-Type" value="${#Project#content}"/>
+</xml-fragment>]]></con:setting></con:settings><con:endpoint>https://sb-api.portocred.com.br</con:endpoint><con:request>{
+  "dataVencimentoPrimeiraParcela": "2018-09-17",
+  "codigoProduto": "001036",
+  "tipoContrato": "CCB",
+  "valorCompra": "1000.00",
+  "Prazo": "002",
+  "dadosAdicionais": [
+        {
+         "campo": "A_CodOperador",
+         "valor": "123456"
+         }
+  ],
+  "tipoSeguro": "SEGURO_COMPLETO",
+  "clientes": [
+    {
+		"nome": "ALYNE ZGIEVSKI BARRETO",
+		"cpf": "00137270011",
+		"dataNascimento": "1966-03-06",
+		"nomeMae": "Maria",
+		"tipo": "CLIENTE_PRINCIPAL",
+		"documentos": [
+        {
+          "numero": "306598758",
+          "dataEmissao": "2017-03-17",
+          "uf": "RS"
+        }
+      ],
+        "estadoCivil": "CASADO",
+        "sexo": "FEMININO",
+	    "telefones": [
+        {
+				"ddd": "051",
+				"numero": "30762020"
+        }
+      ],
+        "emprego": {
+         "codigoClasseProfissional": "02",
+         "renda": "3000.00"
+       },
+        "enderecos": [
+        {
+          "logradouro": "Rua Santana",
+          "numero": "160",
+          "bairro": "Santana",
+          "cidade": "Porto Alegre",
+          "uf": "RS",
+          "cep": "90110290"
+       }
+    ],
+      "referenciasPessoais": [
+          {
+            "nome": "DENISE",
+            "relacionamento": "CUNHADA",
+            "telefone": {
+              "tipo": "CELULAR",
+              "ddd": "051",
+              "numero": "999999999"
+            }
+
+    }
+    ]
+}
+]
+}</con:request><con:originalUri>https://sb-api.portocred.com.br/gestao-proposta/v1/propostas</con:originalUri><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:preemptive>true</con:preemptive><con:authType>Preemptive</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="4f7df6f3-27bf-463a-9bae-28c74088f2a9" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://sb-api.portocred.com.br" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>https://sb-api.portocred.com.br</con:endpoint></con:endpoints><con:resource name="GravaPropostasAtualizar" path="/gestao-proposta/v1/propostas" id="7a056164-9609-4ca6-8903-d6c3e6b13d0c"><con:settings/><con:parameters/><con:method name="Propostas 1" id="67fe6351-a6d0-4c42-bb96-b79bd26fc481" method="POST"><con:settings/><con:parameters/><con:request name="Request 1" id="ad0ececa-ce29-43c1-b682-4a316e42bf6d" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="access_token" value="${#Project#token}"/>
+  <con:entry key="CODIGOLOJA" value="${#Project#loja}"/>
+  <con:entry key="X-AUTHORIZATION" value="${#Project#auth}"/>
+  <con:entry key="CODIGOLOJISTA" value="${#Project#lojista}"/>
+  <con:entry key="client_id" value="${#Project#cliente}"/>
+  <con:entry key="Content-Type" value="${#Project#content}"/>
+</xml-fragment>]]></con:setting></con:settings><con:endpoint>https://sb-api.portocred.com.br</con:endpoint><con:request>{
+  "dataVencimentoPrimeiraParcela": "2018-09-17",
+  "codigoProduto": "001036",
+  "tipoContrato": "CCB",
+  "valorCompra": "1000.00",
+  "Prazo": "002",
+  "dadosAdicionais": [
+        {
+         "campo": "A_CodOperador",
+         "valor": "123456"
+         }
+  ],
+  "tipoSeguro": "SEGURO_COMPLETO",
+  "clientes": [
+    {
+		"nome": "ALYNE ZGIEVSKI BARRETO",
+		"cpf": "00137270011",
+		"dataNascimento": "1966-03-06",
+		"nomeMae": "Maria",
+		"tipo": "CLIENTE_PRINCIPAL",
+		"documentos": [
+        {
+          "numero": "306598758",
+          "dataEmissao": "2017-03-17",
+          "uf": "RS"
+        }
+      ],
+        "estadoCivil": "CASADO",
+        "sexo": "FEMININO",
+	    "telefones": [
+        {
+				"ddd": "051",
+				"numero": "30762020"
+        }
+      ],
+        "emprego": {
+         "codigoClasseProfissional": "02",
+         "renda": "3000.00"
+       },
+        "enderecos": [
+        {
+          "logradouro": "Rua Santana",
+          "numero": "160",
+          "bairro": "Santana",
+          "cidade": "Porto Alegre",
+          "uf": "RS",
+          "cep": "90110290"
+       }
+    ],
+      "referenciasPessoais": [
+          {
+            "nome": "DENISE",
+            "relacionamento": "CUNHADA",
+            "telefone": {
+              "tipo": "CELULAR",
+              "ddd": "051",
+              "numero": "999999999"
+            }
+
+    }
+    ]
+}
+]
+}</con:request><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:preemptive>true</con:preemptive><con:authType>Preemptive</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="a7750b85-a27f-4c6b-8328-6050087fac39" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://sb-api.portocred.com.br" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>https://sb-api.portocred.com.br</con:endpoint></con:endpoints><con:resource name="Status" path="/gestao-proposta/v1/propostas/${proposta#num}/status" id="b618a705-d337-4407-9fd7-16ef39f7a756"><con:settings/><con:parameters/><con:method name="Status 1" id="2e726b64-8d95-4d75-a73b-38aa0f1f8ab3" method="GET"><con:settings/><con:parameters/><con:request name="Request 1" id="366f2953-1b9a-4430-8d1f-f84e97761d7f" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="access_token" value="${#Project#token}"/>
+  <con:entry key="CODIGOLOJA" value="${#Project#loja}"/>
+  <con:entry key="X-AUTHORIZATION" value="${#Project#auth}"/>
+  <con:entry key="CODIGOLOJISTA" value="${#Project#lojista}"/>
+  <con:entry key="client_id" value="${#Project#cliente}"/>
+  <con:entry key="Content-Type" value="${#Project#content}"/>
+</xml-fragment>]]></con:setting></con:settings><con:endpoint>https://sb-api.portocred.com.br</con:endpoint><con:request/><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:preemptive>true</con:preemptive><con:authType>Preemptive</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="398ab782-77d9-47b6-9216-f33192e4db51" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://sb-api.portocred.com.br" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>https://sb-api.portocred.com.br</con:endpoint></con:endpoints><con:resource name="IncluirDocumentos" path="/gestao-proposta/v1/propostas/${proposta#num}/documentos" id="9fd58b94-37ed-4a59-b331-4164e9ce6923"><con:settings/><con:parameters><con:parameter><con:name>tipoDocumento</con:name><con:value>DOCUMENTOS_PDV</con:value><con:style>QUERY</con:style><con:default>DOCUMENTOS_PDV</con:default><con:path xsi:nil="true"/><con:description xsi:nil="true"/></con:parameter></con:parameters><con:method name="Documentos 1" id="b1e6dd7b-e199-4515-961c-11574e9e3855" method="GET"><con:settings/><con:parameters/><con:request name="Request 1" id="b8e90773-add2-4c7c-a69d-1d1c6c521651" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="access_token" value="${#Project#token}"/>
+  <con:entry key="CODIGOLOJA" value="${#Project#loja}"/>
+  <con:entry key="X-AUTHORIZATION" value="${#Project#auth}"/>
+  <con:entry key="CODIGOLOJISTA" value="${#Project#lojista}"/>
+  <con:entry key="client_id" value="${#Project#cliente}"/>
+  <con:entry key="Content-Type" value="${#Project#content}"/>
+</xml-fragment>]]></con:setting></con:settings><con:endpoint>https://sb-api.portocred.com.br</con:endpoint><con:request/><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:preemptive>true</con:preemptive><con:authType>Preemptive</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="tipoDocumento" value="DOCUMENTOS_PDV" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>tipoDocumento</con:entry></con:parameterOrder></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="d1179a8e-3a58-4aed-97ca-a3a0f226e9fc" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://sb-api.portocred.com.br" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>https://sb-api.portocred.com.br</con:endpoint></con:endpoints><con:resource name="ConsultaHistorico" path="/gestao-proposta/v1/propostas/${proposta#num}/historicos" id="f6a05254-27df-465f-a3a2-ca663f2bd604"><con:settings/><con:parameters/><con:method name="Historicos 1" id="80ba4bbb-25c1-4ab0-9b16-c4bf55d9375c" method="GET"><con:settings/><con:parameters/><con:request name="Request 1" id="3f724616-361a-4a83-a385-03c189e4919d" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="access_token" value="${#Project#token}"/>
+  <con:entry key="CODIGOLOJA" value="${#Project#loja}"/>
+  <con:entry key="X-AUTHORIZATION" value="${#Project#auth}"/>
+  <con:entry key="CODIGOLOJISTA" value="${#Project#lojista}"/>
+  <con:entry key="client_id" value="${#Project#cliente}"/>
+  <con:entry key="Content-Type" value="${#Project#content}"/>
+</xml-fragment>]]></con:setting></con:settings><con:endpoint>https://sb-api.portocred.com.br</con:endpoint><con:request/><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:preemptive>true</con:preemptive><con:authType>Preemptive</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="c168c591-1a7c-49b6-afd7-8ef525bd58e9" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://sb-api.portocred.com.br" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>https://sb-api.portocred.com.br</con:endpoint></con:endpoints><con:resource name="Cancela Proposta" path="/gestao-proposta/v1/propostas/${proposta#num}" id="cfe931de-0853-495d-bb55-7d7fdf0f90ef"><con:settings/><con:parameters/><con:method name="CancelaProposta" id="bf8ce544-ceee-4a28-8cd9-feb146ee44d6" method="PUT"><con:settings/><con:parameters/><con:request name="Request 1" id="2602a83f-c41d-4316-a7b8-6dbc6acfba4b" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="access_token" value="${#Project#token}"/>
+  <con:entry key="CODIGOLOJA" value="${#Project#loja}"/>
+  <con:entry key="X-AUTHORIZATION" value="${#Project#auth}"/>
+  <con:entry key="CODIGOLOJISTA" value="${#Project#lojista}"/>
+  <con:entry key="client_id" value="${#Project#cliente}"/>
+  <con:entry key="Content-Type" value="${#Project#content}"/>
+</xml-fragment>]]></con:setting></con:settings><con:endpoint>https://sb-api.portocred.com.br</con:endpoint><con:request>{
+	"acaoAlteracao": "CANCELAMENTO"
+}</con:request><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:preemptive>true</con:preemptive><con:authType>Preemptive</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="42377ed8-266d-4ecf-a37b-e926839de539" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://sb-api.portocred.com.br" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>https://sb-api.portocred.com.br</con:endpoint></con:endpoints><con:resource name="Efetivar Proposta" path="/gestao-proposta/v1/propostas/${proposta#num}" id="cdf5739e-629f-471f-aa28-ad31ed646e36"><con:settings/><con:parameters/><con:method name="Efetivar Propostas" id="5662982e-3519-4776-9d3e-ae6d87daf7ac" method="PUT"><con:settings/><con:parameters/><con:request name="Request 1" id="d4090220-c7ff-4a49-b1cf-dc866f405e6c" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="access_token" value="${#Project#token}"/>
+  <con:entry key="CODIGOLOJA" value="${#Project#loja}"/>
+  <con:entry key="X-AUTHORIZATION" value="${#Project#auth}"/>
+  <con:entry key="CODIGOLOJISTA" value="${#Project#lojista}"/>
+  <con:entry key="client_id" value="${#Project#cliente}"/>
+  <con:entry key="Content-Type" value="${#Project#content}"/>
+</xml-fragment>]]></con:setting></con:settings><con:endpoint>https://sb-api.portocred.com.br</con:endpoint><con:request>{
+	"acaoAlteracao": "EFETIVACAO"
+}</con:request><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:preemptive>true</con:preemptive><con:authType>Preemptive</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="c92563a1-364c-465d-8022-a085fe0276db" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://sb-api.portocred.com.br" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>https://sb-api.portocred.com.br</con:endpoint></con:endpoints><con:resource name="RecuperarDocumentos" path="/gestao-proposta/v2/propostas/${proposta#num}/documentos" id="0567ba7f-de6c-45be-bda7-16131a153650"><con:settings/><con:parameters><con:parameter><con:name>tipoDocumento</con:name><con:value>DOCUMENTOS_PDV</con:value><con:style>QUERY</con:style><con:default>DOCUMENTOS_PDV</con:default><con:path xsi:nil="true"/><con:description xsi:nil="true"/></con:parameter></con:parameters><con:method name="RecuperarDocumentos" id="84c0559a-f0eb-4474-8182-815adfef8115" method="GET"><con:settings/><con:parameters/><con:request name="Request 1" id="8c3ff8c3-8149-4803-b663-a53082beb347" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="access_token" value="${#Project#token}"/>
+  <con:entry key="CODIGOLOJA" value="${#Project#loja}"/>
+  <con:entry key="X-AUTHORIZATION" value="${#Project#auth}"/>
+  <con:entry key="CODIGOLOJISTA" value="${#Project#lojista}"/>
+  <con:entry key="client_id" value="${#Project#cliente}"/>
+  <con:entry key="Content-Type" value="${#Project#content}"/>
+</xml-fragment>]]></con:setting></con:settings><con:endpoint>https://sb-api.portocred.com.br</con:endpoint><con:request/><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:preemptive>true</con:preemptive><con:authType>Preemptive</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="tipoDocumento" value="DOCUMENTOS_PDV" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>tipoDocumento</con:entry></con:parameterOrder></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="edb68ae6-8ca8-4650-91a8-926a7dffdf9f" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://sb-api.portocred.com.br" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>https://sb-api.portocred.com.br</con:endpoint></con:endpoints><con:resource name="RecuperaContrato Por ID" path="/gestao-contrato/v1/contratos/3803708873" id="bbd1e092-e5fa-41b5-baf5-31e319842154"><con:settings/><con:parameters/><con:method name="RecuperaContrato Por ID" id="8245e04a-8d30-479f-9ca6-312628219e3f" method="GET"><con:settings/><con:parameters/><con:request name="Request 1" id="fc9ca977-8607-44c3-afc0-b22c84b188ff" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="access_token" value="${#Project#token}"/>
+  <con:entry key="CODIGOLOJA" value="${#Project#loja}"/>
+  <con:entry key="X-AUTHORIZATION" value="${#Project#auth}"/>
+  <con:entry key="CODIGOLOJISTA" value="${#Project#lojista}"/>
+  <con:entry key="client_id" value="${#Project#cliente}"/>
+  <con:entry key="Content-Type" value="${#Project#content}"/>
+</xml-fragment>]]></con:setting></con:settings><con:endpoint>https://sb-api.portocred.com.br</con:endpoint><con:request/><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:preemptive>true</con:preemptive><con:authType>Preemptive</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="a0ed208d-e95c-4712-8270-f849b07d11c9" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://sb-api.portocred.com.br" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>https://sb-api.portocred.com.br</con:endpoint></con:endpoints><con:resource name="Lista Pagamentos" path="/gestao-contrato/v1/contratos/parcelas" id="a077cf1d-91e4-4478-b5ba-66e24c928f2a"><con:settings/><con:parameters><con:parameter><con:name>cpf</con:name><con:value>59714182034</con:value><con:style>QUERY</con:style><con:default>59714182034</con:default><con:path xsi:nil="true"/><con:description xsi:nil="true"/></con:parameter><con:parameter><con:name>dataInicio</con:name><con:value>2018-06-17</con:value><con:style>QUERY</con:style><con:default>2018-06-17</con:default><con:path xsi:nil="true"/><con:description xsi:nil="true"/></con:parameter><con:parameter><con:name>dataFim</con:name><con:value>2018-08-30</con:value><con:style>QUERY</con:style><con:default>2018-08-30</con:default><con:path xsi:nil="true"/><con:description xsi:nil="true"/></con:parameter></con:parameters><con:method name="Parcelas 1" id="5542077b-a6c8-4d96-9709-55adeb9edfba" method="GET"><con:settings/><con:parameters/><con:request name="Request 1" id="084299e4-2e12-4aa1-8256-84dd6cc84536" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="access_token" value="${#Project#token}"/>
+  <con:entry key="CODIGOLOJA" value="${#Project#loja}"/>
+  <con:entry key="X-AUTHORIZATION" value="${#Project#auth}"/>
+  <con:entry key="CODIGOLOJISTA" value="${#Project#lojista}"/>
+  <con:entry key="client_id" value="${#Project#cliente}"/>
+  <con:entry key="Content-Type" value="${#Project#content}"/>
+</xml-fragment>]]></con:setting></con:settings><con:endpoint>https://sb-api.portocred.com.br</con:endpoint><con:request/><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:preemptive>true</con:preemptive><con:authType>Preemptive</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="dataFim" value="2018-08-30"/>
+  <con:entry key="cpf" value="59714182034"/>
+  <con:entry key="dataInicio" value="2018-06-17"/>
+</con:parameters><con:parameterOrder><con:entry>cpf</con:entry><con:entry>dataInicio</con:entry><con:entry>dataFim</con:entry></con:parameterOrder></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="f542e6a7-20e3-4cd1-8639-3075f967931c" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://sb-api.portocred.com.br" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>https://sb-api.portocred.com.br</con:endpoint></con:endpoints><con:resource name="Consulta Inadimplência" path="/gestao-contrato/v2/contratos/status" id="b010ebb2-276b-4a25-bf95-f0d90165fea3"><con:settings/><con:parameters><con:parameter><con:name>cpf</con:name><con:value>65766684069000</con:value><con:style>QUERY</con:style><con:default>65766684069000</con:default><con:path xsi:nil="true"/><con:description xsi:nil="true"/></con:parameter></con:parameters><con:method name="Status 1" id="5b4ec608-cc17-4046-a7c5-07cc56819a5d" method="GET"><con:settings/><con:parameters/><con:request name="Request 1" id="c4a05652-26cb-4d0c-9ab1-1eebbcdf0114" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="access_token" value="${#Project#token}"/>
+  <con:entry key="CODIGOLOJA" value="${#Project#loja}"/>
+  <con:entry key="X-AUTHORIZATION" value="${#Project#auth}"/>
+  <con:entry key="CODIGOLOJISTA" value="${#Project#lojista}"/>
+  <con:entry key="client_id" value="${#Project#cliente}"/>
+  <con:entry key="Content-Type" value="${#Project#content}"/>
+</xml-fragment>]]></con:setting></con:settings><con:endpoint>https://sb-api.portocred.com.br</con:endpoint><con:request/><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:preemptive>true</con:preemptive><con:authType>Preemptive</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="cpf" value="65766684069000" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>cpf</con:entry></con:parameterOrder></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="87ec026c-4c2d-4bee-846d-f1c1092a6a93" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://sb-api.portocred.com.br" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>https://sb-api.portocred.com.br</con:endpoint></con:endpoints><con:resource name="ListarOfertas" path="/gestao-proposta/v1/propostas/${proposta#num}/ofertas" id="3ae73cd8-4005-4c40-b715-0a5d927e1288"><con:settings/><con:parameters/><con:method name="ListarOfertas" id="5769c82d-a393-4c67-8eb1-c4480b72b064" method="GET"><con:settings/><con:parameters/><con:request name="Request 1" id="3013ff4f-2835-4465-a301-3c0564645ce2" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="access_token" value="${#Project#token}"/>
+  <con:entry key="CODIGOLOJA" value="${#Project#loja}"/>
+  <con:entry key="X-AUTHORIZATION" value="${#Project#auth}"/>
+  <con:entry key="CODIGOLOJISTA" value="${#Project#lojista}"/>
+  <con:entry key="client_id" value="${#Project#cliente}"/>
+  <con:entry key="Content-Type" value="${#Project#content}"/>
+</xml-fragment>]]></con:setting></con:settings><con:endpoint>https://sb-api.portocred.com.br</con:endpoint><con:request/><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:preemptive>true</con:preemptive><con:authType>Preemptive</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="62917a07-5544-44de-bfc9-232db329b047" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://sb-api.portocred.com.br" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>https://sb-api.portocred.com.br</con:endpoint></con:endpoints><con:resource name="RecuperarContratos por CPF" path="/gestao-contrato/v1/contratos" id="afca4211-c683-4fcf-aeac-bf0030bf8870"><con:settings/><con:parameters><con:parameter><con:name>cpf</con:name><con:value>23268301487</con:value><con:style>QUERY</con:style><con:default>23268301487</con:default><con:path xsi:nil="true"/><con:description xsi:nil="true"/></con:parameter></con:parameters><con:method name="RecuperarContratoCpf" id="ec0503e2-f617-4045-9033-b31fdc1d2405" method="GET"><con:settings/><con:parameters/><con:request name="Request 1" id="05e70a8e-98db-4b5a-a362-ef13fb802171" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="teste" value="7383" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>https://sb-api.portocred.com.br</con:endpoint><con:request/><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:preemptive>true</con:preemptive><con:authType>Preemptive</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="cpf" value="23268301487" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>cpf</con:entry></con:parameterOrder></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="9d950b0d-fb43-4302-bebe-35eaf6255933" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://sb-api.portocred.com.br" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>https://sb-api.portocred.com.br</con:endpoint></con:endpoints><con:resource name="Paga Parcelas Solicitacao-pagamentos" path="/gestao-contrato/v1/contratos/3803708873/solicitacao-pagamentos" id="4148eec9-3700-40a2-bb2e-1e2a7c95d2ad"><con:settings/><con:parameters/><con:method name="Solicitacao-pagamentos 1" id="cd16bbed-1ba5-4bef-9a93-7adc56e7af68" method="POST"><con:settings/><con:parameters/><con:request name="Request 1" id="c15d2679-2d1c-4a03-9428-127edcbc9ccd" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="access_token" value="${#Project#token}"/>
+  <con:entry key="CODIGOLOJA" value="${#Project#loja}"/>
+  <con:entry key="X-AUTHORIZATION" value="${#Project#auth}"/>
+  <con:entry key="CODIGOLOJISTA" value="${#Project#lojista}"/>
+  <con:entry key="client_id" value="${#Project#cliente}"/>
+  <con:entry key="Content-Type" value="${#Project#content}"/>
+</xml-fragment>]]></con:setting></con:settings><con:endpoint>https://sb-api.portocred.com.br</con:endpoint><con:request>{
+  "quantidadeParcelas": "7",
+  "valorPagamento": "139.69",
+  "operador": "242424"
+}</con:request><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:preemptive>true</con:preemptive><con:authType>Preemptive</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="7a3ddad1-1ea4-4878-8132-acdc6bead92f" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://sb-api.portocred.com.br" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>https://sb-api.portocred.com.br</con:endpoint></con:endpoints><con:resource name="Pre-propostas" path="/gestao-proposta/v1/pre-propostas" id="8c0d8032-6d33-40d3-aa7e-d7b3ed8fd9e1"><con:settings/><con:parameters/><con:method name="Pre-propostas 1" id="3010c3a3-ba8e-4029-814b-ad4f29805ee5" method="POST"><con:settings/><con:parameters/><con:request name="Request 1" id="4405e4fe-08ed-4ae8-acfb-bcbca46b1905" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="access_token" value="${#Project#token}"/>
+  <con:entry key="CODIGOLOJA" value="${#Project#loja}"/>
+  <con:entry key="X-AUTHORIZATION" value="${#Project#auth}"/>
+  <con:entry key="CODIGOLOJISTA" value="${#Project#lojista}"/>
+  <con:entry key="client_id" value="${#Project#cliente}"/>
+  <con:entry key="Content-Type" value="${#Project#content}"/>
+</xml-fragment>]]></con:setting></con:settings><con:endpoint>https://sb-api.portocred.com.br</con:endpoint><con:request>{
+  "operador": "TESTE123",
+  "codigoProduto": "001036",
+  "valorCompra": "500.00",
+  "tipoSeguro": "SEM_SEGURO",
+  "dataVencimentoPrimeiraParcela": "2018-05-02",
+  "candidato": {
+    "cpf": "30521408091"
+  }
+}</con:request><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:preemptive>true</con:preemptive><con:authType>Preemptive</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="36ae7a18-7497-435e-af75-522f0569830c" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://sb-api.portocred.com.br" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>https://sb-api.portocred.com.br</con:endpoint></con:endpoints><con:resource name="AssociarOferta" path="/gestao-proposta/v1/propostas/${proposta#num}/ofertas" id="62c47570-2dd5-49b6-9e07-56e8f2d6e6b2"><con:settings/><con:parameters/><con:method name="Ofertas 1" id="6c676684-cefc-42fd-b762-dd0d420e2e12" method="POST"><con:settings/><con:parameters/><con:request name="Request 1" id="4ab81ea3-80fe-4ddd-84b9-3148b106cbe6" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="access_token" value="${#Project#token}"/>
+  <con:entry key="CODIGOLOJA" value="${#Project#loja}"/>
+  <con:entry key="X-AUTHORIZATION" value="${#Project#auth}"/>
+  <con:entry key="CODIGOLOJISTA" value="${#Project#lojista}"/>
+  <con:entry key="client_id" value="${#Project#cliente}"/>
+  <con:entry key="Content-Type" value="${#Project#content}"/>
+</xml-fragment>]]></con:setting></con:settings><con:endpoint>https://sb-api.portocred.com.br</con:endpoint><con:request>{
+	"idOferta": "5059626"
+}</con:request><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:preemptive>true</con:preemptive><con:authType>Preemptive</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="82aead2a-9549-492a-9b89-3ff1b3620557" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://sb-api.portocred.com.br" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>https://sb-api.portocred.com.br</con:endpoint></con:endpoints><con:resource name="Exclusão Contratos" path="/gestao-contrato/v1/contratos/3804576145/cancelamento" id="477df824-f3e0-402a-9e42-f7cdf4b8ff8f"><con:settings/><con:parameters/><con:method name="Cancelamento 1" id="c824e2ff-4eeb-40bd-82d4-3d34e564dd72" method="PUT"><con:settings/><con:parameters/><con:request name="Request 1" id="d623c024-04e6-4c88-9df9-f6319895c1ff" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="access_token" value="${#Project#token}"/>
+  <con:entry key="CODIGOLOJA" value="${#Project#loja}"/>
+  <con:entry key="X-AUTHORIZATION" value="${#Project#auth}"/>
+  <con:entry key="CODIGOLOJISTA" value="${#Project#lojista}"/>
+  <con:entry key="client_id" value="${#Project#cliente}"/>
+  <con:entry key="Content-Type" value="${#Project#content}"/>
+</xml-fragment>]]></con:setting></con:settings><con:endpoint>https://sb-api.portocred.com.br</con:endpoint><con:request/><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:preemptive>true</con:preemptive><con:authType>Preemptive</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="6f76c979-627d-47d1-b408-c07859a16904" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://sb-api.portocred.com.br" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>https://sb-api.portocred.com.br</con:endpoint></con:endpoints><con:resource name="Exclusao-pagamento" path="/gestao-contrato/v1/contratos/3803708873/exclusao-pagamento" id="c90e59b6-2ec2-43cc-af93-b8d56cf5fb01"><con:settings/><con:parameters/><con:method name="Exclusao-pagamento 1" id="ac37470f-0909-415b-9d67-ee83f17a8505" method="DELETE"><con:settings/><con:parameters/><con:request name="Request 1" id="4c57a44b-5440-4f70-a8a0-893e1508f304" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="access_token" value="${#Project#token}"/>
+  <con:entry key="CODIGOLOJA" value="${#Project#loja}"/>
+  <con:entry key="X-AUTHORIZATION" value="${#Project#auth}"/>
+  <con:entry key="CODIGOLOJISTA" value="${#Project#lojista}"/>
+  <con:entry key="client_id" value="${#Project#cliente}"/>
+  <con:entry key="Content-Type" value="${#Project#content}"/>
+</xml-fragment>]]></con:setting></con:settings><con:endpoint>https://sb-api.portocred.com.br</con:endpoint><con:request/><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:preemptive>true</con:preemptive><con:authType>Preemptive</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="3b241506-3f1a-4e30-b357-aae054b04789" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://sb-api.portocred.com.br" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>https://sb-api.portocred.com.br</con:endpoint></con:endpoints><con:resource name="Altera Proposta Paqueta Atualização" path="/gestao-proposta/v1/propostas/3803323680" id="0fa96c89-92d8-4796-8048-26cf69711523"><con:settings/><con:parameters/><con:method name="AlteraProposta Paqueta Atualizacao" id="21c9a6cf-7414-4ba4-974c-18440ccfb089" method="PUT"><con:settings/><con:parameters/><con:request name="Request 1" id="c8bb3d33-6556-416f-8086-b3d1445745b2" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="access_token" value="${#Project#token}"/>
+  <con:entry key="CODIGOLOJA" value="${#Project#loja}"/>
+  <con:entry key="X-AUTHORIZATION" value="${#Project#auth}"/>
+  <con:entry key="CODIGOLOJISTA" value="${#Project#lojista}"/>
+  <con:entry key="client_id" value="${#Project#cliente}"/>
+  <con:entry key="Content-Type" value="${#Project#content}"/>
+</xml-fragment>]]></con:setting></con:settings><con:endpoint>https://sb-api.portocred.com.br</con:endpoint><con:request>{
+  "acaoAlteracao": "ATUALIZACAO",
+    "proposta": {
+    "numero": "3803323680",
+    "dataVencimentoPrimeiraParcela": "2018-05-11",
+    "tipoContrato": "CCB",
+    "dadosAdicionais": [
+	{ 
+		"campo": "PROP_JA_CLIENTE_PARCEIRO",
+		"valor": "S"
+	},
+	{ 
+		"campo": "CPFATENDENTE",
+		"valor": "00776471066"
+	}
+  ],
+    "tipoSeguro": "SEM_SEGURO",
+    "clientes": [
+      {
+        "nome": "TESTE",
+		"cpf": "75783873403",
+		"dataNascimento": "1966-03-06",
+        "codigoEscolaridade": "6",
+        "nomeMae": "ELIANE LEHMANN HOLZHEY",	
+        "cidade": "PORTO ALEGRE",
+        "uf": "RS",
+        "tipo": "CLIENTE_PRINCIPAL",
+        "documentos": [
+          {
+            "numero": "5083943984",
+            "codigoTipoDocumento": "01",
+            "codigoOrgaoEmissor": "01",
+            "dataEmissao": "2013-10-01",
+            "uf": "RS"
+          }
+        ],
+        "estadoCivil": "SOLTEIRO",
+        "nacionalidade": "BRASILEIRO_NATO",
+        "sexo": "FEMININO",
+        "telefones": [
+          {
+            "tipo": "FIXO",
+            "ddd": "051",
+            "numero": "30762020"
+        }
+        ],
+        "emprego": {
+          "nomeEmpresa": "PORTOCRED",
+          "codigoClasseProfissional": "02",
+          "codigoAtividade": "1110",
+          "dataAdmissao": "2016-08-29",
+          "renda": "3000.00",
+          "telefones": [
+            {
+              "tipo": "FIXO",
+              "ddd": "051",
+              "numero": "30762020",
+              "ramal": "2020"
+            }
+          ],
+          "endereco": {
+            "logradouro": "RUA DOS ANDRADAS",
+            "numero": "1001",
+            "complemento": "1401",
+            "bairro": "CENTRO HISTORICO",
+            "cidade": "PORTO ALEGRE",
+            "uf": "RS",
+            "cep": "90010410"
+          }
+        },
+        "enderecos": [
+          {
+            "logradouro": "RUA VASCO ALVES",
+            "numero": "244",
+            "complemento": "402",
+            "bairro": "CENTRO HISTORICO",
+            "cidade": "PORTO ALEGRE",
+            "uf": "RS",
+            "cep": "90010410",
+            "tempoMes": "03",
+            "tempoAno": "2013",
+            "tipoResidencia": "PROPRIA_FINANCIADA",
+            "tipoCorrespondencia": "RESIDENCIAL"
+          }
+        ],
+        "contasBancarias": [
+          {
+            "codigoBanco": "0341",
+            "tipoContaBancaria": "CONTA_CORRENTE_PF",
+            "codigoAgencia": "6954",
+            "conta": "038706",
+            "cidade": "PORTO ALEGRE",
+            "uf": "RS",
+            "tempoMes": "05",
+            "tempoAno": "2010",
+            "limiteChequeEspecial": "2000.00",
+            "tipoConta": "CHEQUE_ESPECIAL"
+          }
+        ],
+
+        "referenciasPessoais": [
+          {
+            "nome": "DENISE",
+            "relacionamento": "CUNHADA",
+            "telefone": {
+              "tipo": "CELULAR",
+              "ddd": "051",
+              "numero": "999999999"
+            }
+          },
+           {
+            "nome": "ALEXANDRE",
+            "relacionamento": "IRMAO",
+            "telefone": {
+              "tipo": "CELULAR",
+              "ddd": "051",
+              "numero": "988888888"
+            }
+          }         
+        ]
+      }
+    ]
+  }
+}</con:request><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:preemptive>true</con:preemptive><con:authType>Preemptive</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="24c9beca-4f79-47cb-bc3c-8a055d1ec4d7" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://sb-api.portocred.com.br" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>https://sb-api.portocred.com.br</con:endpoint></con:endpoints><con:resource name="Pre Efetivar Proposta" path="/gestao-proposta/v1/propostas/${proposta#num}" id="f65b6f78-7ab2-4c95-9a42-3cf89755bd53"><con:settings/><con:parameters/><con:method name="Pre Efetivar Proposta" id="06cbc302-1431-4193-8648-057f7a23cda2" method="PUT"><con:settings/><con:parameters/><con:request name="Request 1" id="4b949590-159a-4224-bc33-05ca040adda7" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="access_token" value="${#Project#token}"/>
+  <con:entry key="CODIGOLOJA" value="${#Project#loja}"/>
+  <con:entry key="X-AUTHORIZATION" value="${#Project#auth}"/>
+  <con:entry key="CODIGOLOJISTA" value="${#Project#lojista}"/>
+  <con:entry key="client_id" value="${#Project#cliente}"/>
+  <con:entry key="Content-Type" value="${#Project#content}"/>
+</xml-fragment>]]></con:setting></con:settings><con:endpoint>https://sb-api.portocred.com.br</con:endpoint><con:request>{
+  "acaoAlteracao": "PRE_EFETIVACAO",
+   "preEfetivacaoProposta": {
+   "tipoEfetivacao": "LOJA"
+}
+}</con:request><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:preemptive>true</con:preemptive><con:authType>Preemptive</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="09696c6d-deb9-486f-a5d4-2ca08e495720" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://sb-api.portocred.com.br" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>https://sb-api.portocred.com.br</con:endpoint></con:endpoints><con:resource name="Grava Proposta" path="/gestao-proposta/v1/propostas/3" id="041d339c-b0de-4365-9580-f0e05e8a8e2e"><con:settings/><con:parameters/><con:method name="Grava Proposta" id="0d3cff6f-389c-4e54-bc71-ecf9efdca92a" method="PUT"><con:settings/><con:parameters/><con:request name="Request 1" id="1c9678aa-a2d3-4fa1-8873-48ff98243379" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="access_token" value="${#Project#token}"/>
+  <con:entry key="CODIGOLOJA" value="${#Project#loja}"/>
+  <con:entry key="X-AUTHORIZATION" value="${#Project#auth}"/>
+  <con:entry key="CODIGOLOJISTA" value="${#Project#lojista}"/>
+  <con:entry key="client_id" value="${#Project#cliente}"/>
+  <con:entry key="Content-Type" value="${#Project#content}"/>
+</xml-fragment>]]></con:setting></con:settings><con:endpoint>https://sb-api.portocred.com.br</con:endpoint><con:request>{
+	"acaoAlteracao": "ATUALIZACAO",
+	"proposta":{
+       "numero": "string",
+       "dataEmissao": "2017-03-17",
+       "dataVencimentoPrimeiraParcela": "2017-03-17",
+       "codigoProduto": "string",
+       "codigoPlanoPagamento": "string",
+       "prazoPagamento": "string",
+       "codigoMidia": "string",
+       "codigoTipoContrato": "string",
+       "valorCompra": 0,
+       "valorEntrada": 0,
+       "valorPrestacao": 0,
+       "situacao": "string",
+       "descricaoSituacao": "string",
+  "dadosAdicionais": [
+    {
+      "campo": "string",
+      "valor": "string"
+    }
+  ],
+  "possuiSeguro": "SIM",
+  "etapaProposta": "SITUACOES_PRE_APROVADAS",
+  "ofertas": [
+    {
+      "idSimulacao": "string",
+      "origemOferta": "string",
+      "dataVencimentoPrimeiraParcela": "2017-03-17",
+      "dataVencimentoUltimaParcela": "2017-03-17",
+      "cetAnual": 0,
+      "cetMensal": 0,
+      "dataMovimento": "2017-03-17",
+      "codigoPlano": "string",
+      "descricaoPlano": "string",
+      "codigoProduto": "string",
+      "descricaoProduto": "string",
+      "dataEmissao": "2017-03-17",
+      "financiadoIndice": 0,
+      "finioFSeguro": 0,
+      "idProdutoSeguro": 0,
+      "valorIOF": 0,
+      "prazo": 0,
+      "valorPrimeiraPrestacao": 0,
+      "seguradora": "string",
+      "seguro": 0,
+      "valorTAC": 0,
+      "valorTaxa": 0,
+      "valorTaxaAnual": 0,
+      "valorCompra": 0,
+      "valorCredito": 0,
+      "valorFinanciado": 0,
+      "valorLiberado": 0,
+      "valorLiquidar": 0,
+      "valorParcela": 0,
+      "valorPrestacao": 0,
+      "valorSeguro": 0,
+      "valorTaxaInclusao": 0,
+      "valorTaxaRenovacao": 0,
+      "valorTotal": 0,
+      "valorTotalPST": 0,
+      "expiradaFaixaTarifaInclusao": "SIM",
+      "sugeridoFaixaRetorno": "SIM",
+      "tipoSimulacao": "VALOR_CREDITO"
+    }
+  ],
+  "tipoSeguro": "SEM_SEGURO",
+  "clientes": [
+    {
+      "nome": "string",
+      "cpf": "string",
+      "dataNascimento": "2017-03-17",
+      "numeroDependentes": "string",
+      "email": "string",
+      "codigoEscolaridade": "string",
+      "nomeMae": "string",
+      "nomePai": "string",
+      "cidade": "string",
+      "uf": "string",
+      "tipo": "CLIENTE_PRINCIPAL",
+      "documentos": [
+        {
+          "numero": "string",
+          "codigoTipoDocumento": "string",
+          "codigoOrgaoEmissor": "string",
+          "dataEmissao": "2017-03-17",
+          "uf": "string"
+        }
+      ],
+      "estadoCivil": "CASADO",
+      "nacionalidade": "BRASILEIRO_NATO",
+      "sexo": "MASCULINO",
+      "telefones": [
+        {
+          "tipo": "FIXO",
+          "ddd": "string",
+          "numero": "string",
+          "ramal": "string"
+        }
+      ],
+      "conjuge": {},
+      "emprego": {
+        "nomeEmpresa": "string",
+        "codigoClasseProfissional": 0,
+        "codigoAtividade": 0,
+        "dataAdmissao": "2017-03-17",
+        "codigoConveniada": "string",
+        "orgaoConveniada": "string",
+        "numeroBeneficio": "string",
+        "especieBeneficio": "string",
+        "matriculaFucional": "string",
+        "renda": 0,
+        "cnpj": "string",
+        "telefones": [
+          {
+            "tipo": "FIXO",
+            "ddd": "string",
+            "numero": "string",
+            "ramal": "string"
+          }
+        ],
+        "endereco": {
+          "lograduro": "string",
+          "numero": "string",
+          "complemento": "string",
+          "bairro": "string",
+          "cidade": "string",
+          "uf": "string",
+          "cep": 0,
+          "tempoMes": 0,
+          "tempoAno": 0,
+          "tipoResidencia": "PROPRIA_QUITADA",
+          "tipoCorrespondencia": "COMERCIAL"
+        }
+      },
+      "enderecos": [
+        {
+          "lograduro": "string",
+          "numero": "string",
+          "complemento": "string",
+          "bairro": "string",
+          "cidade": "string",
+          "uf": "string",
+          "cep": 0,
+          "tempoMes": 0,
+          "tempoAno": 0,
+          "tipoResidencia": "PROPRIA_QUITADA",
+          "tipoCorrespondencia": "COMERCIAL"
+        }
+      ],
+      "rendasAdicionais": [
+        {
+          "valor": 0,
+          "cnpj": "string",
+          "dataAdmissao": "2017-03-17",
+          "nomeEmpresa": "string",
+          "numeroBeneficio": "string",
+          "especieBeneficio": "string",
+          "telefones": [
+            {
+              "tipo": "FIXO",
+              "ddd": "string",
+              "numero": "string",
+              "ramal": "string"
+            }
+          ],
+          "endereco": {
+            "lograduro": "string",
+            "numero": "string",
+            "complemento": "string",
+            "bairro": "string",
+            "cidade": "string",
+            "uf": "string",
+            "cep": 0,
+            "tempoMes": 0,
+            "tempoAno": 0,
+            "tipoResidencia": "PROPRIA_QUITADA",
+            "tipoCorrespondencia": "COMERCIAL"
+          }
+        }
+      ],
+      "negativado": "SIM",
+      "possuiCheque": "SIM",
+      "contasBancarias": [
+        {
+          "codigoBanco": "string",
+          "tipoContaBancaria": "CONTA_CORRENTE_PF",
+          "codigoAgencia": "string",
+          "conta": "string",
+          "cidade": "string",
+          "uf": "string",
+          "tempoMes": 0,
+          "tempoAno": 0,
+          "limiteChequeEspecial": 0,
+          "tipoConta": "CHEQUE_ESPECIAL"
+        }
+      ],
+      "cartoesCredito": [
+        {
+          "emissor": 0,
+          "limiteCredito": 0
+        }
+      ],
+      "referenciasPessoais": [
+        {
+          "nome": "string",
+          "relacionamento": "string",
+          "telefone": {
+            "tipo": "FIXO",
+            "ddd": "string",
+            "numero": "string",
+            "ramal": "string"
+          }
+        }
+      ],
+      "suspeitoFraude": "SIM"
+    }
+  ]
+}
+}</con:request><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:preemptive>true</con:preemptive><con:authType>Preemptive</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:testSuite id="b6e04380-b476-47fd-8700-c434de877ba3" name="SENSEDIAPaqueta TestSuite"><con:description>TestSuite generated for REST Service [https://sb-api.portocred.com.br]</con:description><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="5d743bec-6274-4daf-aa32-db6442c38f90" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="https://sb-api.portocred.com.br TestSuite" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="GravaPropostas" id="20c83964-6ae3-4b3c-af0b-530c3355f7b6"><con:settings/><con:config service="https://sb-api.portocred.com.br" resourcePath="/gestao-proposta/v1/propostas" methodName="Propostas 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="GravaPropostas" id="957dba7a-c075-48c3-9183-fe4b3b032c6d" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="access_token" value="${#Project#token}"/>
+  <con:entry key="CODIGOLOJA" value="${#Project#loja}"/>
+  <con:entry key="X-AUTHORIZATION" value="${#Project#auth}"/>
+  <con:entry key="CODIGOLOJISTA" value="${#Project#lojista}"/>
+  <con:entry key="client_id" value="${#Project#cliente}"/>
+  <con:entry key="Content-Type" value="${#Project#content}"/>
+</xml-fragment>]]></con:setting></con:settings><con:endpoint>https://sb-api.portocred.com.br</con:endpoint><con:request>{
+  "dataVencimentoPrimeiraParcela": "2018-09-17",
+  "codigoProduto": "001036",
+  "tipoContrato": "CCB",
+  "valorCompra": "1000.00",
+  "Prazo": "002",
+  "dadosAdicionais": [
+        {
+         "campo": "A_CodOperador",
+         "valor": "123456"
+         }
+  ],
+  "tipoSeguro": "SEGURO_COMPLETO",
+  "clientes": [
+    {
+		"nome": "ALYNE ZGIEVSKI BARRETO",
+		"cpf": "00137270011",
+		"dataNascimento": "1966-03-06",
+		"nomeMae": "Maria",
+		"tipo": "CLIENTE_PRINCIPAL",
+		"documentos": [
+        {
+          "numero": "306598758",
+          "dataEmissao": "2017-03-17",
+          "uf": "RS"
+        }
+      ],
+        "estadoCivil": "CASADO",
+        "sexo": "FEMININO",
+	    "telefones": [
+        {
+				"ddd": "051",
+				"numero": "30762020"
+        }
+      ],
+        "emprego": {
+         "codigoClasseProfissional": "02",
+         "renda": "3000.00"
+       },
+        "enderecos": [
+        {
+          "logradouro": "Rua Santana",
+          "numero": "160",
+          "bairro": "Santana",
+          "cidade": "Porto Alegre",
+          "uf": "RS",
+          "cep": "90110290"
+       }
+    ],
+      "referenciasPessoais": [
+          {
+            "nome": "DENISE",
+            "relacionamento": "CUNHADA",
+            "telefone": {
+              "tipo": "CELULAR",
+              "ddd": "051",
+              "numero": "999999999"
+            }
+
+    }
+    ]
+}
+]
+}</con:request><con:originalUri>https://sb-api.portocred.com.br/gestao-proposta/v1/propostas</con:originalUri><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:preemptive>true</con:preemptive><con:authType>Preemptive</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties><con:property><con:name>token</con:name><con:value>9c60220f-e314-3a14-8e3c-44ef0cf1a132</con:value></con:property><con:property><con:name>loja</con:name><con:value>5477</con:value></con:property><con:property><con:name>lojista</con:name><con:value>905297</con:value></con:property><con:property><con:name>cliente</con:name><con:value>758c4753-f8ac-3dd1-af71-d2c6df1b4c37</con:value></con:property><con:property><con:name>content</con:name><con:value>application/json</con:value></con:property><con:property><con:name>auth</con:name><con:value>MTE6TEFTQTE6MTIzNDU2</con:value></con:property></con:properties><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>

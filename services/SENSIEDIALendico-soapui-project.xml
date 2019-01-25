@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="4b3d6fad-1e34-40ab-ab34-7755b2506fe8" activeEnvironment="Default" name="SENSIEDIALendico" resourceRoot="" soapui-version="5.4.0" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:RestService" id="3b12d4a1-2967-4bfe-b404-d528a479f802" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://sb-api.portocred.com.br" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>https://sb-api.portocred.com.br</con:endpoint></con:endpoints><con:resource name="Valida" path="/contratoEspecial/v1/validacoes/33855995800/valida" id="6712e5bd-6929-45f4-a059-150eb5e4a876"><con:settings/><con:parameters/><con:method name="Valida 1" id="41d2d80e-3b61-4111-b938-5c4f2400364a" method="GET"><con:settings/><con:parameters/><con:request name="Request 1" id="940bb58c-81ba-4f1c-bea6-77931d9e6959" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="access_token" value="aff6cb93-ea84-37a9-83e5-b1822f559a45"/>
+  &lt;con:entry key="client_secret" value="8eddd06e-d5e2-3805-945d-97a790062255"/>
+  &lt;con:entry key="client_id" value="4ad85789-1a8b-35df-8bbd-b283fa1993dd"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>https://sb-api.portocred.com.br</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="ae4d4529-d2d0-40de-9977-35c6ad0dbd50" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://sb-api.portocred.com.br" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>https://sb-api.portocred.com.br</con:endpoint></con:endpoints><con:resource name="Efetivacoes" path="/contratoEspecial/v1/efetivacoes" id="85a9fc11-a7d1-49aa-bdc0-1432a0fbc6ca"><con:settings/><con:parameters/><con:method name="Efetivacoes 1" id="efbab4eb-d487-4869-8308-a126a643489a" method="POST"><con:settings/><con:parameters/><con:request name="Request 1" id="aa4f0b1b-cb4a-4615-a3c5-8fd4e1030801" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="access_token" value="aff6cb93-ea84-37a9-83e5-b1822f559a45"/>
+  <con:entry key="client_secret" value="8eddd06e-d5e2-3805-945d-97a790062255"/>
+  <con:entry key="x-authorization" value="MjA7OTA1Mjg3OzUyODc="/>
+  <con:entry key="client_id" value="4ad85789-1a8b-35df-8bbd-b283fa1993dd"/>
+  <con:entry key="Content-Type" value="application/json"/>
+</xml-fragment>]]></con:setting></con:settings><con:endpoint>https://sb-api.portocred.com.br</con:endpoint><con:request>{
+	"cpf": "00000008338",
+	"email": "tiago.canatelli@gmail.com",
+	"nomeMae": "MARIA DAS NEVES B GOMES",
+	"dataNascimento": "22/01/1979",
+	"dataEmissaoIdentidade":"16/07/1985",
+	"ufOrgaoEmissorIdentidade":"SP",
+	"orgaoEmissor":"01",
+	"grauInstrucao":"7",
+	"ocupacao":"analista",
+	"identificacaoContratoLendico":"3803877154",
+	"valorRenda":"1421.66",
+	"nacionalidade":"brasileiro",
+	"numeroDocumentoIdentificacao":"402224448",
+	"identificacaoClienteLendico":"5287",
+	"identificacaoPropostaLendico":"5287",
+	"nome":"teste",
+	"ddd":"15",
+	"ufNascimento":"SP",
+	"sexo":"M",
+	"celular":"999999999",
+	"cidadeNascimento":"Tiete",
+	"estadoCivil":"solteiro",
+	"produto":"001028",
+	"endereco":{
+	   "bairro":"vl hortencia",
+	   "cep":"18025270",
+	   "cidade":"sorocaba",
+	   "complemento":"",
+	   "estado":"SP",
+	   "logradouro":"rua anibal prestes",
+	   "numero":"305"
+	},
+	"dadosBancarios": {
+	   "agencia": "555",
+	   "banco": "341",
+	   "contaCorrente": "112223",
+	   "digitoConta": "9",
+	   "tipoConta" : "1"
+	},
+   "emprestimo": {
+	   "plano": "3737",
+	   "dataPrimeiraParcela": "18/02/2019",
+	   "quantidadeDeParcelas": "12",
+	   "taxaAM": 4.93,
+	   "CETAA": 5.26,
+	   "valorIOF": 18.22,
+	   "valorOperacao": 850.55,
+	   "valorParcela": 95.31,
+	   "valorSolicitado": 850.55,
+    "parcelas":[
+         {
+            "numero":1,
+            "data":"18/02/2019",
+            "valor":95.31
+         },
+         {
+            "numero":2,
+            "data":"18/03/2019",
+            "valor":95.31
+         },
+         {
+            "numero":3,
+            "data":"18/04/2019",
+            "valor":95.31
+         },
+         {
+            "numero":4,
+            "data":"18/05/2019",
+            "valor":95.31
+         },
+         {
+            "numero":5,
+            "data":"18/06/2019",
+            "valor":95.31
+         },
+         {
+            "numero":6,
+            "data":"18/07/2019",
+            "valor":95.31
+         },
+         {
+            "numero":7,
+            "data":"18/08/2019",
+            "valor":95.31
+         },
+         {
+            "numero":8,
+            "data":"18/09/2019",
+            "valor":95.31
+         },
+         {
+            "numero":9,
+            "data":"18/10/2019",
+            "valor":95.31
+         },
+         {
+            "numero":10,
+            "data":"18/11/2019",
+            "valor":95.31
+         },
+         {
+            "numero":11,
+            "data":"18/12/2019",
+            "valor":95.31
+         },
+         {
+            "numero":12,
+            "data":"18/01/2020",
+            "valor":95.31
+         }
+      ]
+    }
+}
+</con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="2e1bbae3-f135-4151-916d-9994097212d0" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://sb-api.portocred.com.br" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>https://sb-api.portocred.com.br</con:endpoint></con:endpoints><con:resource name="Libera" path="/contratoEspecial/v1/pagamentos/contratos/3805954262/libera" id="578f0687-561b-4ae5-9d9e-7df4c3f7ac0e"><con:settings/><con:parameters/><con:method name="Libera 1" id="ea61b379-b880-4f22-be09-d90fe728f18a" method="PUT"><con:settings/><con:parameters/><con:request name="Request 1" id="d6aac934-5b5a-4cff-bc40-b2a7f6da1cfb" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="access_token" value="aff6cb93-ea84-37a9-83e5-b1822f559a45"/>
+  <con:entry key="client_secret" value="8eddd06e-d5e2-3805-945d-97a790062255"/>
+  <con:entry key="client_id" value="4ad85789-1a8b-35df-8bbd-b283fa1993dd"/>
+  <con:entry key="Content-Type" value="application/json"/>
+</xml-fragment>]]></con:setting></con:settings><con:endpoint>https://sb-api.portocred.com.br</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/></con:soapui-project>

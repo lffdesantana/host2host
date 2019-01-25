@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="3f6d008a-d3fd-4004-b79e-1063144d0693" activeEnvironment="Default" name="SENSEDIAGravaProposta" resourceRoot="" soapui-version="5.4.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:RestService" id="51d73e0c-04b8-4214-ae4e-d24962aedbb0" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://sb-api.portocred.com.br" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>https://sb-api.portocred.com.br</con:endpoint></con:endpoints><con:resource name="Propostas" path="/gestao-proposta/v1/propostas" id="ad7c02e6-2c46-4f0f-a6b6-9b75be132292"><con:settings/><con:parameters/><con:method name="Propostas 1" id="ede82b19-d2b0-46ca-8574-0bae1adbd431" method="POST"><con:settings/><con:parameters/><con:representation type="FAULT"><con:mediaType>application/json;charset=utf-8</con:mediaType><con:status>500</con:status><con:params/><con:element xmlns:prop="https://sb-api.portocred.com.br/gestao-proposta/v1/propostas">prop:Fault</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json;charset=utf-8</con:mediaType><con:status>201</con:status><con:params/><con:element xmlns:prop="https://sb-api.portocred.com.br/gestao-proposta/v1/propostas">prop:Response</con:element></con:representation><con:request name="Request 1" id="9a685f84-4264-4af0-977e-0fb121c8065c" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="access_token" value="9c60220f-e314-3a14-8e3c-44ef0cf1a132"/>
+  <con:entry key="CODIGOLOJA" value="5194"/>
+  <con:entry key="X-AUTHORIZATION" value="MTpsb3NhbmdvMToxMjM0NTY="/>
+  <con:entry key="CODIGOLOJISTA" value="905166"/>
+  <con:entry key="client_id" value="758c4753-f8ac-3dd1-af71-d2c6df1b4c37"/>
+  <con:entry key="Content-Type" value="application/json"/>
+</xml-fragment>]]></con:setting></con:settings><con:endpoint>https://sb-api.portocred.com.br</con:endpoint><con:request>{
+  "dataVencimentoPrimeiraParcela": "2018-07-19",
+      "codigoProduto": "001015",
+  "tipoContrato": "CCB",
+  "valorCompra": "2000.00",
+  "dadosAdicionais": [
+	{ 
+		"campo": "PROP_JA_CLIENTE_PARCEIRO",
+		"valor": "S"
+	},
+	{ 
+		"campo": "CPFATENDENTE",
+		"valor": "00776471066"
+	}
+  ],
+  "tipoSeguro": "SEM_SEGURO",
+  "clientes": [
+    {
+		"nome": "TESTE",
+		"cpf": "68469934872",
+		"dataNascimento": "1966-03-06",
+		"tipo": "CLIENTE_PRINCIPAL",
+    "telefones": [
+        {
+				"ddd": "051",
+				"numero": "30762020"
+        }
+      ],
+    "emprego": {
+         "codigoClasseProfissional": "02",
+         "renda": "3000.00"
+       },
+    "enderecos": [
+        {
+          "cep": "90010410"
+       }
+    ]
+    }
+]
+}</con:request><con:originalUri>https://sb-api.portocred.com.br/gestao-proposta/v1/propostas</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:testSuite id="f9db2b54-2a82-49a9-9fb4-00e14a446bd7" name="https://sb-api.portocred.com.br TestSuite"><con:description>TestSuite generated for REST Service [https://sb-api.portocred.com.br]</con:description><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="1369fcfd-70d3-4749-9146-14716250f17b" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="https://sb-api.portocred.com.br TestSuite" searchProperties="true"><con:settings/><con:testStep type="properties" name="prop" id="a6d05d94-7613-44de-ba47-7031a252ebe6"><con:settings/><con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:properties><con:property><con:name>loja</con:name><con:value>5477</con:value></con:property><con:property><con:name>lojista</con:name><con:value>905297</con:value></con:property><con:property><con:name>parceiro</con:name><con:value>11</con:value></con:property><con:property><con:name>senha</con:name><con:value>123456</con:value></con:property><con:property><con:name>usuario</con:name><con:value>LASA1</con:value></con:property><con:property><con:name>origem</con:name><con:value>H</con:value></con:property><con:property><con:name>dataPriVencimento</con:name><con:value>2019-02-25</con:value></con:property><con:property><con:name>seguro</con:name><con:value>2</con:value></con:property><con:property><con:name>prazo</con:name><con:value>9</con:value></con:property><con:property><con:name>produto</con:name><con:value>001028</con:value></con:property><con:property><con:name>valorOp</con:name><con:value>3971</con:value></con:property><con:property><con:name>cliCPF</con:name><con:value>36049745692</con:value></con:property><con:property><con:name>cliNome</con:name><con:value>PAULO CARLOS P</con:value></con:property><con:property><con:name>cliDataNasc</con:name><con:value>1988-12-17</con:value></con:property><con:property><con:name>cliSexo</con:name><con:value>M</con:value></con:property><con:property><con:name>cliMail</con:name><con:value>teste23datum@gmail.com</con:value></con:property><con:property><con:name>renda</con:name><con:value>11000</con:value></con:property><con:property><con:name>tipocontrato</con:name><con:value>0</con:value></con:property><con:property><con:name>cliTelefone</con:name><con:value>94362</con:value></con:property><con:property><con:name>cliTelefonerand</con:name><con:value>8277</con:value></con:property></con:properties></con:config></con:testStep><con:testStep type="groovy" name="GERACPFCNPJ" id="9115d0fd-1933-42bf-ad4e-f4072a74b585"><con:settings/><con:config><script>// codigo para gerar CPF
+// codigo copiado de http://gerardocumentos.com.br/?pg=funcao-javascript-para-gerar-cpf e transformado para groovy
+int randomiza(n) {
+	ranNum = Math.round(Math.random()*n);
+	return ranNum;
+}
+
+int mod(dividendo,divisor) {
+	return Math.round(dividendo - (Math.floor(dividendo/divisor)*divisor));
+}
+
+String gerarCPF(boolean comPontos) {
+	n = 9;
+	n1 = randomiza(n);
+	n2 = randomiza(n);
+	n3 = randomiza(n);
+	n4 = randomiza(n);
+	n5 = randomiza(n);
+	n6 = randomiza(n);
+	n7 = randomiza(n);
+	n8 = randomiza(n);
+	n9 = randomiza(n);
+	d1 = n9*2+n8*3+n7*4+n6*5+n5*6+n4*7+n3*8+n2*9+n1*10;
+	d1 = 11 - ( mod(d1,11) );
+	if (d1>=10) {
+		d1 = 0;
+	}
+	d2 = d1*2+n9*3+n8*4+n7*5+n6*6+n5*7+n4*8+n3*9+n2*10+n1*11;
+	d2 = 11 - ( mod(d2,11) );
+	if (d2>=10) {
+		d2 = 0;
+	}
+	retorno = '';
+	if (comPontos) {
+		cpf = ''+n1+n2+n3+'.'+n4+n5+n6+'.'+n7+n8+n9+'-'+d1+d2;
+	}
+	else {
+		cpf = ''+n1+n2+n3+n4+n5+n6+n7+n8+n9+d1+d2;
+	}
+	if (n7 &lt;2) {
+		return gerarCPF(false);
+	} else {
+		return cpf;
+	}
+	
+}
+
+String gerarCnpj (boolean comPontos) {
+	n = 9;
+	n1 = randomiza(n);
+	n2 = randomiza(n);
+	n3 = randomiza(n);
+	n4 = randomiza(n);
+	n5 = randomiza(n);
+	n6 = randomiza(n);
+	n7 = randomiza(n);
+	n8 = randomiza(n);
+	n9 = 0; //randomiza(n);
+	n10 = 0; //randomiza(n);
+	n11 = 0; //randomiza(n);
+	n12 = 1; //randomiza(n);
+	d1 = n12*2+n11*3+n10*4+n9*5+n8*6+n7*7+n6*8+n5*9+n4*2+n3*3+n2*4+n1*5;
+	d1 = 11 - ( mod(d1,11) );
+	if (d1>=10) {
+		d1 = 0;
+	}
+	d2 = d1*2+n12*3+n11*4+n10*5+n9*6+n8*7+n7*8+n6*9+n5*2+n4*3+n3*4+n2*5+n1*6;
+	d2 = 11 - ( mod(d2,11) );
+	if (d2>=10) {
+		d2 = 0;
+	}
+	retorno = '';
+	if (comPontos) {
+		cnpj = ''+n1+n2+'.'+n3+n4+n5+'.'+n6+n7+n8+'/'+n9+n10+n11+n12+'-'+d1+d2;
+	}
+	else {
+		cnpj = ''+n1+n2+n3+n4+n5+n6+n7+n8+n9+n10+n11+n12+d1+d2;
+	}
+	return cnpj
+}
+
+//log.info gerarCPF(true)
+//log.info gerarCPF(false)
+//log.info gerarCnpj(true)
+//log.info gerarCnpj(false)
+
+testRunner.testCase.testSteps["prop"].setPropertyValue( "cliCPF", gerarCPF(false) )
+//testRunner.testCase.testSteps["prop"].setPropertyValue( "cliTelefone", gerarCPF(false) )
+
+def getLocalPropValueOne = testRunner.testCase.testSteps["prop"].getPropertyValue("cliCPF")
+//def getLocalPropValueTwo = testRunner.testCase.testSteps["prop"].getPropertyValue("cliTelefone")
+log.info(getLocalPropValueOne)
+//log.info(getLocalPropValueTwo)</script></con:config></con:testStep><con:testStep type="jdbc" name="GeraTelefone" id="f09c2221-e5d2-47b2-a95e-d9157899e253"><con:settings/><con:config xsi:type="con:JdbcRequestTestStep" convertColumnNamesToUpperCase="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:driver>com.microsoft.sqlserver.jdbc.SQLServerDriver</con:driver><con:connectionString>jdbc:sqlserver://10.10.20.23;databaseName=db_sicred_tecnica9;username=sicred;password=ps&amp;sicred</con:connectionString><con:query>SELECT CAST(FLOOR(RAND()*(50-1000)+9000) AS varchar(10)) as RAND
+
+</con:query><con:assertion type="JDBC Status" id="779fd060-01fe-4f4b-b298-2890ca0ee8d2" name="JDBC Status"/><con:assertion type="JDBC Timeout" id="a8c432c8-c8eb-4fd5-9418-37eaf1cdb12c" name="JDBC Timeout"/><con:properties/></con:config></con:testStep><con:testStep type="jdbc" name="GeraValor" id="5e81d7b9-ff3d-4230-af1c-ea36207b8615"><con:settings/><con:config xsi:type="con:JdbcRequestTestStep" convertColumnNamesToUpperCase="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:driver>com.microsoft.sqlserver.jdbc.SQLServerDriver</con:driver><con:connectionString>jdbc:sqlserver://10.10.20.23;databaseName=db_sicred_tecnica9;username=sicred;password=ps&amp;sicred</con:connectionString><con:query>SELECT CAST(FLOOR(RAND()*(50-2000)+4000) AS varchar(10)) as VALOR
+
+</con:query><con:assertion type="JDBC Status" id="779fd060-01fe-4f4b-b298-2890ca0ee8d2" name="JDBC Status"/><con:assertion type="JDBC Timeout" id="a8c432c8-c8eb-4fd5-9418-37eaf1cdb12c" name="JDBC Timeout"/><con:properties/></con:config></con:testStep><con:testStep type="transfer" name="FoneTransfer" id="849c1e62-ca0c-4b27-a77b-d7dcacca4212"><con:settings/><con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>num</con:name><con:sourceType>ResponseAsXml</con:sourceType><con:sourceStep>GeraTelefone</con:sourceStep><con:sourcePath>//RAND[1]</con:sourcePath><con:targetType>cliTelefonerand</con:targetType><con:targetStep>prop</con:targetStep><con:upgraded>true</con:upgraded></con:transfers><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>vlrOp</con:name><con:sourceType>ResponseAsXml</con:sourceType><con:sourceStep>GeraValor</con:sourceStep><con:sourcePath>//VALOR[1]</con:sourcePath><con:targetType>valorOp</con:targetType><con:targetStep>prop</con:targetStep><con:upgraded>true</con:upgraded></con:transfers></con:config></con:testStep><con:testStep type="restrequest" name="Propostas" id="b2261058-304f-4be4-ace6-4d76b59ed45e"><con:settings/><con:config service="https://sb-api.portocred.com.br" resourcePath="/gestao-proposta/v1/propostas" methodName="Propostas 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Propostas" id="9a685f84-4264-4af0-977e-0fb121c8065c" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="access_token" value="9c60220f-e314-3a14-8e3c-44ef0cf1a132"/>
+  <con:entry key="CODIGOLOJA" value="5477"/>
+  <con:entry key="X-AUTHORIZATION" value="MTE6TEFTQTE6MTIzNDU2"/>
+  <con:entry key="CODIGOLOJISTA" value="905297"/>
+  <con:entry key="client_id" value="758c4753-f8ac-3dd1-af71-d2c6df1b4c37"/>
+  <con:entry key="Content-Type" value="application/json"/>
+</xml-fragment>]]></con:setting></con:settings><con:endpoint>https://sb-api.portocred.com.br</con:endpoint><con:request>{
+  "dataVencimentoPrimeiraParcela": "${prop#dataPriVencimento}",
+      "codigoProduto": "${prop#produto}",
+  "tipoContrato": "CCB",
+  "valorCompra": "${prop#valorOp}",
+  "dadosAdicionais": [
+	{ 
+		"campo": "CPFATENDENTE",
+		"valor": "00776471066"
+	}
+  ],
+  "tipoSeguro": "SEM_SEGURO",
+  "clientes": [
+    {
+		"nome": "${prop#cliNome}${prop#cliTelefonerand}",
+		"cpf": "${prop#cliCPF}",
+		"dataNascimento": "1966-03-06",
+		"tipo": "CLIENTE_PRINCIPAL",
+    "telefones": [
+        {
+				"ddd": "051",
+				"numero": "${prop#cliTelefone}${prop#cliTelefonerand}"
+        }
+      ],
+    "emprego": {
+         "codigoClasseProfissional": "02",
+         "renda": "9000.00"
+       },
+    "enderecos": [
+        {
+          "cep": "90010410"
+       }
+    ]
+    }
+]
+}</con:request><con:originalUri>https://sb-api.portocred.com.br/gestao-proposta/v1/propostas</con:originalUri><con:assertion type="Schema Compliance" id="5b84de94-0433-4b28-8fe2-db30352586b6" name="Schema Compliance"><con:configuration/></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="transfer" name="PropTransfer" id="7750fe0c-debf-49d3-b809-3fa14fbc74fb"><con:settings/><con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>num</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>Propostas</con:sourceStep><con:sourcePath>$.numero</con:sourcePath><con:targetType>numProp</con:targetType><con:targetStep>#Project#</con:targetStep><con:type>JSONPATH</con:type><con:targetTransferType>JSONPATH</con:targetTransferType><con:upgraded>true</con:upgraded></con:transfers></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties><con:property><con:name>numProp</con:name><con:value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">3805687672</con:value></con:property></con:properties><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>

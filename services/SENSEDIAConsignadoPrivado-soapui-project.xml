@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="9a0e223a-b115-4491-a6d7-9a945690fe9a" activeEnvironment="Default" name="SENSEDIAConsignadoPrivado" resourceRoot="" soapui-version="5.4.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:RestService" id="7d2eaec9-3ac5-4a09-ba55-1d614730afa0" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://sb-api.portocred.com.br" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>https://sb-api.portocred.com.br</con:endpoint></con:endpoints><con:resource name="Solicitação de Empréstimo" path="/psd/consignado/v1/solicitacoes/21898854858" id="1ae8e19e-e1e1-467b-82b0-d84153e6ff37"><con:settings/><con:parameters/><con:method name="SolicitaEmprestimo" id="cc2f22e1-607e-45cb-bc56-685f2d849353" method="PUT"><con:settings/><con:parameters/><con:request name="Request 1" id="07a4751d-2e09-45f9-80e6-ab2b5c3c0af6" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="access_token" value="${#Project#token}"/>
+  <con:entry key="charset" value="${#Project#charset}"/>
+  <con:entry key="Host" value="${#Project#host}"/>
+  <con:entry key="client_secret" value="${#Project#secret}"/>
+  <con:entry key="client_id" value="${#Project#cliente}"/>
+  <con:entry key="Content-Type" value="${#Project#content}"/>
+</xml-fragment>]]></con:setting></con:settings><con:endpoint>https://sb-api.portocred.com.br</con:endpoint><con:request>{
+	"cpf": "21898854858",
+	"dataDeNascimento": "1977-10-26",
+	"email": "teste@teste.com",
+	"anoAdmissao": "2017",
+	"mesAdmissao": "03",
+	"ddd": "51",
+	"celular": "981420813",
+	"deviceId": "879879878",
+	"mobileBrandName": "teste123",
+	"mobileModelName": "Iphone 5",
+	"deviceCategory": "smartphone",
+	"platformVersion": "IOS 5",
+	"deviceModel": "5"
+}</con:request><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="c9688fd7-7bc9-410c-a8a2-6d76f3ca7268" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://sb-api.portocred.com.br" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>https://sb-api.portocred.com.br</con:endpoint></con:endpoints><con:resource name="Busca Solicitação CPF" path="/psd/consignado/v1/solicitacoes/21898854858" id="a5abeeb5-e243-4546-9877-7d89fe266835"><con:settings/><con:parameters/><con:method name="BuscaSolicitaçãoCPF" id="38b53cca-b2e5-42b8-bfa5-63748721fc41" method="GET"><con:settings/><con:parameters/><con:request name="Request 1" id="cbd48688-a6d1-465c-a3e7-169900d04102" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="access_token" value="${#Project#token}"/>
+  <con:entry key="charset" value="${#Project#charset}"/>
+  <con:entry key="Host" value="${#Project#host}"/>
+  <con:entry key="client_secret" value="${#Project#secret}"/>
+  <con:entry key="client_id" value="${#Project#cliente}"/>
+  <con:entry key="Content-Type" value="${#Project#content}"/>
+</xml-fragment>]]></con:setting></con:settings><con:endpoint>https://sb-api.portocred.com.br</con:endpoint><con:request/><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="d535320e-5c07-4846-9c38-48147e919b6f" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://sb-api.portocred.com.br" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>https://sb-api.portocred.com.br</con:endpoint></con:endpoints><con:resource name="ValidaçãoTokenSegurança" path="/ecp/v1/solicitacoes/21898854858/tokens/51425" id="c94f4a8b-8e30-429a-b657-373fb093234a"><con:settings/><con:parameters/><con:method name="Token" id="815c0b98-9f83-4da4-b80d-d5ff6ec10132" method="GET"><con:settings/><con:parameters/><con:request name="Request 1" id="74ce4f87-ef21-4400-91b9-f1ede404d2eb" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="access_token" value="${#Project#token}"/>
+  <con:entry key="charset" value="${#Project#charset}"/>
+  <con:entry key="Host" value="${#Project#host}"/>
+  <con:entry key="client_secret" value="${#Project#secret}"/>
+  <con:entry key="client_id" value="${#Project#cliente}"/>
+  <con:entry key="Content-Type" value="${#Project#content}"/>
+</xml-fragment>]]></con:setting></con:settings><con:endpoint>https://sb-api.portocred.com.br</con:endpoint><con:request/><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="e02e2ff3-e3e5-428f-9fa0-28734f88476a" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://sb-api.portocred.com.br" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>https://sb-api.portocred.com.br</con:endpoint></con:endpoints><con:resource name="Dados-adicionais" path="/ecp/v1/solicitacoes/21898854858/dados-adicionais" id="ad6f1d94-58a2-4770-8888-a286b49b6624"><con:settings/><con:parameters><con:parameter><con:name>termoScr</con:name><con:value>true</con:value><con:style>QUERY</con:style><con:default>true</con:default><con:path xsi:nil="true"/><con:description xsi:nil="true"/></con:parameter></con:parameters><con:method name="Dados-adicionais 1" id="8705251e-6017-4f0e-bd6a-a31c07ac09d6" method="POST"><con:settings/><con:parameters/><con:request name="Request 1" id="6ff11190-5116-41ec-87c3-cd6d1dc59edd" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="access_token" value="${#Project#token}"/>
+  <con:entry key="charset" value="${#Project#charset}"/>
+  <con:entry key="Host" value="${#Project#host}"/>
+  <con:entry key="client_secret" value="${#Project#secret}"/>
+  <con:entry key="client_id" value="${#Project#cliente}"/>
+  <con:entry key="Content-Type" value="${#Project#content}"/>
+</xml-fragment>]]></con:setting></con:settings><con:endpoint>https://sb-api.portocred.com.br</con:endpoint><con:request>{
+	"estadoCivil": "D",
+	"motivoEmprestimo": "Abrir um comercio",
+	"valorSolicitado": "15000.00"
+}</con:request><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="termoScr" value="true" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>termoScr</con:entry></con:parameterOrder></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="cc52d684-7053-472e-acdc-67439c5734cb" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://sb-api.portocred.com.br" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>https://sb-api.portocred.com.br</con:endpoint></con:endpoints><con:resource name="ObterOfertas" path="/ecp/v1/solicitacoes/21898854858/ofertas" id="2f10784e-5230-4053-8de3-3ce5a6be33a1"><con:settings/><con:parameters><con:parameter><con:name>valor-solicitado</con:name><con:value>7500.00</con:value><con:style>QUERY</con:style><con:default>7500.00</con:default><con:path xsi:nil="true"/><con:description xsi:nil="true"/></con:parameter><con:parameter><con:name>seguro-emprestimo</con:name><con:value>S</con:value><con:style>QUERY</con:style><con:default>S</con:default><con:path xsi:nil="true"/><con:description xsi:nil="true"/></con:parameter></con:parameters><con:method name="Ofertas 1" id="481d8989-c51a-43c7-962a-52bbd04b2d2c" method="GET"><con:settings/><con:parameters/><con:representation type="FAULT"><con:mediaType>text/plain</con:mediaType><con:status>401</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="Request 1" id="47053d66-c980-407b-a83a-3efc675004e1" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="access_token" value="${#Project#token}"/>
+  <con:entry key="charset" value="${#Project#charset}"/>
+  <con:entry key="Host" value="${#Project#host}"/>
+  <con:entry key="client_secret" value="${#Project#secret}"/>
+  <con:entry key="client_id" value="${#Project#cliente}"/>
+  <con:entry key="Content-Type" value="${#Project#content}"/>
+</xml-fragment>]]></con:setting></con:settings><con:endpoint>https://sb-api.portocred.com.br</con:endpoint><con:request/><con:originalUri>https://sb-api.portocred.com.br/ecp/v1/solicitacoes/21898854858/ofertas</con:originalUri><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="seguro-emprestimo" value="S"/>
+  <con:entry key="valor-solicitado" value="7500.00"/>
+</con:parameters><con:parameterOrder><con:entry>valor-solicitado</con:entry><con:entry>seguro-emprestimo</con:entry></con:parameterOrder></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="18b14065-a113-4c92-a2f1-749ee2f6dd2e" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://sb-api.portocred.com.br" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>https://sb-api.portocred.com.br</con:endpoint></con:endpoints><con:resource name="EscolheOferta" path="/ecp/v1/solicitacoes/30717782875/ofertas/escolhe" id="d2034506-b53b-4abd-9436-2d3dbb54f0e1"><con:settings/><con:parameters><con:parameter><con:name>offer-select</con:name><con:value>S</con:value><con:style>QUERY</con:style><con:default>S</con:default><con:path xsi:nil="true"/><con:description xsi:nil="true"/></con:parameter></con:parameters><con:method name="Escolhe 1" id="4f3b096e-0366-46b0-9e3b-c92ef4d9e29d" method="PUT"><con:settings/><con:parameters/><con:request name="Request 1" id="012106da-f48f-4e11-985e-52f64c44f952" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="access_token" value="${#Project#token}"/>
+  <con:entry key="charset" value="${#Project#charset}"/>
+  <con:entry key="Host" value="${#Project#host}"/>
+  <con:entry key="client_secret" value="${#Project#secret}"/>
+  <con:entry key="client_id" value="${#Project#cliente}"/>
+  <con:entry key="Content-Type" value="${#Project#content}"/>
+</xml-fragment>]]></con:setting></con:settings><con:endpoint>https://sb-api.portocred.com.br</con:endpoint><con:request>{
+	"valorCredito": 1500.00,
+    "prazoOferta": "012",
+    "planoOferta": "3594",
+    "taxaPlano": 2.79,
+    "valorParcela": 165.95,
+    "valorFinanciado": 1669.17,
+    "valorLiberado": 1500.00,
+    "iof": 34.17,
+    "tac": 0.00,
+    "finIofSeguro": 0.51,
+    "valorSeguro": 135.00,
+    "idProdutoSeguro": 10,
+    "seguradora": "15",
+    "valorTaxaInclusao": 0.00,
+    "valorTaxaRenovacao": 0.00,
+    "valorTotal": 1991.4,
+    "valorTotalPst": 0.00,
+    "seguro": "COMPLETO",
+    "dataEmissao": "2018-06-06"
+}</con:request><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="offer-select" value="S" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>offer-select</con:entry></con:parameterOrder></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="b2dfeb60-c99f-438d-8f46-9f4a58f1963a" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://sb-api.portocred.com.br" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>https://sb-api.portocred.com.br</con:endpoint></con:endpoints><con:resource name="Dados-complementares" path="/ecp/v1/solicitacoes/30717782875/dados-complementares" id="d9ec1e7a-254c-4050-a853-c3f7a2a163ec"><con:settings/><con:parameters/><con:method name="Dados-complementares 1" id="8934ae51-a302-4c68-9acb-ad2428cfcfa9" method="POST"><con:settings/><con:parameters/><con:request name="Request 1" id="123d1c7b-5c39-4259-b767-298de9504499" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="access_token" value="${#Project#token}"/>
+  <con:entry key="charset" value="${#Project#charset}"/>
+  <con:entry key="Host" value="${#Project#host}"/>
+  <con:entry key="client_secret" value="${#Project#secret}"/>
+  <con:entry key="client_id" value="${#Project#cliente}"/>
+  <con:entry key="Content-Type" value="${#Project#content}"/>
+</xml-fragment>]]></con:setting></con:settings><con:endpoint>https://sb-api.portocred.com.br</con:endpoint><con:request>{
+	"nomeMae": "Maria",
+	"ddd2": "16",
+	"telefone2": "991259884",
+	"sexo": "M", 
+	"cep": "14070660",
+	"logradouro": "Rua Dr Domingos Sgorlon",
+	"numero": "80",
+	"complemento": "nao tem",
+	"bairro": "Avelino Alves Palma",
+	"cidade": "Ribeirão Preto",
+	"uf": "SP",
+	"tipoContaBancaria": "1",
+	"banco": "0001",
+	"conta": "12345678",
+	"agencia": "1234",
+	"nomeReferencia": "claudio",
+	"relacionamento": "amigo",
+	"dddReferencia": "16",
+	"telefoneReferencia": "991397014",
+	"escolariadade": "7",
+	"possuiEmprestimo": false,
+	"bancoEmprestimo": "nao tem",
+	"nacionalidade": "01"
+}</con:request><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="7c2b15ec-1ec7-402f-a56a-7fc6946d86c7" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://sb-api.portocred.com.br" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>https://sb-api.portocred.com.br</con:endpoint></con:endpoints><con:resource name="Valida" path="/ecp/v1/solicitacoes/30717782875/ofertas/valida" id="12560f45-161d-449f-b118-cecd17aff99d"><con:settings/><con:parameters/><con:method name="Valida 1" id="4a596948-2251-43e3-933c-5f7ee787c082" method="PUT"><con:settings/><con:parameters/><con:request name="Request 1" id="593dab64-c530-426f-a280-abc23b884a15" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="access_token" value="${#Project#token}"/>
+  <con:entry key="charset" value="${#Project#charset}"/>
+  <con:entry key="Host" value="${#Project#host}"/>
+  <con:entry key="client_secret" value="${#Project#secret}"/>
+  <con:entry key="client_id" value="${#Project#cliente}"/>
+  <con:entry key="Content-Type" value="${#Project#content}"/>
+</xml-fragment>]]></con:setting></con:settings><con:endpoint>https://sb-api.portocred.com.br</con:endpoint><con:request/><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="142c2395-49a6-413c-add6-d95353d01dcc" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://sb-api.portocred.com.br" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>https://sb-api.portocred.com.br</con:endpoint></con:endpoints><con:resource name="Grava" path="/ecp/v1/solicitacoes/30717782875/ofertas/grava" id="64eff183-1c54-4453-99fc-8b55f80c8fdd"><con:settings/><con:parameters><con:parameter><con:name>cpf</con:name><con:value/><con:style>QUERY</con:style><con:default/><con:description xsi:nil="true"/></con:parameter></con:parameters><con:method name="Grava 1" id="cd9da086-df03-402d-bb39-9d1836a7e4c9" method="PUT"><con:settings/><con:parameters/><con:request name="Request 1" id="f614da0f-ed36-44a1-b119-4097ac361188" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="access_token" value="${#Project#token}"/>
+  <con:entry key="charset" value="${#Project#charset}"/>
+  <con:entry key="Host" value="${#Project#host}"/>
+  <con:entry key="client_secret" value="${#Project#secret}"/>
+  <con:entry key="client_id" value="${#Project#cliente}"/>
+  <con:entry key="Content-Type" value="${#Project#content}"/>
+</xml-fragment>]]></con:setting></con:settings><con:endpoint>https://sb-api.portocred.com.br</con:endpoint><con:request/><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder><con:entry>cpf</con:entry></con:parameterOrder></con:request></con:method></con:resource></con:interface><con:properties><con:property><con:name>token</con:name><con:value>228aedf1-f4e0-3529-bde2-12fb1b446bd3</con:value></con:property><con:property><con:name>charset</con:name><con:value>UTF-8</con:value></con:property><con:property><con:name>secret</con:name><con:value>c0f52dcc-fe11-3e8e-a5da-b77c5cfb5811</con:value></con:property><con:property><con:name>cliente</con:name><con:value>d31b51b2-a5ae-35d6-9ce9-08e710682e8a</con:value></con:property><con:property><con:name>content</con:name><con:value>application/json</con:value></con:property><con:property><con:name>auth</con:name><con:value>MTE6TEFTQTE6MTIzNDU2</con:value></con:property><con:property><con:name>host</con:name><con:value>consignado</con:value></con:property></con:properties><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/></con:soapui-project>
